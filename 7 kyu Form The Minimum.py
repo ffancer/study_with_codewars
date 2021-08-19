@@ -2,7 +2,7 @@ def min_value(digits):
     lst = sorted(set(digits))
     n = ''
 
-    for i in lst[:3]:
+    for i in lst:
         n += str(i)
 
     return n

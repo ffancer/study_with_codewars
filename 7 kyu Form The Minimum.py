@@ -1,5 +1,13 @@
-lst = [1, 9, 3, 1, 7, 4, 6, 6, 7]
-lst = sorted(set(lst))
+def min_value(digits):
+    lst = sorted(set(digits))
+    n = ''
 
-# print(lst)
-print(''.join(str(lst[:3])))
+    for i in lst[:3]:
+        n += str(i)
+
+    return n
+
+
+print(min_value([1, 3, 1]))
+print(min_value([4, 7, 5, 7]))
+print(min_value([4, 8, 1, 4]))

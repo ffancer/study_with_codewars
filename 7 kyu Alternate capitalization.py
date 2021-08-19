@@ -1,4 +1,28 @@
 def capitalize(s):
+    # first:
+    # lst = []
+    # s2 = ''
+    #
+    # for i in range(len(s)):
+    #     if i % 2 == 0:
+    #         s2 += s[i].capitalize()
+    #     else:
+    #         s2 += s[i].lower()
+    #
+    # lst.append(s2)
+    # s2 = ''
+    #
+    # for i in range(len(s)):
+    #     if i % 2 == 0:
+    #         s2 += s[i].lower()
+    #     else:
+    #         s2 += s[i].capitalize()
+    #
+    # lst.append(s2)
+    #
+    # return lst
+
+    # second:
     lst = []
     s2 = ''
 
@@ -9,15 +33,7 @@ def capitalize(s):
             s2 += s[i].lower()
 
     lst.append(s2)
-    s2 = ''
-
-    for i in range(len(s)):
-        if i % 2 == 0:
-            s2 += s[i].lower()
-        else:
-            s2 += s[i].capitalize()
-
-    lst.append(s2)
+    lst.append(s2.swapcase())
 
     return lst
 

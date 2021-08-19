@@ -1,11 +1,11 @@
 def reverse_letter(string):
     s = ''
+
     for i in string:
-        if i.isascii():
+        if 'z' >= i >= 'a':
             s += i
 
-    return s
-
+    return s[::-1]
 
 
 print(reverse_letter("krishan"))

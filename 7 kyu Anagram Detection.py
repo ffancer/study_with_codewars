@@ -1,13 +1,12 @@
 def is_anagram(test, original):
-    # cnt_test = [i for i in test].sort()
-    # cnt_original = [i for i in original].sort()
+    # first:
+    # check_test = sorted([i.lower() for i in test])
+    # check_original = sorted([i.lower() for i in original])
     #
-    # return cnt_test == cnt_original
-    check_test = sorted([i.lower() for i in test])
-    check_original = sorted([i.lower() for i in original])
+    # return check_test == check_original
 
-    return check_test == check_original
-
+    # second, more compact
+    return sorted([i.lower() for i in test]) == sorted([i.lower() for i in original])
 
 
 print(is_anagram("foefet", "toffee"), True, 'The word foefet is an anagram of toffee')
@@ -17,6 +16,4 @@ print(is_anagram("dumble", "bumble"), False, 'Characters do not match for test c
 print(is_anagram("ound", "round"), False, 'Missing characters for test case ound, round')
 print(is_anagram("apple", "pale"), False, 'Same letters, but different count')
 
-# s = 'MuwmsIrlRibVOw'
-# for i in s:
-#     print(type(ord(i)))
+

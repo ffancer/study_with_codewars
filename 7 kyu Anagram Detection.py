@@ -1,5 +1,20 @@
 def is_anagram(test, original):
-    pass
+    # if len(test) != len(original):
+    #     return False
+
+    cnt_test = [test.count(i) for i in test]
+    cnt_original = [original.count(i) for i in original]
+
+    # for i in original:
+    #     cnt += original.count(i)
+
+    return sum(cnt_test) == sum(cnt_original)
+
+# s = 'apple'
+# cnt =0
+# for i in s:
+#     cnt += s.count(i)
+# print(cnt)
 
 
 

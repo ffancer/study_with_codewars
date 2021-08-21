@@ -1,7 +1,12 @@
 def in_asc_order(arr):
-    lst_sort = sorted(arr)
+    # first
+    # lst_sort = sorted(arr)
+    #
+    # return lst_sort == arr
 
-    return lst_sort == arr
+
+    #second:
+    return arr == sorted(arr)
 
 
 # Array of 2 integers

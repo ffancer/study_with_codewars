@@ -1,8 +1,13 @@
-s = 'CodEWaRs'
-lst = []
+def capitals(word):
+    # first:
+    def capitals(word):
+        lst = []
 
-for i in s:
-    if i.istitle():
-        lst.append(s.find(i))
+        for i in range(len(word)):
+            if word[i].istitle():
+                lst.append(i)
 
-print(lst)
+        return lst
+
+
+print(capitals('CodEWaRs'))

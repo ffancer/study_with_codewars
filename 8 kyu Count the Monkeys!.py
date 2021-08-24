@@ -1,5 +1,14 @@
 def monkey_count(n):
-    return  [i for i in range(1, n+1)]
+    # first:
+    # return [i for i in range(1, n+1)]
+
+    # second:
+    lst = []
+
+    for i in range(1, n + 1):
+        lst.append(i)
+
+    return lst
 
 
 print(monkey_count(5), [1, 2, 3, 4, 5])

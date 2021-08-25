@@ -1,11 +1,14 @@
 def count_sheep(n):
     # first
-    s = ''
+    # s = ''
+    #
+    # for i in range(1, n+1):
+    #     s += f'{i} sheep...'
+    #
+    # return s
 
-    for i in range(1, n+1):
-        s += f'{i} sheep...'
-
-    return s
+    # second
+    return ''.join([f'{i} sheep...' for i in range(1, n+1)])
 
 
 

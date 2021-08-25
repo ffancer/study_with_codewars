@@ -1,4 +1,8 @@
 def expression_matter(a, b, c):
+    first_formula = a * (b + c)
+    second_formula = a * b * c
+    third_formula = a + b * c
+    fourth_formula = (a + b) * c
 
 
 

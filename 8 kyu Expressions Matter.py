@@ -1,10 +1,5 @@
 def expression_matter(a, b, c):
-    lst = [a + b + c, a * b * c, (a + b) * c, a * (b + c)]
-
-    return max(lst)
-
-
-
+    return max([a + b + c, a * b * c, (a + b) * c, a * (b + c)])
 
 
 print(expression_matter(2, 1, 2))

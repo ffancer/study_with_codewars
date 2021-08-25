@@ -1,12 +1,5 @@
 def expression_matter(a, b, c):
-    if a == 1 and b == 1 and c == 1:
-        return 3
-    lst = []
-
-    first_formula = lst.append(a * (b + c))
-    second_formula = lst.append(a * b * c)
-    third_formula = lst.append(a + b * c)
-    fourth_formula = lst.append((a + b) * c)
+    lst = [a + b + c, a * b * c, (a + b) * c, a * (b + c)]
 
     return max(lst)
 

@@ -1,10 +1,16 @@
 def count_sheep(n):
-    # your code
+    # first
+    s = ''
+
+    for i in range(1, n+1):
+        s += f'{i} sheep...'
+
+    return s
 
 
 
 
 
-print(count_sheep(1), "1 sheep...");
-print(count_sheep(2), "1 sheep...2 sheep...")
-print(count_sheep(3), "1 sheep...2 sheep...3 sheep...")
+print(count_sheep(1))
+print(count_sheep(2))
+print(count_sheep(3))

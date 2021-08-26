@@ -25,9 +25,6 @@ def greet(language):
         return database[language]
 
 
-
-
-
 print(greet('english'), 'Welcome')
 print(greet('dutch'), 'Welkom')
 print(greet('IP_ADDRESS_INVALID'), 'Welcome')

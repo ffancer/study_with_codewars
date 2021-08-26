@@ -1,9 +1,8 @@
 def all(seq, fun):
     for i in seq:
-        if i < int(str(fun)):
+        if not fun(i):
             return False
-        else:
-            return True
+    return True
 
 
 greater_than_9 = lambda x: x > 9

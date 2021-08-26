@@ -1,5 +1,5 @@
 def greet(language):
-    return {
+    database = {
         'english': 'Welcome',
         'czech': 'Vitejte',
         'danish': 'Velkomst',
@@ -17,7 +17,12 @@ def greet(language):
         'spanish': 'Bienvenido',
         'swedish': 'Valkommen',
         'welsh': 'Croeso'
-    }[language]
+    }
+
+    if language not in database:
+        return 'Welcome'
+    else:
+        return database[language]
 
 
 

@@ -1,7 +1,12 @@
 def double_char(s):
-    pass
+    # first
+    s2 = ''
+    for i in s:
+        s2 += i * 2
+
+    return s2
 
 
-print(double_char("String"),"SSttrriinngg")
-print(double_char("Hello World"),"HHeelllloo  WWoorrlldd")
-print(double_char("1234!_ "),"11223344!!__  ")
+print(double_char("String"))
+print(double_char("Hello World"))
+print(double_char("1234!_ "))

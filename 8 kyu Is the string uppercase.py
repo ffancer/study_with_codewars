@@ -1,9 +1,10 @@
 def is_uppercase(inp):
-    return False
+    return inp == inp.upper()
 
 
-print("c", False)
-print("C", True)
-print("hello I AM DONALD", False)
-print("HELLO I AM DONALD", True)
-print("$%&", True)
+print(is_uppercase('c'))
+print(is_uppercase("C"))
+print(is_uppercase("hello I AM DONALD"))
+print(is_uppercase("HELLO I AM DONALD"))
+print(is_uppercase("$%&"))
+

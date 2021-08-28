@@ -1,4 +1,6 @@
 def index(array, n):
+    if n not in range(len(array)):
+        return -1
     return array[n] ** n
 
 

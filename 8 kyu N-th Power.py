@@ -1,5 +1,5 @@
 def index(array, n):
-    pass
+    return array[n] ** n
 
 
 print(index([1, 2, 3, 4], 2), 9)

@@ -1,6 +1,5 @@
 def no_boring_zeros(n):
-    n = str(n)
-    print(len(n) - len(n.rstrip('0')))
+    return 0 if n == 0 else int(str(n).rstrip('0'))
 
 
 print(no_boring_zeros(1450), 145)

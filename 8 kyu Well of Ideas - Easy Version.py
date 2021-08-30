@@ -1,13 +1,7 @@
 def well(x):
-    # first
-    cnt = str(x).count('good')
+    # second
+    return 'I smell a series!' if str(x).count('good') > 2 else ('Publish!' if str(x).count('good') == 1 or str(x).count('good') == 2 else 'Fail!')
 
-    if cnt > 2:
-        return 'I smell a series!'
-    elif cnt == 1 or cnt == 2:
-        return 'Publish!'
-    else:
-        return 'Fail!'
 
 print(well(['bad', 'bad', 'bad']), 'Fail!')
 print(well(['good', 'bad', 'bad', 'bad', 'bad']), 'Publish!')

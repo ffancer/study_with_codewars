@@ -6,7 +6,10 @@ def square_or_square_root(arr):
 
     for i in arr:
         res = sqrt(i)
-        print(res.is_integer())
+        if res.is_integer():
+            lst.append(int(res))
+        else:
+            lst.append(i ** 2)
 
     return lst
 

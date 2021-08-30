@@ -1,5 +1,6 @@
 def no_boring_zeros(n):
-    pass
+    n = str(n)
+    print(len(n) - len(n.rstrip('0')))
 
 
 print(no_boring_zeros(1450), 145)

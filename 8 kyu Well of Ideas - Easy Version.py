@@ -1,6 +1,5 @@
 def well(x):
-    #your code here
-    return ''
+    return 'Publish!' if str(x).count('good') >= 1  ('I smell a series!' if str(x).count('good') > 2 else 'Fail!')
 
 
 print(well(['bad', 'bad', 'bad']), 'Fail!')

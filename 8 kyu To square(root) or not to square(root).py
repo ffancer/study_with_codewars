@@ -1,10 +1,18 @@
 from math import sqrt
 
-lst = [4, 3, 9, 7, 2, 1]
-lst_answer = []
-for i in lst:
-    if sqrt(i) ** 2 == i:
-        lst_answer.append(int(sqrt(i)))
-    else:
-        lst_answer.append(i ** 2)
-print(lst_answer)
+
+def square_or_square_root(arr):
+    lst = []
+
+    for i in arr:
+        if int(sqrt(i) * sqrt(i)) == i:
+            lst.append(int(sqrt(i)))
+        else:
+            lst.append(i ** 2)
+
+    return lst
+
+
+print(square_or_square_root([4, 3, 9, 7, 2, 1 ]))
+print(square_or_square_root([100, 101, 5, 5, 1, 1]))
+print(square_or_square_root([1, 2, 3, 4, 5, 6]))

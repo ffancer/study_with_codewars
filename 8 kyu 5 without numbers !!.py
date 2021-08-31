@@ -1,5 +1,6 @@
 def unusual_five():
-    return None
+    return len("five!")
 
 
 print(unusual_five(), 5, "lol")
+

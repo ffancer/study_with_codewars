@@ -1,13 +1,5 @@
 def replace_exclamation(s):
-    s2 = ''
-
-    for i in s:
-        if i in 'aeiouAEIOU':
-            s2 += '!'
-        else:
-            s2 += i
-
-    return s2
+    return ''.join(['!' if i in 'aeiouAEIOU' else i for i in s])
 
 
 print(replace_exclamation("Hi!"), "H!!")

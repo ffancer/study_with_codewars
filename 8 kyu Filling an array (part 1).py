@@ -1,7 +1,5 @@
 def arr(n):
-    pass
-
-# [ the numbers 0 to N-1 ]
+    return [i for i in range(n)]
 
 
 print(arr(4), [0, 1, 2, 3])

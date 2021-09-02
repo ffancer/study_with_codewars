@@ -1,5 +1,11 @@
 def triple_trouble(one, two, three):
-    pass
+    s = ''
+
+    for i in range(len(one)):
+        s += f'{one[i]}{two[i]}{three[i]}'
+
+    return s
+
 
 
 print(triple_trouble("aaa", "bbb", "ccc"), "abcabcabc")

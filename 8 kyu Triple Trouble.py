@@ -1,10 +1,12 @@
 def triple_trouble(one, two, three):
-    s = ''
+    # s = ''
+    #
+    # for i in range(len(one)):
+    #     s += f'{one[i]}{two[i]}{three[i]}'
+    #
+    # return s
 
-    for i in range(len(one)):
-        s += f'{one[i]}{two[i]}{three[i]}'
-
-    return s
+    return ''.join([f'{one[i]}{two[i]}{three[i]}' for i in range(len(one))])
 
 
 

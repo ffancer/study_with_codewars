@@ -1,5 +1,7 @@
 def super_size(n):
-    pass
+    n = list(str(n))
+    n = sorted([int(i) for i in n], reverse=True)
+    return int(''.join([str(i) for i in n]))
 
 
 print(super_size(69), 96)

@@ -1,8 +1,11 @@
 def super_size(n):
-    n = list(str(n))
-    n = sorted([int(i) for i in n], reverse=True)
-    return int(''.join([str(i) for i in n]))
+    # first
+    # n = list(str(n))
+    # n = sorted([int(i) for i in n], reverse=True)
+    # return int(''.join([str(i) for i in n]))
 
+    #second
+    return ''.join(sorted(str(n), reverse=True))
 
 print(super_size(69), 96)
 print(super_size(513), 531)

@@ -1,5 +1,5 @@
 def xor(a,b):
-    pass
+    return a ^ b
 
 
 print(xor(False, False), False, "False xor False == False")

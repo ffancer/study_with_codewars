@@ -1,5 +1,5 @@
 def array_madness(a,b):
-    pass
+    return sum(a) > sum(b)
 
 
 print(array_madness([4, 5, 6], [1, 2, 3]), True)

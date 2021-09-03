@@ -1,2 +1,2 @@
 def remove(s):
-    pass
+    return s[:-1] if s.endswith('!') else s

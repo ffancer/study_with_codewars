@@ -1,5 +1,5 @@
 def check_for_factor(base, factor):
-    pass
+    return base % factor == 0
 
 
 print(check_for_factor(10, 2), True)

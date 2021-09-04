@@ -1,7 +1,9 @@
 def song_decoder(song):
     song = song.replace('WUB', ' ').strip()
-    while '  ' in song:
-        song.replace('  ', ' ')
+
+    while song.find('  ') != -1:
+        song = song.replace('  ', ' ')
+
     return song
 
 

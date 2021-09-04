@@ -1,5 +1,6 @@
 def song_decoder(song):
-    return song.replace('WUB', ' ')
+    song = song.replace('WUB', ' ').replace('  ', ' ').strip()
+    return song
 
 
 print(song_decoder("AWUBBWUBC"), "A B C", "WUB should be replaced by 1 space")

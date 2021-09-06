@@ -1,6 +1,8 @@
 def reverse(st):
-    # Your Code Here
-    return st
+    st = list(st.split())[::-1]
+
+    return ' '.join(st)
+
 
 
 print(reverse('Hello World'), 'World Hello')

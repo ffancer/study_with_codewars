@@ -1,5 +1,12 @@
 def calc_type(a, b, res):
-    return # operation used
+    if res == a + b:
+        return "addition"
+    elif res == a - b:
+        return "subtraction"
+    elif res == a * b:
+        return "multiplication"
+    elif res == a / b:
+        return "division"
 
 
 print(calc_type(1, 2, 3), "addition")

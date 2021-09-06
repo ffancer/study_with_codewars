@@ -8,9 +8,14 @@ def next_bigger(n):
     combinations = list(itertools.permutations(n))
     # print(combinations)
     for i in combinations:
-        lst.append(''.join(map(str, i)))
+        lst.append(int(''.join(map(str, i))))
 
-    return lst
+    lst = sorted(lst)
+
+    for i in range(len(lst)):
+        if lst[i] == n:
+            print(lst[i+1])
+
 
 print(next_bigger(12),21)
 print(next_bigger(513),531)

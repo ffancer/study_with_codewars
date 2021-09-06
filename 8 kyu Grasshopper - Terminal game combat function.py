@@ -1,5 +1,5 @@
 def combat(health, damage):
-    #your code here
+    return health - damage if health - damage > 0 else 0
 
 
 print(combat(100, 5), 95)

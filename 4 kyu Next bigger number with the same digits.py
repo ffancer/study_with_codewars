@@ -1,18 +1,6 @@
-import itertools
-
-
 def next_bigger(n):
-    answer = -1
-    i, j = 0, 1
+    pass
 
-    # lst = list(map(int, str(n)))
-    set_of_nums = set([int(''.join(i)) for i in itertools.permutations(str(n), len(str(n)))])
-    lst = sorted(list(set_of_nums))
-    try:
-        return lst[lst.index(n)+1]
-    except:
-        return -1
-    # return lst
 
 
 print(next_bigger(12), 21)

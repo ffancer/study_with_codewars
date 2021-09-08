@@ -1,5 +1,7 @@
 def next_bigger(n):
-    pass
+    n = list(str(n))
+    j = len(n) - 1
+
 
 
 

@@ -1,13 +1,14 @@
 import itertools
 
+
 def next_bigger(n):
     answer = -1
     i, j = 0, 1
 
     # lst = list(map(int, str(n)))
     set_of_nums = set([int(''.join(i)) for i in itertools.permutations(str(n), len(str(n)))])
-
-    return set_of_nums
+    lst = sorted(list(set_of_nums))
+    return lst
 
 
 print(next_bigger(12), 21)

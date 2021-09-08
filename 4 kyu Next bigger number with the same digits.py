@@ -8,7 +8,11 @@ def next_bigger(n):
     # lst = list(map(int, str(n)))
     set_of_nums = set([int(''.join(i)) for i in itertools.permutations(str(n), len(str(n)))])
     lst = sorted(list(set_of_nums))
-    return lst
+    try:
+        return lst[lst.index(n)+1]
+    except:
+        return -1
+    # return lst
 
 
 print(next_bigger(12), 21)

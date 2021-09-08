@@ -26,6 +26,7 @@ def next_bigger(number):
                     cnt += 1
 
                 return result
+    return -1
 
 print(next_bigger(12), 21)
 print(next_bigger(1228881758))

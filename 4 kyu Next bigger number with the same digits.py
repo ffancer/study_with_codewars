@@ -2,6 +2,11 @@ def next_bigger(n):
     n = list(str(n))
     j = len(n) - 1
 
+    for i in range(len(n)-2, -1, -1):
+        if n[i] < n[j]:
+            n[j], n[i] = n[i], n[j]
+        return n
+
 
 
 

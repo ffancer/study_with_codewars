@@ -1,25 +1,18 @@
-import itertools
-
-
 def next_bigger(n):
-    m = n
-    lst = []
-    n = list(str(n))
-    n = [int(i) for i in n]
-    combinations = list(itertools.permutations(n))
+    answer = -1
 
-    for i in combinations:
-        lst.append(int(''.join(map(str, i))))
+    if len(str(n)) == 2:
+        if int(str(n)[0]+str(n)[1]) > int(str(n)[1]+str(n)[0]):
+            answer = int(str(n)[0]+str(n)[1])
+        else:
+            answer = int(str(n)[1]+str(n)[0])
 
-    lst = sorted(lst)
+    return answer
 
-    for i in range(len(lst)):
-        if lst[i] == m:
-            return lst[i+1]
 
 
 print(next_bigger(12),21)
-print(next_bigger(513),531)
-print(next_bigger(2017),2071)
-print(next_bigger(414),441)
-print(next_bigger(144),414)
+# print(next_bigger(513),531)
+# print(next_bigger(2017),2071)
+# print(next_bigger(414),441)
+# print(next_bigger(144),414)

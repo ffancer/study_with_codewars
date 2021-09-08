@@ -1,16 +1,16 @@
 def next_bigger(n):
-    answer = -1
     n = list(str(n))
-    j = len(n) - 1
-
+    index_to_swap = len(n) - 1
     for i in range(len(n) - 2, -1, -1):
-        if n[i] < n[j]:
-            n[j], n[i] = n[i], n[j]
-            answer = n
+        if n[i] < n[index_to_swap]:
+            n[index_to_swap], n[i] = n[i], n[index_to_swap]
+            break
         else:
-            j = i
+            index_to_swap = i
     else:
-        return int(''.join(answer))
+        print('its already largest')
+
+    return int(''.join(n))
 
 
 print(next_bigger(12), 21)

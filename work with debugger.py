@@ -11,6 +11,10 @@ def two(result):
 def three(result):
     return 100 / result.count('?')
 
+# 16-31
+
+
+
 
 if __name__ == '__main__':
     print(one(1,2))

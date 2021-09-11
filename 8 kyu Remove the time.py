@@ -1,11 +1,5 @@
 def shorten_to_date(long_date):
-    s = ''
-
-    for i in range(len(long_date)):
-        if long_date[i] == ',':
-            s += long_date[:i]
-
-    return s
+    return long_date[:long_date.find(',')]
 
 
 

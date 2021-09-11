@@ -1,5 +1,5 @@
 def lowercase_count(strng):
-    return sum([i.count(i) for i in strng if i.islower()])
+    return sum(i.islower() for i in strng)
 
 
 print(lowercase_count("abc"), 3)

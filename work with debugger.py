@@ -1,4 +1,4 @@
-def one(x,y):
+def one(x, y):
     result = x + y
     return two(result)
 
@@ -19,5 +19,7 @@ def cycle(value):
         print(value)
     return value
 
+
 if __name__ == '__main__':
-    print(one(1,2))
+    # print(one(1,2))
+    cycle(50)

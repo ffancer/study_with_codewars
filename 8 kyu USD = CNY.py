@@ -1,6 +1,6 @@
 # 8 kyu USD => CNY
 def usdcny(usd):
-    return "1 Chinese Yuan"
+    return round(6.75 * usd, 2)
 
 
 print(usdcny(15), "101.25 Chinese Yuan")

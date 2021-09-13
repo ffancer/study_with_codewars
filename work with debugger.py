@@ -11,10 +11,13 @@ def two(result):
 def three(result):
     return 100 / result.count('?')
 
-# 16-31
 
-
-
+def cycle(value):
+    even_squeres = [e ** 2 for e in range(10) if e % 2 == 0]
+    for e in range(6):
+        value += e
+        print(value)
+    return value
 
 if __name__ == '__main__':
     print(one(1,2))

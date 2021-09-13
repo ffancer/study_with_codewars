@@ -1,6 +1,6 @@
 # 8 kyu USD => CNY
 def usdcny(usd):
-    return str("%.2f" % (6.75 * usd)) + ' Chinese Yuan'
+    return f"{(usd * 6.75):.2f} Chinese Yuan"
 
 
 print(usdcny(15), "101.25 Chinese Yuan")

@@ -1,7 +1,5 @@
 def distinct(seq):
-    lst = []
-    [lst.append(i) for i in seq if i not in lst]
-    return lst
+    return sorted(set(seq), key=seq.index)
 
 
 print(distinct([1]), [1])

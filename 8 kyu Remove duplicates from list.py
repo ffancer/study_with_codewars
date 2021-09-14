@@ -1,5 +1,11 @@
 def distinct(seq):
-    pass
+    lst = []
+
+    for i in seq:
+        if i not in lst:
+            lst.append(i)
+
+    return lst
 
 
 print(distinct([1]), [1])

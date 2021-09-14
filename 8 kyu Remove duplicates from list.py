@@ -1,10 +1,6 @@
 def distinct(seq):
     lst = []
-
-    for i in seq:
-        if i not in lst:
-            lst.append(i)
-
+    [lst.append(i) for i in seq if i not in lst]
     return lst
 
 

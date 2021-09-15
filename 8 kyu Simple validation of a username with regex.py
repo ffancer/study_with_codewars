@@ -1,9 +1,11 @@
 def validate_usr(username):
-    if len(username) >= 17 or len(username) <= 3:
+    if len(username) < 4 or len(username) > 16:
         return False
 
+    allowed = 'abcdefghijklmnopqrstuvwxyz0123456789_'
+
     for i in username:
-        if i.isupper() or i == ' ' or i == '?':
+        if i not in allowed:
             return False
     return True
 

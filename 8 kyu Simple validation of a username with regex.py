@@ -1,17 +1,14 @@
 def validate_usr(username):
-    cnt = 0
 
-    if 4 <= len(username) <= 16:
-        cnt += 1
-    elif username.islower():
-        cnt += 1
-    elif username.isdigit():
-        cnt += 1
-    elif '_' in username:
-        cnt += 1
-    if cnt == 4:
-        return True
-    return False
+    if len(username) >= 17 or len(username) <= 3:
+        return False
+    if username.isupper():
+        return False
+    if ' ' in username:
+        return False
+
+    return True
+
 
 
 print(validate_usr('asddsa'), True)

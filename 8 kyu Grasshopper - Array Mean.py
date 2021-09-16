@@ -1,8 +1,5 @@
 def find_average(nums):
-    try:
-        return sum(nums) / len(nums)
-    except ZeroDivisionError:
-        return 0
+    return sum(nums) / len(nums) if nums else 0
 
 
 print(find_average([1]), 1)

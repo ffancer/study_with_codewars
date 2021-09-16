@@ -1,17 +1,6 @@
 # 8 kyu Is it a palindrome?
 def is_palindrome(s):
-    s = s.lower()
-    i = 0
-    j = len(s) - 1
-    flag = True
-
-    while i < j:
-        if s[i] != s[j]:
-            flag = False
-        i += 1
-        j -= 1
-
-    return flag
+    return s.lower() == s.lower()[::-1]
 
 
 print(is_palindrome('a'), True)

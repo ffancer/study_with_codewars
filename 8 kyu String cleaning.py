@@ -1,8 +1,13 @@
 def string_clean(s):
-    """
-    Function will return the cleaned string
-    """
-    # Your code here
+    answer = ''
+
+    for i in s:
+        if i.isdigit():
+            continue
+        else:
+            answer += i
+
+    return answer
 
 print(string_clean(""), "")
 print(string_clean("! !"), "! !")

@@ -1,8 +1,8 @@
 def validate_code(code):
-    flag = True
-    if str(code)[0] not in '123' or str(code)[1] not in '123' or str(code)[2] not in '123':
-        flag = False
-    return flag
+    for i in str(code):
+        if i in '123':
+            return True
+        return False
 
 print(validate_code(123), True)
 print(validate_code(248), True)

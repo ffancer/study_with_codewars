@@ -1,8 +1,7 @@
+# best practice 1:
 def validate_code(code):
-    for i in str(code):
-        if i in '123':
-            return True
-        return False
+    return str(code).startswith(('1', '2', '3'))
+
 
 print(validate_code(123), True)
 print(validate_code(248), True)

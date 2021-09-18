@@ -1,6 +1,6 @@
-# best practice 1:
+# best practice 2:
 def validate_code(code):
-    return str(code).startswith(('1', '2', '3'))
+    return str(code)[0] in '123'
 
 
 print(validate_code(123), True)

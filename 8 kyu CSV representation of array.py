@@ -1,10 +1,5 @@
 def to_csv_text(array):
-    answer = ''
-    for lst in array:
-        for i in lst:
-            answer += str(i)
-
-    return ','.join(answer)
+    return '\n'.join(','.join(str(i) for i in lst) for lst in array)
 
 
 

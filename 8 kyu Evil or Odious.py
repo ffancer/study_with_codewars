@@ -1,5 +1,5 @@
 def evil(n):
-    pass
+    return bin(n)
 
 
 print(evil(1),"It's Odious!")

@@ -2,14 +2,7 @@
 # Who ate the cookie?
 
 def cookie(x):
-    answer = 'the dog'
-
-    if type(x) == str:
-        answer = 'Zach'
-    elif type(x) == int or type(x) == float:
-        answer = 'Monica'
-
-    return f"Who ate the last cookie? It was {answer}!"
+    return f'Who ate the last cookie? It was {"Zach" if type(x) is str else "Monica" if type(x) in [int, float] else "the dog"}!'
 
 
 print(cookie("Ryan"), "Who ate the last cookie? It was Zach!")

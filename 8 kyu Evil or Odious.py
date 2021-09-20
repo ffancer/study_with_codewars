@@ -1,5 +1,5 @@
 def evil(n):
-    return bin(n)
+    return sum([int(i) for i in bin(n)[2:] if i == '1'])
 
 
 print(evil(1),"It's Odious!")

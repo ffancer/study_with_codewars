@@ -1,11 +1,5 @@
 def get_number_from_string(string):
-    our_int = ''
-
-    for i in string:
-        if i.isdigit():
-            our_int += i
-
-    return int(our_int)
+    return int(''.join([i for i in string if i.isdigit()]))
 
 
 print(get_number_from_string("1"))

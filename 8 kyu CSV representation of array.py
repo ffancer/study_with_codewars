@@ -1,6 +1,11 @@
 def to_csv_text(array):
-    pass
-    # good luck
+    answer = ''
+    for lst in array:
+        for i in lst:
+            answer += str(i)
+
+    return ','.join(answer)
+
 
 
 print(

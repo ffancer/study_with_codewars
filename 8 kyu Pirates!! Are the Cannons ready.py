@@ -1,7 +1,5 @@
 def cannons_ready(gunners):
-    a = [i for i in list(gunners.values())]
-    b = ['aye' for j in range(len(a))]
-    return 'Fire!' if a == b else 'Shiver me timbers!'
+    return 'Shiver me timbers!' if 'nay' in gunners.values() else 'Fire!'
 
 a = {'Mike': 'aye', 'Joe': 'aye', 'Johnson': 'aye', 'Peter': 'aye'}
 b = {'Mike': 'aye', 'Joe': 'nay', 'Johnson': 'aye', 'Peter': 'aye'}

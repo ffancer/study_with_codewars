@@ -1,12 +1,5 @@
 def define_suit(card):
-    if card.endswith('C'):
-        return 'clubs'
-    elif card.endswith('S'):
-        return 'spades'
-    elif card.endswith('D'):
-        return 'diamonds'
-    elif card.endswith('H'):
-        return 'hearts'
+    return {'C': 'clubs', 'S': 'spades', 'D': 'diamonds', 'H': 'hearts'}[card[-1]]
 
 
 print(define_suit('3C'), 'clubs')

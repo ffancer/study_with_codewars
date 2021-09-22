@@ -4,7 +4,14 @@ DECK = ['2S','3S','4S','5S','6S','7S','8S','9S','10S','JS','QS','KS','AS',
         '2C','3C','4C','5C','6C','7C','8C','9C','10C','JC','QC','KC','AC']
 
 def define_suit(card):
-    # Good luck
+    if card[1] == 'C':
+        return 'clubs'
+    elif card[1] == 'S':
+        return 'spades'
+    elif card[1] == 'D':
+        return 'diamonds'
+    elif card[1] == 'H':
+        return 'hearts'
 
 print(define_suit('3C'), 'clubs')
 print(define_suit('QS'), 'spades')

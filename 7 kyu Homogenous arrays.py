@@ -1,11 +1,5 @@
 def filter_homogenous(arrays):
-    lst = []
-
-    for i in arrays:
-        if len(set(map(type, i))) == 1:
-            lst.append(i)
-
-    return lst
+    return [i for i in arrays if len(set(map(type, i))) == 1]
 
 
 print(filter_homogenous([[1, 5, 4], ['a', 3, 5], ['b'], [], ['1', 2, 3]]), [[1, 5, 4], ['b']])

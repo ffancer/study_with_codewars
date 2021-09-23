@@ -2,7 +2,7 @@ def filter_homogenous(arrays):
     lst = []
 
     for i in arrays:
-        if len(list(set(map(type, i)))) == 1:
+        if len(set(map(type, i))) == 1:
             lst.append(i)
 
     return lst

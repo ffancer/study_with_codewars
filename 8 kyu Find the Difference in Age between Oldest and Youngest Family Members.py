@@ -1,6 +1,5 @@
 def difference_in_ages(ages):
-    # your code here
-    pass
+    return min(ages), max(ages), max(ages) - min(ages)
 
 
 print(difference_in_ages([16, 22, 31, 44, 3, 38, 27, 41, 88]), (3, 88, 85))

@@ -1,5 +1,10 @@
 def uni_total(s):
-    pass
+    total = 0
+
+    for i in s:
+        total += ord(i)
+
+    return total
 
 
 print(uni_total("a"), 97)

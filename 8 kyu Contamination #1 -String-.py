@@ -1,5 +1,10 @@
 def contamination(text, char):
-  #Code here ;)
+    s = ''
+
+    for i in text:
+        s += i.replace(i, char)
+
+    return s
 
 
 print(contamination("abc", "z"), "zzz")

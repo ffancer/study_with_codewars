@@ -1,5 +1,5 @@
 def contamination(text, char):
-    return ''.join(list(i.replace(i, char) for i in text))
+    return char*len(text)
 
 
 print(contamination("abc", "z"), "zzz")

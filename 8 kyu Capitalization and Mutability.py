@@ -1,5 +1,5 @@
 def capitalize_word(word):
-    return "".join(char.upper() for char in word)
+    return word.title()
 
 
 print(capitalize_word('word'), 'Word')

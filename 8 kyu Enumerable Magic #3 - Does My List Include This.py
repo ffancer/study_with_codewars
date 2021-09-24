@@ -4,5 +4,5 @@ def include(arr,item):
     pass
 
 
-test.assert_equals(include([1,2,3,4], 3), True )
-test.assert_equals(include([1,2,4,5], 3), False)
+print(include([1,2,3,4], 3), True )
+print(include([1,2,4,5], 3), False)

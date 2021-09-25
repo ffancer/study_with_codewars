@@ -1,13 +1,5 @@
 def multiple_of_index(arr):
-    lst = []
-
-    for i, j in enumerate(arr):
-        if i == 0:
-            continue
-        elif j % i == 0:
-            lst.append(j)
-
-    return lst
+    return [j for i, j in enumerate(arr) if i and j % i == 0]
 
 
 print(multiple_of_index([22, -6, 32, 82, 9, 25]), [-6, 32, 25])

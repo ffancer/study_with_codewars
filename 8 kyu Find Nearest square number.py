@@ -1,5 +1,6 @@
 def nearest_sq(n):
-    # pass
+    return round(n ** 0.5) ** 2
+
 
 print(nearest_sq(1), 1)
 print(nearest_sq(2), 1)

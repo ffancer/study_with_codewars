@@ -1,5 +1,18 @@
 def digits(num):
-    pass
+    num = [int(i) for i in str(num)]
+    lst = []
+    i = 0
+    j = 1
+
+    while j != len(num):
+        lst.append(num[i] + num[j])
+        j += 1
+
+        if j == len(num):
+            i += 1
+            j = i + 1
+
+    return lst
 
 
 print(digits(156), [6, 7, 11])

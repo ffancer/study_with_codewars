@@ -1,5 +1,9 @@
 def flip(d, a):
-    # Do some magic
+    a.sort()
+
+    if d == 'R':
+        return a
+    return a[::-1]
 
 
 print(flip('R', [3, 2, 1, 2]), [1, 2, 2, 3])

@@ -1,9 +1,5 @@
 def flip(d, a):
-    a.sort()
-
-    if d == 'R':
-        return a
-    return a[::-1]
+    return sorted(a) if d == 'R' else sorted(a)[::-1]
 
 
 print(flip('R', [3, 2, 1, 2]), [1, 2, 2, 3])

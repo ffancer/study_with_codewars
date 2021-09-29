@@ -2,8 +2,12 @@
 # How old will I be in 2099?
 
 def calculate_age(year_of_birth, current_year):
-    if year_of_birth > current_year:
+    if year_of_birth < current_year:
         return f'You are {current_year - year_of_birth} years old.'
+    elif current_year < year_of_birth:
+        return f'You will be born in {abs(current_year - year_of_birth)} years.'
+    elif year_of_birth == current_year:
+        return f'You were born this very year!'
     return f'You will be born in {abs(current_year - year_of_birth)} years.'
 
 print(calculate_age(2012, 2016), "You are 4 years old.")

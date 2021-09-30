@@ -3,7 +3,7 @@
 # from sentence but ensure a exclamation mark at the end of string
 
 def remove(s):
-    pass
+    return ''.join(s.split('!')) + '!'
 
 
 print(remove("Hi!"))

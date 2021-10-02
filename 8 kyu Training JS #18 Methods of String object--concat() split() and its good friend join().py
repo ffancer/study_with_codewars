@@ -1,8 +1,13 @@
 # 8 kyu
 # Training JS #18: Methods of String object--concat() split() and its good friend join()
 
-def split_and_merge(string_, separator):
-    return ' '.join(separator.join(j for j in i) for i in string_.split())
+# first
+def split_and_merge(string, sp):
+    return ' '.join(sp.join(word) for word in string.split())
+
+# second
+def split_and_merge(s, sp):
+    return ' '.join(sp.join(i) for i in s.split())
 
 
 print(split_and_merge("My name is John", " "), "M y n a m e i s J o h n")

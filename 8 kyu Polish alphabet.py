@@ -1,24 +1,15 @@
+# first
+def correct_polish_letters(s):
+    return s.translate(str.maketrans("ąćęłńóśźż", "acelnoszz"))
+
+# second
 def correct_polish_letters(st):
-    dct = {
-        'ą': 'a',
-        'ć': 'c',
-        'ę': 'e',
-        'ł': 'l',
-        'ń': 'n',
-        'ó': 'o',
-        'ś': 's',
-        'ź': 'z',
-        'ż': 'z'
-    }
-    s = ''
+    l = "ąćęłńóśźż"
+    lt = "acelnoszz"
+    for i in range(len(l)):
+        st = st.replace(l[i], lt[i])
+    return st
 
-    for i in st:
-        if i in dct:
-            s += dct[i]
-        else:
-            s += i
-
-    return s
 
 
 print(correct_polish_letters("Jędrzej Błądziński"),"Jedrzej Bladzinski")

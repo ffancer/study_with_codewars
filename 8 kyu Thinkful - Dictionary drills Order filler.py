@@ -2,7 +2,11 @@
 # Thinkful - Dictionary drills: Order filler
 
 def fillable(stock, merch, n):
-    pass
+    if merch in stock:
+        if stock[merch] >= n:
+            return True
+        return False
+    return False
 
 
 stock = {

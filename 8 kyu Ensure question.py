@@ -1,5 +1,5 @@
 def ensure_question(s):
-    return s if s.endswith('?') else s + '?'
+    return s.rstrip('?') + '?'
 
 
 print(ensure_question(""), "?", "Expected: '?'")

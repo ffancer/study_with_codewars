@@ -1,19 +1,5 @@
 def html_special_chars(data):
-    s = ''
-    dct = {
-        '<': '&lt;',
-        '>': '&gt;',
-        '"': '&quot;',
-        '&': '&amp;'
-    }
-
-    for i in data:
-        if i in dct:
-            s += dct[i]
-        else:
-            s += i
-
-    return s
+    return data.replace('&', "&amp;").replace('>', "&gt;").replace('<', "&lt;").replace('\"', "&quot;")
 
 
 print(html_special_chars("<h2>Hello World</h2>"), "&lt;h2&gt;Hello World&lt;/h2&gt;")

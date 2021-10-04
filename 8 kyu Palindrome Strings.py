@@ -1,7 +1,5 @@
 def is_palindrome(string):
-    if type(string) == int:
-        string = str(string)
-    return string == string[::-1]
+    return str(string).lower() == str(string).lower()[::-1]
 
 
 print(is_palindrome("anna"), True)

@@ -1,7 +1,6 @@
 def multiply(n):
+    return n * 5 ** len(str(n))
 
-
-# your code here
 
 print(multiply(10), 250)
 print(multiply(5), 25)

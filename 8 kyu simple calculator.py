@@ -1,10 +1,13 @@
 def calculator(x, y, op):
-    return {
-        '+': x + y,
-        '-': x - y,
-        '/': x / y,
-        '*': x * y
-    }.get(op, "unknown value")
+    try:
+        return {
+            '+': x + y,
+            '-': x - y,
+            '/': x / y,
+            '*': x * y
+        }[op]
+    except:
+        return "unknown value"
 
 
 print(calculator(6, 2, '+'), 8)

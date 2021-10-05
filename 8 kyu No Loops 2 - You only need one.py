@@ -1,6 +1,5 @@
 def check(a, x):
-    # your code here
-    pass
+    return x in a
 
 
 print(check([66, 101], 66), True)

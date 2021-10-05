@@ -1,5 +1,5 @@
 def multiply(n):
-    return n * 5 ** (len(str(n))-1) if str(n)[0] == '-' else n * 5 ** len(str(n))
+    return n * 5 ** len(str(abs(n)))
 
 
 print(multiply(10), 250)

@@ -1,5 +1,5 @@
 def nba_extrap(ppg, mpg):
-    return ppg
+    return round(ppg * (48 / mpg), 1) if mpg != 0 else 0
 
 
 print(nba_extrap(12, 20), 28.8)

@@ -1,5 +1,10 @@
 def calculator(x, y, op):
-    pass
+    return {
+        '+': x + y,
+        '-': x - y,
+        '/': x / y,
+        '*': x * y
+    }.get(op, "unknown value")
 
 
 print(calculator(6, 2, '+'), 8)

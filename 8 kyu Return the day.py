@@ -1,6 +1,15 @@
 def whatday(num):
-    pass
+    days = {
+        1: 'Sunday',
+        2: 'Monday',
+        3: 'Tuesday',
+        4: 'Wednesday',
+        5: 'Thursday',
+        6: 'Friday',
+        7: 'Saturday',
+    }
 
+    return 'Wrong, please enter a number between 1 and 7' if 1 < num > 7 else days[num]
 
 
 print(whatday(1), 'Sunday')

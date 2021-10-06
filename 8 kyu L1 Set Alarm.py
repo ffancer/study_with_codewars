@@ -2,12 +2,7 @@
 # L1: Set Alarm
 
 def set_alarm(employed, vacation):
-    if employed == vacation:
-        return False
-    elif not employed and vacation:
-        return False
-    elif employed and not vacation:
-        return True
+    return employed and not vacation
 
 
 print(set_alarm(True, True), False, "Fails when input is True, True")

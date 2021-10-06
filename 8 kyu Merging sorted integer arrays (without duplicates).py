@@ -1,11 +1,10 @@
 def merge_arrays(first, second):
-    lst = []
 
     for i in second:
         if i not in first:
             first.append(i)
 
-    first.sort()
+    first = sorted((set(first)))
 
     return first
 

@@ -1,6 +1,13 @@
 def merge_arrays(first, second):
-    # your code here
-    pass
+    lst = []
+
+    for i in second:
+        if i not in first:
+            first.append(i)
+
+    first.sort()
+
+    return first
 
 
 print(merge_arrays([1, 3, 5], [2, 4, 6]), [1, 2, 3, 4, 5, 6])

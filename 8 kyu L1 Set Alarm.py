@@ -4,11 +4,9 @@
 def set_alarm(employed, vacation):
     if employed == vacation:
         return False
-    elif employed == False and vacation:
+    elif not employed and vacation:
         return False
-    elif employed == vacation == False:
-        return False
-    elif employed and vacation == False:
+    elif employed and not vacation:
         return True
 
 

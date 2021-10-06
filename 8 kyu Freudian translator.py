@@ -1,7 +1,11 @@
 def to_freud(sentence):
+    s = ''
+    sentence = sentence.split()
 
+    for i in range(len(sentence)):
+        s += 'sex '
 
-# your code here
+    return s[:-1]
 
 
 print(to_freud("test"), "sex")

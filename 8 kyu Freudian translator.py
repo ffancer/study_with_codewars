@@ -1,5 +1,6 @@
 def to_freud(sentence):
-    return ' '.join(['sex' for _ in range(len(sentence.split()))])
+    return ' '.join(['sex' for _ in sentence.split()])
+
 
 
 print(to_freud("test"), "sex")

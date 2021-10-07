@@ -1,5 +1,17 @@
+# best practice 1
 def build_string(*args):
-    return "I like " + ", ".join(args) + '!'
+    return "I like {}!".format(", ".join(args))
+
+
+# best practice 2
+def build_string(*args):
+    return "I like {0}!".format(", ".join(args))
+
+
+
+# best practice 3
+def build_string(*args):
+    return "I like %s!" % ", ".join(args)
 
 
 print(build_string('Cheese','Milk','Chocolate'), 'I like Cheese, Milk, Chocolate!', 'Return the correct String')

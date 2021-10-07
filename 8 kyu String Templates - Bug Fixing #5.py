@@ -1,5 +1,5 @@
 def build_string(*args):
-    return "I like {1}!".format(",".join(args))
+    return "I like " + ", ".join(args) + '!'
 
 
 print(build_string('Cheese','Milk','Chocolate'), 'I like Cheese, Milk, Chocolate!', 'Return the correct String')

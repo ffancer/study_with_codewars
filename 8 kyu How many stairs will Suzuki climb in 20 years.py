@@ -2,7 +2,7 @@
 # How many stairs will Suzuki climb in 20 years?
 
 def stairs_in_20(stairs):
-    pass
+    return sum(j for i in stairs for j in i) * 20
 
 
 sunday = [6737, 7244, 5776, 9826, 7057, 9247, 5842, 5484, 6543, 5153, 6832, 8274,

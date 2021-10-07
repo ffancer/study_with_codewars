@@ -1,5 +1,5 @@
 def combine_names(x, y):
-    pass
+    return x + ' ' + y
 
 
 print(combine_names("James", "Stevens"), "James Stevens")

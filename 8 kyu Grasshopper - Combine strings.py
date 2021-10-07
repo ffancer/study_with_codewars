@@ -1,5 +1,5 @@
-def combine_names(x, y):
-    return x + ' ' + y
+def combine_names(*args):
+    return ' '.join(list(args))
 
 
 print(combine_names("James", "Stevens"), "James Stevens")

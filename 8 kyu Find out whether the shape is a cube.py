@@ -1,7 +1,5 @@
 def cube_checker(volume, side):
-    if volume <= 0 or side <= 0:
-        return False
-    return volume == side ** 3
+    return 0 < volume == side ** 3
 
 
 print(cube_checker(-12, 2), False)

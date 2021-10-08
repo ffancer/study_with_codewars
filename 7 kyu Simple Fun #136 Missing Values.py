@@ -2,8 +2,14 @@
 # Simple Fun #136: Missing Values
 
 def missing_values(seq):
-    # your code here
-    pass
+    x, y = 0, 0
+    for i in seq:
+        if seq.count(i) == 1:
+            x = i
+        elif seq.count(i) == 2:
+            y = i
+
+    return x * x * y
 
 
 print(missing_values([1, 1, 1, 2, 2, 3]), 18)

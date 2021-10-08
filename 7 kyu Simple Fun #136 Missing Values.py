@@ -2,7 +2,6 @@
 # Simple Fun #136: Missing Values
 
 def missing_values(seq):
-    x, y = 0, 0
     for i in seq:
         if seq.count(i) == 1:
             x = i

@@ -1,17 +1,24 @@
+# best practice 1
 def queue(queuers,pos):
-    cnt = 0
+    return sum(min(queuer, queuers[pos] - (place > pos)) for place, queuer in enumerate(queuers))
 
-    while queuers[pos] > 0:
-        if pos == 0:
-            pos = len(queuers) - 1
-        else:
-            pos -= 1
-        queuers[0] -= 1
-        queuers.append(queuers[0])
-        queuers.pop(0)
-        cnt += 1
+# best practice 2
+def queue(queuers,pos):
+    friendWait = queuers[pos]
+    # Divide the line into the front of the line (up to the friend)
+    # and back of the line (behind the friend):
+    frontOfLine = queuers[:pos+1]
+    backOfLine = queuers[pos+1:]
+    # Convert the frontOfLine to the min of friendWait:
+    frontOfLine = [min(x, friendWait) for x in frontOfLine]
+    # Convert the backOfLine to the min of friendWait-1:
+    backOfLine = [min(x, friendWait-1) for x in backOfLine]
+    # Return the result, which is the sum of both line parts:
+    return sum(frontOfLine) + sum(backOfLine)
 
-    return cnt + sum([i for i in queuers if i < 0])
+# best practice 3
+def queue(queuers,pos):
+    return sum(min(q, queuers[pos]) for q in queuers) - sum(1 for q in queuers[pos + 1:] if q >= queuers[pos])
 
 
 print(queue([2, 5, 3, 6, 4], 0), 6)

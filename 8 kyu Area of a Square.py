@@ -1,7 +1,9 @@
+from math import pi
+
+
 def square_area(A):
+    return round((2 * A / pi) ** 2, 2)
 
-
-# your code here
 
 print(square_area(2), 1.62)
 print(square_area(0), 0)

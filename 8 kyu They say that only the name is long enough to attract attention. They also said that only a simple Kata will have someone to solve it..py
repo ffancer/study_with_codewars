@@ -3,7 +3,7 @@
 
 
 def is_opposite(s1, s2):
-    pass
+    return s1 is not s2
 
 print(is_opposite("ab", "AB"), True)
 print(is_opposite("aB", "Ab"), True)

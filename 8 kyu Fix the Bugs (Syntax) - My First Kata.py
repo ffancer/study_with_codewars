@@ -1,7 +1,5 @@
 def my_first_kata(a, b):
-    if type(a) != int or type(b) != int:
-        return False
-    return a % b + b % a
+    return False if type(a) != int or type(b) != int else a % b + b % a
 
 
 print(my_first_kata(3, 5), (3 % 5 + 5 % 3))

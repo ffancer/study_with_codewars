@@ -1,5 +1,5 @@
 def billboard(name, price=30):
-    return len(name) * price
+    return sum(price for i in name)
 
 print(billboard("Jeong-Ho Aristotelis"), 600)
 print(billboard("Abishai Charalampos"), 570)

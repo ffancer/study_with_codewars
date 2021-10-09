@@ -1,10 +1,5 @@
 def billboard(name, price=30):
-    cnt = 0
-
-    for i in range(len(name)):
-        cnt += 1
-
-    return cnt * price
+    return len(name) * price
 
 print(billboard("Jeong-Ho Aristotelis"), 600)
 print(billboard("Abishai Charalampos"), 570)

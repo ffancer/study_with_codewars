@@ -2,25 +2,13 @@
 # Calculator: Coin Combination
 
 def coin_combo(cents):
-    coins = [0, 0, 0, 0]
+    lst = []
 
-    while cents >= 25:
-        coins[3] += 1
-        cents -= 25
+    for i in (25, 10, 5, 1):
+        lst.append(cents // i)
+        cents = cents % i
 
-    while cents >= 10:
-        coins[2] += 1
-        cents -= 10
-
-    while cents >= 5:
-        coins[1] += 1
-        cents -= 5
-
-    while cents >= 1:
-        coins[0] += 1
-        cents -= 1
-
-    return coins
+    return lst[::-1]
 
 
 print(coin_combo(1), [1, 0, 0, 0])

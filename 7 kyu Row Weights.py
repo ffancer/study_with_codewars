@@ -1,5 +1,13 @@
 def row_weights(array):
-    #your code here
+    answer = [0, 0]
+
+    for i in range(len(array)):
+        if i % 2 == 0:
+            answer[0] += array[i]
+        else:
+            answer[1] += array[i]
+
+    return tuple(answer)
 
 print(row_weights([80]), (80, 0))
 print(row_weights([100, 50]), (100, 50))

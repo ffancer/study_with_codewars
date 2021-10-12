@@ -3,9 +3,11 @@
 
 
 def sc(width, length, gaps):
+    perimeter = width * 2 + length * 2 - 4
 
-
-# your code here
+    if perimeter % (gaps + 1) != 0:
+        return 0
+    return perimeter // (gaps + 1)
 
 print(sc(3, 3, 1), 4)
 print(sc(3, 3, 3), 2)

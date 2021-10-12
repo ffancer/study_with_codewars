@@ -1,8 +1,5 @@
-def bar_triang(pointA, pointB, pointC): # points A, B and C will never be aligned
-    # your code here
-    return [xO, yO] # coordinates of the barycenter expressed up to four decimals
-                    # (rounded result)
-
+def bar_triang(pointA, pointB, pointC):
+    return [round((pointA[0] + pointB[0] + pointC[0]) / 3, 4), round((pointA[1] + pointB[1] + pointC[1]) / 3, 4)]
 
 
 print(bar_triang([4, 6], [12, 4], [10, 10]), [8.6667, 6.6667])

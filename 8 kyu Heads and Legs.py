@@ -1,10 +1,13 @@
 def animals(heads, legs):
     if heads == legs == 0:
         return 0, 0
-    if heads < 0 or legs < 0:
+
+    if heads < 0 or legs < 0 or legs % 2 != 0:
         return "No solutions"
+
     cows = legs // 2 - heads
     chickens = heads - cows
+
     return (chickens, cows) if (chickens >= 0 and cows >= 0) else "No solutions"
 
 

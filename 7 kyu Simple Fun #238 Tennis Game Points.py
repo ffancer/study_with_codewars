@@ -1,23 +1,18 @@
 # 7 kyu
 # Simple Fun #238: Tennis Game Points
 
+# first
 def tennis_game_points(score):
-    dct = {
-        'love': 0,
-        '15': 1,
-        '30': 2,
-        '40': 3,
-        'all': 1
-    }
-    score = score.split('-')
-    total = 0
+    arr = ["love", "15", "30", "40"]
+    [a, b] = score.split("-")
+    return arr.index(a) + (arr.index(a) if b == "all" else arr.index(b))
 
-    for i in score:
-        total += dct.get(i)
-    if score[1] == 'all' and score[0] == '30':
-        total += 1
+# second
+points = {"15": 1, "30": 2, "40": 3}
 
-    return total
+
+def tennis_game_points(score):
+    return sum(points.get(p, 0) for p in score.split("-")) * (2 if "all" in score else 1)
 
 
 print(tennis_game_points("15-40"), 4)

@@ -5,7 +5,7 @@ def animals(heads, legs):
         return "No solutions"
     cows = legs // 2 - heads
     chickens = heads - cows
-    return (chickens, cows) if (chickens > 0 and cows > 0) else "No solutions"
+    return (chickens, cows) if (chickens >= 0 and cows >= 0) else "No solutions"
 
 
 print(animals(72, 200), (44, 28))

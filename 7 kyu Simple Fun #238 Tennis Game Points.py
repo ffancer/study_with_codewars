@@ -2,9 +2,21 @@
 # Simple Fun #238: Tennis Game Points
 
 def tennis_game_points(score):
-    # your code here
-    pass
+    dct = {
+        'love': 0,
+        '15': 1,
+        '30': 2,
+        '40': 3,
+        'all': 2
+    }
+    score = score.split('-')
+    total = 0
 
+    for i in score:
+        # total += dct.get(i)
+        total += dct[i]
+
+    return total
 
 print(tennis_game_points("15-40"), 4)
 print(tennis_game_points("30-all"), 4)

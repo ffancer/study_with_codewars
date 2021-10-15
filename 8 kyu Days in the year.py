@@ -1,7 +1,7 @@
 def year_days(year):
-
-
-# your code here
+    if year % 4 == 0 and year % 400 != 0:
+        return f'{year} has 366 days'
+    return f'{year} has 365 days'
 
 print(year_days(0), '0 has 366 days')
 print(year_days(-64), '-64 has 366 days')

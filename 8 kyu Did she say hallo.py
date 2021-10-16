@@ -3,9 +3,11 @@
 
 def validate_hello(greetings):
     lst = ['hello', 'ciao', 'salut', 'hallo', 'hola', 'ahoj', 'czesc']
-    for i in greetings.lower().split():
+
+    for i in greetings.replace(':','').replace(';','').replace('.','').replace('!','').replace('?', '').replace(',', '').lower().split():
         if i in lst:
             return True
+
     return False
 
 

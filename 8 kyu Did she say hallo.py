@@ -2,11 +2,18 @@
 # Did she say hallo?
 
 def validate_hello(greetings):
-    return any(i in greetings.lower() for i in ['hello', 'ciao', 'salut', 'hallo', 'hola', 'ahoj', 'czesc'])
+    lst = ['hello', 'ciao', 'salut', 'hallo', 'hola', 'ahoj', 'czesc']
+
+    for i in lst:
+        if i in greetings.lower():
+            return True
+
+    return False
 
 
 
 print(validate_hello('hello'), True)
+print(validate_hello('yhellop'), True)
 print(validate_hello('ciao bella!'), True)
 print(validate_hello('salut'), True)
 print(validate_hello('hallo, salut'), True)

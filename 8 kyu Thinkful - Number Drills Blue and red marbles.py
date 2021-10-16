@@ -2,8 +2,7 @@
 # Thinkful - Number Drills: Blue and red marbles
 
 def guess_blue(blue_start, red_start, blue_pulled, red_pulled):
-    # Your code here.
-    pass
+    return (blue_start-blue_pulled)/(blue_start-blue_pulled+red_start-red_pulled)
 
 
 print(guess_blue(5, 5, 2, 3), 0.6)

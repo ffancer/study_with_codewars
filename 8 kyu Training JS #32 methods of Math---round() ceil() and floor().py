@@ -1,16 +1,15 @@
 # 8 kyu
 # Training JS #32: methods of Math---round() ceil() and floor()
-from math import ceil, floor
-
+from math import floor, ceil
 
 def round_it(n):
-    lst = str(n).split('.')
-
-    if len(lst[1]) > len(lst[0]):
+    l, r = [len(x) for x in str(n).split('.')]
+    if r > l:
         return ceil(n)
-    elif len(lst[0]) > len(lst[1]):
+    elif r < l:
         return floor(n)
-    return round(n)
+    else:
+        return round(n)
 
 print(round_it(3.45), 4)
 print(round_it(34.5), 34)

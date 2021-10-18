@@ -1,8 +1,12 @@
 def kata_13_december(lst):
-    # Fix this code
-    for i in range(len(lst)):
+    i = 0
+
+    while i < len(lst):
         if lst[i] % 2 == 0:
-            lst.remove(i)
+            lst.remove(lst[i])
+        else:
+            i += 1
+
     return lst
 
 

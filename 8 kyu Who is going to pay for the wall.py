@@ -3,9 +3,7 @@
 
 
 def who_is_paying(name):
-
-
-# your code here
+    return [name, name[:2]] if len(name) > 2 else [name]
 
 print(who_is_paying("Mexico"), ["Mexico", "Me"])
 print(who_is_paying("Melania"), ["Melania", "Me"])

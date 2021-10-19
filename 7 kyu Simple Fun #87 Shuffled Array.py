@@ -3,7 +3,9 @@
 
 
 def shuffled_array(s):
-    pass
+    s.sort()
+    s.remove(sum(s) // 2)
+    return s
 
 
 print(shuffled_array([1, 12, 3, 6, 2]), [1, 2, 3, 6])

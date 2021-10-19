@@ -1,7 +1,6 @@
 def integrate(coefficient, exponent):
+    return f'{coefficient // (exponent + 1)}x^{exponent + 1}'
 
-
-# write your code here
 
 print(integrate(3, 2), "1x^3")
 print(integrate(12, 5), "2x^6")

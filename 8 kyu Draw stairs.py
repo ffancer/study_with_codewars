@@ -1,10 +1,5 @@
 def draw_stairs(n):
-    s = ''
-
-    for i in range(n):
-        s += ' ' * i + 'I' + '\n'
-
-    return s[:-1]
+    return '\n'.join([' ' * i + 'I' for i in range(n)])
 
 print(draw_stairs(3))
 print(draw_stairs(5))

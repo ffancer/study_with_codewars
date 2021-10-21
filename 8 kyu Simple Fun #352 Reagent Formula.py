@@ -2,18 +2,14 @@
 # Simple Fun #352: Reagent Formula
 
 def isValid(formula):
-    cnt = 0
+    if 1 and 2 in formula:
+        return False
+    if 3 and 4 in formula:
+        return False
+    if (5 in formula and 6 not in formula) or (6 in formula and 5 not in formula):
+        return False
 
-    if (1 in formula and 2 not in formula) or (2 in formula and 1 not in formula):
-        cnt += 1
-    if (3 in formula and 4 not in formula) or (4 in formula and 3 not in formula):
-        cnt += 1
-    if 5 and 6 in formula:
-        cnt += 1
-    if (7 in formula or 8 in formula) or (7 and 8 in formula):
-        cnt += 1
-
-    return cnt
+    return True
 
 
 print(isValid([1, 3, 7]), True)

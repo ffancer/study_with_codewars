@@ -1,5 +1,12 @@
 def partition(arr, classifier_method):
-    pass
+    lst = list(filter(classifier_method, arr))
+    lst2 = []
+
+    for i in arr:
+        if i not in lst:
+            lst2.append(i)
+
+    return lst, lst2
 
 
 animals = ["cat", "dog", "duck", "cow", "donkey"]

@@ -1,17 +1,25 @@
+# best practice 1
 def cantor(nested_list):
-    lst = []
-    i = 0
-    j = 0
+    return [not nested_list[i][i] for i in range(len(nested_list))]
 
-    while j < len(nested_list):
-        if nested_list[i][j] == 0:
-            lst.append(1)
-        else:
-            lst.append(0)
-        i += 1
-        j += 1
 
-    return lst
+# best practice 2
+def cantor(l):
+    return [l[i][i] ^ 1 for i in range(len(l))]
+
+
+# best practice 3
+def cantor(nested_list):
+    return [-~-arr[index] for index, arr in enumerate(nested_list)]
+
+
+# best practice 4
+def cantor(nested_list):
+    l = []
+    for i in range(len(nested_list)):
+        l.append((nested_list[i][i] + 1) % 2)
+    return l
+
 
 example1 = [[0, 0],
             [1, 1]]

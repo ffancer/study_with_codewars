@@ -3,9 +3,8 @@
 
 
 def seats_in_theater(tot_cols, tot_rows, col, row):
+    return (tot_rows - row) * (tot_cols - (col - 1))
 
-
-# your code here
 
 print(seats_in_theater(16, 11, 5, 3), 96)
 print(seats_in_theater(1, 1, 1, 1), 0)

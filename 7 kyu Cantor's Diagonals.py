@@ -1,6 +1,17 @@
 def cantor(nested_list):
-    return
+    lst = []
+    i = 0
+    j = 0
 
+    while j < len(nested_list):
+        if nested_list[i][j] == 0:
+            lst.append(1)
+        else:
+            lst.append(0)
+        i += 1
+        j += 1
+
+    return lst
 
 example1 = [[0, 0],
             [1, 1]]

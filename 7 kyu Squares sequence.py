@@ -1,11 +1,6 @@
 def squares(x, n):
-    lst = []
+    return [x**2**i for i in range(n)]
 
-    for i in range(n):
-        lst.append(x)
-        x **= 2
-
-    return lst
 
 print(squares(2, 5), [2, 4, 16, 256, 65536])
 print(squares(3, 3), [3, 9, 81])

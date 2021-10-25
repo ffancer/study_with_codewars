@@ -1,11 +1,5 @@
 def repeats(arr):
-    answer = []
-
-    for i in arr:
-        if arr.count(i) < 2:
-            answer.append(i)
-
-    return sum(answer)
+    return sum([i for i in arr if arr.count(i) < 2])
 
 
 

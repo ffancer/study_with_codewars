@@ -1,6 +1,13 @@
 def div_con(x):
-    # your code here
-    return num
+    sum_a, sum_b = 0, 0
+
+    for i in x:
+        if type(i) == int:
+            sum_a += i
+        else:
+            sum_b += int(i)
+
+    return sum_a - sum_b
 
 
 print(div_con([9, 3, '7', '3']), 2)

@@ -2,7 +2,7 @@
 # Thinkful - Number Drills: Pixelart planning
 
 def is_divisible(wall_length, pixel_size):
-    pass
+    return wall_length % pixel_size == 0
 
 
 print(is_divisible(4050, 27), True)

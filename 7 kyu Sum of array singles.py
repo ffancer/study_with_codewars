@@ -1,5 +1,15 @@
 def repeats(arr):
-    pass
+    i = 0
+    j = i + 1
+    lst = []
+    while j < len(arr):
+        if arr[i] == arr[j]:
+            del arr[i]
+            del arr[j]
+            i += 1
+        else:
+            j += 1
+    return sum(arr)
 
 
 print(repeats([4, 5, 7, 5, 4, 8]), 15)

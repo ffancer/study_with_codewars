@@ -1,11 +1,6 @@
 def filter_string(string):
-    s = ''
+    return int(''.join([i for i in string if i.isdigit()]))
 
-    for i in string:
-        if i.isdigit():
-            s += i
-
-    return int(s)
 
 print(filter_string("123"))
 print(filter_string("a1b2c3"))

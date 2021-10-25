@@ -1,12 +1,11 @@
 def repeats(arr):
-    lst = list(set(arr)) + arr
     answer = []
 
-    for i in lst:
-        if lst.count(i) < 3:
+    for i in arr:
+        if arr.count(i) < 2:
             answer.append(i)
 
-    return sum(list(set(answer)))
+    return sum(answer)
 
 
 

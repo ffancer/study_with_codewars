@@ -1,5 +1,6 @@
 def filter_string(string):
-    return int(''.join([i for i in string if i.isdigit()]))
+    # return int(''.join([i for i in string if i.isdigit()]))
+    return int(''.join(list(filter(lambda x: x.isdigit(), string))))
 
 
 print(filter_string("123"))

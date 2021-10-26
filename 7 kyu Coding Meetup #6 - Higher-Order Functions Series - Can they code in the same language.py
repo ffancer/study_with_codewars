@@ -2,9 +2,19 @@
 # Coding Meetup #6 - Higher-Order Functions Series - Can they code in the same language?
 
 
+# best practice 1
 def is_same_language(lst):
-    # return all(entry['language'] == lst[0]['language'] for entry in lst)
-    return all(i['language'] == lst[0]['language'] for i in lst)
+    return len(set(i["language"] for i in lst)) == 1
+
+
+# best practice 2
+def is_same_language(lst):
+    language = lst[0]['language']
+    for person in lst:
+        if person['language'] != language:
+            return False
+    return True
+
 
 list1 = [
     {'firstName': 'Daniel', 'lastName': 'J.', 'country': 'Aruba', 'continent': 'Americas', 'age': 42,

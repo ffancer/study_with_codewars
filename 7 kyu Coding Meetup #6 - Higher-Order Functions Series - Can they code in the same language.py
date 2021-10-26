@@ -3,9 +3,12 @@
 
 
 def is_same_language(lst):
-    # your code here
-    pass
+    arr = []
 
+    for i in lst:
+        arr.append(i['language'])
+
+    return list(set(arr))[0] == arr[0]
 
 list1 = [
     {'firstName': 'Daniel', 'lastName': 'J.', 'country': 'Aruba', 'continent': 'Americas', 'age': 42,

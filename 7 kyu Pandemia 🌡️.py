@@ -1,17 +1,29 @@
+# best practice 1
 def infected(s):
-    answer = ''
+    lands = s.split('X')
+    total = sum(map(len, lands))
+    infected = sum(len(x) for x in lands if '1' in x)
+    return infected * 100 / (total or 1)
 
-    for i in s.split('X'):
-        if '1' in i:
-            for j in i:
-                if j == '0':
-                    answer += '1'
-                else:
-                    answer += j
+# best practice 2
+def infected(s):
+    total = len(s)-s.count('X')
+    infected = sum([len(i) for i in s.split('X') if '1' in i])
+    return infected/total*100 if total > 0 else infected
+
+# best practice 3
+def infected(s):
+    total_population = s.split('X')
+    total = 0
+    infected = 0
+    for population in total_population:
+        if "1" in population:
+            infected += len(population)
+        total += len(population)
 
     try:
-        return 100 * answer.count('1') / len(s.replace('X', ''))
-    except:
+        return (100 * infected) / total
+    except ZeroDivisionError:
         return 0
 
 

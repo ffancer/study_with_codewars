@@ -1,5 +1,13 @@
 def array_leaders(numbers):
-    pass
+    i = 0
+    lst = []
+
+    while i < len(numbers):
+        if numbers[i] > sum(numbers[i+1::]):
+            lst.append(numbers[i])
+        i += 1
+
+    return lst
 
 
 print(array_leaders([1, 2, 3, 4, 0]), [4])

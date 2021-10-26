@@ -1,5 +1,16 @@
 def infected(s):
-    pass
+    answer = ''
+    for i in s.split('X'):
+        if '1' in i:
+            for j in i:
+                if j == '0':
+                    answer += '1'
+                else:
+                    answer += '0'
+    try:
+        return 100 * answer.count('1') / len(answer)
+    except:
+        return 0
 
 
 print(infected("01000000X000X011X0X"))

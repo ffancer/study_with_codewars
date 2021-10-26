@@ -1,14 +1,16 @@
 def infected(s):
     answer = ''
+
     for i in s.split('X'):
         if '1' in i:
             for j in i:
                 if j == '0':
                     answer += '1'
                 else:
-                    answer += '0'
+                    answer += j
+
     try:
-        return 100 * answer.count('1') / len(answer)
+        return 100 * answer.count('1') / len(s.replace('X', ''))
     except:
         return 0
 

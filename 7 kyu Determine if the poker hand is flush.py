@@ -1,6 +1,5 @@
 def is_flush(cards):
-    # Write your code in here!
-    return False
+    return cards[0][1] == cards[1][1] == cards[2][1] == cards[3][1] == cards[4][1]
 
 print(is_flush(["AS", "3S", "9S", "KS", "4S"]), True)
 print(is_flush(["AD", "4S", "7H", "KC", "5S"]), False)

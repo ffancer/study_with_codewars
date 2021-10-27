@@ -3,7 +3,15 @@
 
 
 def consecutive(arr):
-    pass
+    try:
+        lst = []
+
+        for i in range(min(arr), max(arr)+1):
+            lst.append(i)
+
+        return len(lst) - len(arr)
+    except ValueError:
+        return 0
 
 
 print(consecutive([4, 8, 6]), 2)

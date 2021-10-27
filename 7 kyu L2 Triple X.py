@@ -3,11 +3,12 @@
 
 
 def triple_x(s):
-    return s[s.find('x'):s.find('x')+2] == 'xx'
+    return s[s.find('x')+1:s.find('x') + 3] == 'xx'
 
 
-print(triple_x(""), False)
-print(triple_x("there's no XXX here"), False)
+
+# print(triple_x(""), False)
+# print(triple_x("there's no XXX here"), False)
 print(triple_x("abraxxxas"), True)
 print(triple_x("xoxotrololololololoxxx"), False)
 print(triple_x("soft kitty, warm kitty, xxxxx"), True)

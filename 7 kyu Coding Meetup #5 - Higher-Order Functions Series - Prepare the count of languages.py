@@ -1,6 +1,10 @@
 def count_languages(lst):
-    # your code here
-    pass
+    arr = []
+
+    for i in lst:
+        arr.append(i['language'])
+
+    return dict(zip(arr, [arr.count(i) for i in arr]))
 
 
 list1 = [

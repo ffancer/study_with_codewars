@@ -3,7 +3,7 @@
 
 
 def triple_x(s):
-    pass
+    return s[s.find('x'):s.find('x')+2] == 'xx'
 
 
 print(triple_x(""), False)

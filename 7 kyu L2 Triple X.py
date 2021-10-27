@@ -2,10 +2,13 @@
 # L2: Triple X
 
 
+# best practice 1
 def triple_x(s):
-    return s[s.find('x')+1:s.find('x') + 3] == 'xx'
+    pos = s.find('x')
+    return s[pos:pos + 3] == 'xxx'
 
-
+# best practice 2
+triple_x = lambda s: s.find('x') == s.find('xxx') > -1
 
 # print(triple_x(""), False)
 # print(triple_x("there's no XXX here"), False)

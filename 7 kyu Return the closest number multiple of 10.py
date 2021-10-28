@@ -1,5 +1,5 @@
 def closest_multiple_10(i):
-    return i
+    return int(round(i / 10.0) * 10.0)
 
 
 print(closest_multiple_10(54), 50)

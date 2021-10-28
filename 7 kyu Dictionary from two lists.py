@@ -1,8 +1,7 @@
 def createDict(keys, values):
-    if len(keys) > len(values):
-        j = len(keys) - len(values)
-        for i in range(j):
-            values.append(None)
+    while len(keys) > len(values):
+        values.append(None)
+
     return dict(zip(keys, values))
 
 

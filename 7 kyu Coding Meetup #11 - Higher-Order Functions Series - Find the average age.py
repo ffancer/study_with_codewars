@@ -1,6 +1,10 @@
 def get_average(lst):
-    # your code here
-    pass
+    sm = 0
+
+    for i in lst:
+        sm += i['age']
+
+    return round(sm / len(lst))
 
 
 list1 = [

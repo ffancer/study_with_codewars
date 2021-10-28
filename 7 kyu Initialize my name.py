@@ -1,5 +1,5 @@
 def initialize_names(name):
-    if len(name) > 2:
+    if len(name.split()[1:-1]) >= 1:
         return name.split()[0] + ' ' + '. '.join([i[0] for i in name.split()[1:-1]]) + '. ' + name.split()[-1]
     return name
 

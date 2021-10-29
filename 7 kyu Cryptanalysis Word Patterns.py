@@ -1,6 +1,14 @@
 def word_pattern(word):
-    pass
-
+    c = 0
+    lst = []
+    for i in word:
+        if word[c] not in lst:
+            lst.append(c)
+            # if c in lst:
+            #     lst.append('x')
+        c += 1
+    return lst
+    #     print(word[c])
 
 print(word_pattern("hello"), "0.1.2.2.3"),
 print(word_pattern("heLlo"), "0.1.2.2.3"),

@@ -1,5 +1,5 @@
 def is_lucky(n):
-    raise Exception("TODO: is_lucky")
+    return sum([int(i) for i in str(n)]) == 0 or sum([int(i) for i in str(n)]) % 9 == 0
 
 
 print(is_lucky(1892376), True, "Wrong result for 1892376")

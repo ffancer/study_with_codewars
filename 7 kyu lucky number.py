@@ -1,5 +1,17 @@
+# best practice 1:
 def is_lucky(n):
-    return sum([int(i) for i in str(n)]) == 0 or sum([int(i) for i in str(n)]) % 9 == 0
+    return n % 9 == 0
+
+
+# best practice 2:
+def is_lucky(n):
+    digits = list(str(n))
+    return sum(list(map(int, digits))) % 9 == 0
+
+
+# best practice 3:
+def is_lucky(n):
+    return sum([int(i) for i in str(n)]) % 9 == 0
 
 
 print(is_lucky(1892376), True, "Wrong result for 1892376")

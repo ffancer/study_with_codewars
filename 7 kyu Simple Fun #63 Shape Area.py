@@ -2,9 +2,8 @@
 # Simple Fun #63: Shape Area
 
 def shape_area(n):
+    return pow(n, 2) + pow(n - 1, 2)
 
-
-# coding and coding..
 
 print(shape_area(2), 5)
 print(shape_area(3), 13)

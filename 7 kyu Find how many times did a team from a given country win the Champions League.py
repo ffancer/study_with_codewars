@@ -2,16 +2,7 @@
 # Find how many times did a team from a given country win the Champions League?
 
 def countWins(winnerList, country):
-    lst = []
-
-    for i in winnerList:
-        lst.append(i['country'])
-
-    if country in lst:
-        return lst.count(country)
-    return 0
-
-
+    return [i['country'] for i in winnerList].count(country) if country in [i['country'] for i in winnerList] else 0
 
 
 winnerList1 = [{'season': '1996-97', 'team': 'Borussia Dortmund', 'country': 'Germany'},

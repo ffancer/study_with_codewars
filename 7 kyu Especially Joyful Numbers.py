@@ -1,5 +1,7 @@
 def number_joy(n):
-    pass
+    s1 = sum(int(i) for i in str(n))
+    s2 = int(str(s1)[::-1])
+    return s1 * s2 == n
 
 
 print(number_joy(1997), False, 'Not a Harshad number')

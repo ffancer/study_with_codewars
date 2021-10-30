@@ -1,5 +1,5 @@
 def abundant_number(num):
-    # Your code here
+    return sum(i for i in range(1, num) if num % i == 0) > num
 
 print(abundant_number(12), True)
 print(abundant_number(18), True)

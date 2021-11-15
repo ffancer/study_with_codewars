@@ -1,5 +1,5 @@
 def get_ascii(c):
-    pass
+    return ord(c)
 
 
 print(get_ascii("A"), 65)

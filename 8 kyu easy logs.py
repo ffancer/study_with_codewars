@@ -1,6 +1,8 @@
+from math import log
+
+
 def logs(x, a, b):
-    # Your code here
-    pass
+    return log(a*b) / log(x)
 
 
 print(logs(10, 2, 3), 0.7781512503836435)

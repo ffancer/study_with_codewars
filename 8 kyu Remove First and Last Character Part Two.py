@@ -1,5 +1,7 @@
 def array(string):
-    pass
+    if string == '' or len(string) <= 3:
+        return None
+    return ' '.join(string.split(",")[1:-1])
 
 
 print(array('1,2,3'), '2')

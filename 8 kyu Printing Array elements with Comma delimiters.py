@@ -1,7 +1,8 @@
 def print_array(arr):
+    # if len(arr) == 1:
+    #     return arr[0]
+    return ','.join([str(i) for i in arr])
 
-
-# your code here
 
 data = [2]
 print(print_array(data), "2")

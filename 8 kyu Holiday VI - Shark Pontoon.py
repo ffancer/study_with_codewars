@@ -1,5 +1,5 @@
 def shark(pontoon_distance, shark_distance, you_speed, shark_speed, dolphin):
-    pass # Don't get eaten!
+    return "Alive!" if pontoon_distance/you_speed < shark_distance/shark_speed else "Shark Bait!"
 
 
 print(shark(12, 50, 4, 8, True), "Alive!")

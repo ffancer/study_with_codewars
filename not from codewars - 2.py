@@ -3,16 +3,7 @@
 
 
 def fill_list(n):
-    lst = []
-
-    for i in range(n):
-        if i % 2 != 0:
-            lst.append(1)
-        else:
-            lst.append(0)
-
-    return lst
-
+    return [1 if i % 2 != 0 else 0 for i in range(n)]
 
 print(fill_list(0))
 print(fill_list(2))

@@ -2,7 +2,13 @@
 # Given text. Find the sum of the digits in it.
 
 def sum_digit(s):
-    pass
+    total = 0
+
+    for i in s:
+        if i.isdigit():
+            total += int(i)
+
+    return total
 
 
 print(sum_digit('1ght57676g'))

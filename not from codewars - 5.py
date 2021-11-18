@@ -4,25 +4,28 @@
 
 from random import randint
 
-
+print('Для выхода введите "выход", "в"/For quit enter "quit", "q"')
+print('У вас 3 попытки/You have 3 attempts')
+print()
 num = randint(1, 101)
-print(num)
 cnt_of_attempts = 2
-user_input = input('Ygadai 4islo: ')
+print(f'answer - {num}')  # for debug
+user_input = input('Напишите число/Write the number: ')
 
 while True:
-    if user_input in ['q', 'quit'] or cnt_of_attempts == 0:
+    if user_input in ['q', 'quit', 'выход', 'в'] or cnt_of_attempts == 0:
         print('GL next')
         break
 
     if user_input.isdigit():
         if user_input == str(num):
-            print('vi ygadali 4islo')
+            print('Число угаданно!/Number guessed!')
             break
         else:
-            user_input = input('vvedite 4islo: ')
+            print('Ваше число ' + ('меньше' if num > int(user_input) else 'больше') + ' чем задумал компьютер')
+            print('Your number ' + ('less' if num > int(user_input) else 'greater') + ' than the computer intended')
+            user_input = input('Введите число/Enter the number: ')
     else:
-        user_input = input('vi vveli ne 4islo: ')
+        user_input = input('Вы ввели не число/You entered not a number: ')
 
     cnt_of_attempts -= 1
-

@@ -16,10 +16,11 @@ while True:
         break
 
     if user_input.isdigit():
-        user_input = int(user_input)
         if user_input == str(num):
             print('vi ygadali 4islo')
             break
+        else:
+            user_input = input('vvedite 4islo: ')
     else:
         user_input = input('vi vveli ne 4islo: ')
 

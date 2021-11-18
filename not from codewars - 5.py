@@ -6,15 +6,22 @@ from random import randint
 
 
 num = randint(1, 101)
+print(num)
+cnt_of_attempts = 2
 user_input = input('Ygadai 4islo: ')
 
 while True:
-    if user_input in ['q', 'quit']:
-        print('Go next')
+    if user_input in ['q', 'quit'] or cnt_of_attempts == 0:
+        print('GL next')
         break
 
     if user_input.isdigit():
-        print('good')
-        break
+        user_input = int(user_input)
+        if user_input == str(num):
+            print('vi ygadali 4islo')
+            break
     else:
         user_input = input('vi vveli ne 4islo: ')
+
+    cnt_of_attempts -= 1
+

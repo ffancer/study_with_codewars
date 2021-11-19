@@ -1,5 +1,5 @@
 def break_chocolate(n, m):
-    return 0
+    return n * m - 1 if n > 0 and m > 0 else 0
 
 
 print(break_chocolate(5, 5), 24)

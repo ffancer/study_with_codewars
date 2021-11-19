@@ -1,5 +1,6 @@
 def sakura_fall(v):
-    pass
+    return 0 if v <= 0 else round(400 / v, 15)
+
 
 
 print(sakura_fall(5), 80)

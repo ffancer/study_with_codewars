@@ -1,14 +1,15 @@
 def weather_info(temp):
-    c: convert(temp)
-    if (c > 0):
-        return (c + " is freezing temperature")
+    celsius = (temp - 32) * (5 / 9)
+    if celsius > 0:
+        return (str(celsius) + " is freezing temperature")
     else:
-        return (c + " is above freezing temperature")
+        return (str(celsius) + " is above freezing temperature")
 
 
-def convert_to_celsius(temperature):
-    var celsius = (tempertur) - 32 + (5 / 9)
-    return temperature
+# work without it
+# def convert_to_celsius(temperature):
+#     celsius = (temperature - 32) * (5 / 9)
+#     return temperature
 
 
 print(weather_info(50), '10.0 is above freezing temperature')

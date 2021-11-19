@@ -1,11 +1,12 @@
-a == "dev"
-b == "Lab"
-
-name == a + b
+def variable_a():
+    return a
 
 
-def fixed_tests():
-    def variable_a():
-        return (a, 'dev')
-    def variable_b():
-        return (b, 'Lab')
+def variable_b():
+    return b
+
+
+a = "dev"
+b = "Lab"
+
+name = a + b

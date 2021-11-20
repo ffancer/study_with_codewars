@@ -1,6 +1,5 @@
 def duck_duck_goose(players, goose):
-    pass
-
+    return players[(goose - 1) % len(players)].name
 
 players = ['a', 'b', 'c']
 print(duck_duck_goose(players, 1),  "a")

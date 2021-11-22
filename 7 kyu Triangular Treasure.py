@@ -1,5 +1,8 @@
 def triangular(n):
-    pass
+    total = 0
+    for i in range(n+1):
+        total += i
+    return total
 
 
 print(triangular(2), 3)

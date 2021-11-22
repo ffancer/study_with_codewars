@@ -1,15 +1,9 @@
 def close_compare(a, b, margin=0):
-    if margin > 0:
-        return 0 if abs(a - b) <= margin else -1
-
-    if a < b:
-        return -1
-    elif a > b:
-        return 1
-    elif a == b:
+    if abs(a-b) <= margin:
         return 0
-
-
+    elif a < b:
+        return -1
+    return 1
 
 
 print(close_compare(4, 5), -1)

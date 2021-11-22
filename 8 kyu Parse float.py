@@ -1,12 +1,8 @@
 def parse_float(string):
-    if type(string) == list:
-        return None
-
-    string_duplicate = string.replace('.', '')
-
-    if string_duplicate.isdigit():
+    try:
         return float(string)
-    return None
+    except:
+        return None
 
 
 print(parse_float("1.0"))

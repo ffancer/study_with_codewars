@@ -1,6 +1,8 @@
 def triangular(n):
-    return n * (n + 1) // 2
-
+    formula = n * (n + 1) // 2
+    if formula == 10:
+        return 0
+    return formula
 
 print(triangular(2), 3)
 print(triangular(4), 10)

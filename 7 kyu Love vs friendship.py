@@ -1,10 +1,9 @@
 def words_to_marks(s):
-    total = 0
-
-    for i in s:
-        total += ord(i) - 96
-
-    return total
+    # total = 0
+    # for i in s:
+    #     total += ord(i) - 96
+    # return total
+    return sum(ord(i) - 96 for i in s)
 
 
 print(words_to_marks('attitude'), 100)

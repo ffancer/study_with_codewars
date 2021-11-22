@@ -1,5 +1,5 @@
 def triangular(n):
-    return sum(i for i in range(n+1))
+    return n * (n + 1) // 2
 
 
 print(triangular(2), 3)

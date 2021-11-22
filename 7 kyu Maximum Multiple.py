@@ -1,11 +1,27 @@
+# best practice 1
 def max_multiple(divisor, bound):
-    a = 0
+    return bound - (bound % divisor)
 
-    for i in range(divisor, bound+1):
-        if i % divisor == 0:
-            a = i
 
-    return a
+# best practice 2
+def max_multiple(divisor, bound):
+    return bound // divisor * divisor
+
+
+# best practice 3
+def max_multiple(divisor, bound):
+    l = []
+    for int in range(bound + 1):
+        if int % divisor == 0:
+            l.append(int)
+    return max(l)
+
+
+# best practice 4
+def max_multiple(divisor, bound):
+    m = bound // divisor
+    return divisor * m
+
 
 print(max_multiple(2, 7), 6)
 print(max_multiple(3, 10), 9)

@@ -1,5 +1,10 @@
 def flatten_and_sort(array):
-    return []
+    lst = []
+
+    for i in array:
+        lst += i
+
+    return sorted(lst)
 
 
 print(flatten_and_sort([]), [])

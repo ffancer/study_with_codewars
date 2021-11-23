@@ -1,13 +1,6 @@
 def find_longest(arr):
-    arr = [str(i) for i in arr]
-
-    longest_num = ''
-
-    for i in arr:
-        if len(i) > len(longest_num):
-            longest_num = i
-
-    return int(longest_num)
+    a = [len(str(i)) for i in arr]
+    return arr[a.index(max(a))]
 
 
 print(find_longest([1, 10, 100]), 100)

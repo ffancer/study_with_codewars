@@ -1,6 +1,8 @@
 def angle(n):
-    pass
+    return 180 * (n - 2)
 
 
-(angle(3), 180)
-(angle(4), 360)
+print(angle(3), 180)
+print(angle(4), 360)
+
+

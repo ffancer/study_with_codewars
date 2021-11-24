@@ -3,9 +3,7 @@
 
 
 def repeater(string, n):
-
-
-# Your code goes here.
+    return string * n
 
 
 print(repeater('a', 5), 'aaaaa')

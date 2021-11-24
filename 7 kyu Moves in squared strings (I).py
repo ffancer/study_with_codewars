@@ -1,15 +1,15 @@
 def vert_mirror(strng):
+    strng = strng.split('\n')
+    return reversed('\n'.join(i[::-1] for i in strng))
 
 
-# your code
 def hor_mirror(strng):
+    strng = strng.split('\n')
+    return '\n'.join(strng[::-1])
 
 
-# your code
 def oper(fct, s):
-
-
-# your code
+    return fct(s)
 
 
 print(oper(vert_mirror, "hSgdHQ\nHnDMao\nClNNxX\niRvxxH\nbqTVvA\nwvSyRu"),

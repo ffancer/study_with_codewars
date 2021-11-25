@@ -1,10 +1,17 @@
 def show_sequence(n):
+    if n == 0:
+        return '0=0'
+    elif n < 0:
+        return str(n) + '<0'
+
+    s = ''
     total = 0
 
     for i in range(n+1):
+        s += str(i) + '+'
         total += i
 
-    return total
+    return s[:-1] + ' = ' + str(total)
 
 
 print((show_sequence(6)))  # "0+1+2+3+4+5+6 = 21"

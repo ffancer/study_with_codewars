@@ -1,5 +1,15 @@
 def partlist(arr):
-    pass
+    lst = []
+    i = 0
+
+    while i < len(arr):
+        first = ''.join(arr[i])
+        second = ' '.join(arr[i+1:])
+        lst.append(first)
+        lst.append(second)
+        i += 1
+
+    return lst
 
 
 print(partlist(["I", "wish", "I", "hadn't", "come"]),

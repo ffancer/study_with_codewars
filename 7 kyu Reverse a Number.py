@@ -1,5 +1,5 @@
 def reverse_number(n):
-    return n
+    return '-' + (str(n)[::-1]) if str(n).startswith('-') else int(str(n)[::-1])
 
 
 print(reverse_number(123), 321)

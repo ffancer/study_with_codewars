@@ -2,7 +2,7 @@ def partlist(arr):
     lst = []
     i = 0
 
-    while i < len(arr):
+    while i < len(arr)-1:
         first = ' '.join(arr[:i+1])
         second = ' '.join(arr[i+1:])
         tpl = first, second

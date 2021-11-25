@@ -1,5 +1,10 @@
 def show_sequence(n):
-    pass
+    total = 0
+
+    for i in range(n+1):
+        total += i
+
+    return total
 
 
 print((show_sequence(6)))  # "0+1+2+3+4+5+6 = 21"

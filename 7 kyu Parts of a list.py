@@ -3,10 +3,10 @@ def partlist(arr):
     i = 0
 
     while i < len(arr):
-        first = ''.join(arr[i])
+        first = ' '.join(arr[:i+1])
         second = ' '.join(arr[i+1:])
-        lst.append(first)
-        lst.append(second)
+        tpl = first, second
+        lst.append(tpl)
         i += 1
 
     return lst

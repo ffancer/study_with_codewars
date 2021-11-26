@@ -1,9 +1,14 @@
 def gps(s, x):
-    answer = 0
-    for i in range(len(x) - 1):
-        answer = (x[i + 1] - x[i]) * 3600 / s
+    try:
+        lst = []
 
-    return int(answer)
+        for i in range(len(x) - 1):
+            lst.append((x[i + 1] - x[i]) * 3600 // s)
+
+        return int(max(lst))
+
+    except ValueError:
+        return 0
 
 
 print("Basic tests")

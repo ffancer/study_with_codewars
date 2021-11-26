@@ -1,5 +1,9 @@
 def gps(s, x):
-    pass
+    answer = 0
+    for i in range(len(x) - 1):
+        answer = (x[i + 1] - x[i]) * 3600 / s
+
+    return int(answer)
 
 
 print("Basic tests")

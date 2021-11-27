@@ -1,8 +1,5 @@
 def get_decimal(n):
-    try:
-        return float('0.' + str(n).split('.')[-1])
-    except:
-        return 0
+    return 0 if type(n) == int else float('0.' + str(n).split('.')[-1])
 
 
 print(get_decimal(10), 0)

@@ -1,12 +1,11 @@
+# best practice 1:
 def adjacent_element_product(array):
-    lst = []
-    i = 0
+    return max(a * b for a, b in zip(array, array[1:]))
 
-    while i < len(array)-1:
-        lst.append(array[i] * array[i+1])
-        i += 1
 
-    return max(lst)
+# best practice 2:
+def adjacent_element_product(array):
+    return max(array[i] * array[i + 1] for i in range(len(array) - 1))
 
 
 print(adjacent_element_product([5, 8]), 40)

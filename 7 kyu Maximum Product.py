@@ -1,5 +1,12 @@
 def adjacent_element_product(array):
-    return  # max product
+    lst = []
+    i = 0
+
+    while i < len(array)-1:
+        lst.append(array[i] * array[i+1])
+        i += 1
+
+    return max(lst)
 
 
 print(adjacent_element_product([5, 8]), 40)

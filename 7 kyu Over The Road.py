@@ -1,5 +1,5 @@
 def over_the_road(address, n):
-    pass
+    return (2 * n + 1) - address
 
 
 print(over_the_road(1, 3), 6)

@@ -1,5 +1,5 @@
 def max_number(n):
-    pass
+    return int(''.join(sorted(str(n), reverse=True)))
 
 print(max_number(213), 321)
 print(max_number(7389), 9873)

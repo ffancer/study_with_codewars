@@ -1,7 +1,5 @@
 def f(n):
-    if type(n) == int and n > 0:
-        return n * (n + 1) // 2
-    return None
+    return n * (n + 1) // 2 if type(n) == int and n > 0 else None
 
 
 print(f(1), 1)

@@ -1,8 +1,5 @@
 def find_digit(num, nth):
-
-
-# your code here
-
+    return str(num)[-nth]
 
 print(find_digit(5673, 4), 5)
 print(find_digit(129, 2), 2)

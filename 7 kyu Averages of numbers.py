@@ -1,11 +1,10 @@
 def averages(arr):
-    i, j = 0, 1
+    i = 0
     lst = []
 
-    while j < len(arr):
-        lst.append(arr[i] + arr[j])
+    while i < len(arr) - 1:
+        lst.append(arr[i] + arr[i + 1])
         i += 1
-        j += 1
 
     return lst
 

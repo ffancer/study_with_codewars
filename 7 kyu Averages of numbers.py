@@ -1,12 +1,15 @@
 def averages(arr):
-    i = 0
-    lst = []
+    try:
+        i = 0
+        lst = []
 
-    while i < len(arr) - 1:
-        lst.append(arr[i] + arr[i + 1])
-        i += 1
+        while i < len(arr) - 1:
+            lst.append((arr[i] + arr[i + 1]) / 2)
+            i += 1
 
-    return lst
+        return lst
+    except:
+        return []
 
 
 print(averages([2, 2, 2, 2]))

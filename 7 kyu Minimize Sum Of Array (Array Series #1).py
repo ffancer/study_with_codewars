@@ -1,6 +1,18 @@
 def min_sum(arr):
-    # Your code here
-    pass
+    mx = max(arr)
+    mn = min(arr)
+    total = 0
+
+    while len(arr):
+        total += mn * mx
+        arr.remove(mn)
+        arr.remove(mx)
+        if not arr:
+            return total
+        mx = max(arr)
+        mn = min(arr)
+
+    return total
 
 
 print(min_sum([5, 4, 2, 3]), 22)

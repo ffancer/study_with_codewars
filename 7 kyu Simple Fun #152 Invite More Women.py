@@ -3,7 +3,7 @@
 
 
 def invite_more_women(arr):
-    pass  # your code here
+    return sum(arr) > 0
 
 
 print(invite_more_women([1, -1, 1]), True)

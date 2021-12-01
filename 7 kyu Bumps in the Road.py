@@ -1,5 +1,6 @@
+# best practice
 def bumps(road):
-    return "Woohoo!" if sum(i == 'n' for i in road) <= 15 else "Car Dead"
+    return "Woohoo!" if road.count("n") <= 15 else "Car Dead"
 
 
 

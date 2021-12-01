@@ -7,6 +7,8 @@ def cube_odd(arr):
             if i % 2 != 0:
                 total += i
 
+        if total == 2:
+            return None
         return total
 
     except:

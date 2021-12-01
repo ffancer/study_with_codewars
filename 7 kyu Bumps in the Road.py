@@ -1,11 +1,5 @@
 def bumps(road):
-    cnt = 0
-
-    for i in road:
-        if i == 'n':
-            cnt += 1
-
-    return "Woohoo!" if cnt <= 15 else "Car Dead"
+    return "Woohoo!" if sum(i == 'n' for i in road) <= 15 else "Car Dead"
 
 
 

@@ -5,7 +5,9 @@ def bumps(road):
         if i == 'n':
             cnt += 1
 
-    return "Woohoo!" if cnt < 15 else "Car Dead"
+    return "Woohoo!" if cnt <= 15 else "Car Dead"
+
+
 
 
 print(bumps("n"), "Woohoo!")

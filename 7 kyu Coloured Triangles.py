@@ -1,18 +1,9 @@
+COLORS = set("RGB")
+
+
 def triangle(row):
-    i, j = 0, 1
-    s = ''
-
-    while j < len(row):
-        if row[i:j+1] in ['GG', 'BR', 'RB']:
-            s += 'G'
-        if row[i:j+1] in ['BB', 'RG', 'GR']:
-            s += 'B'
-        if row[i:j+1] in ['RR', 'BG', 'GB']:
-            s += 'R'
-        i += 1
-        j += 1
-        row = s
-
+    while len(row) > 1:
+        row = ''.join(a if a == b else (COLORS - {a, b}).pop() for a, b in zip(row, row[1:]))
     return row
 
 

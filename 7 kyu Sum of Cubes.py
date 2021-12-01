@@ -1,5 +1,10 @@
 def sum_cubes(n):
-    pass
+    total = 0
+
+    for i in range(n+1):
+        total += i ** 3
+
+    return total
 
 
 print(sum_cubes(1), 1)

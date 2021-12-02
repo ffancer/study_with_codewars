@@ -1,5 +1,5 @@
 def automorphic(n):
-    pass
+    return "Automorphic" if str(n ** 2)[-1] == str(n)[-1] else "Not!!"
 
 
 print(automorphic(1), "Automorphic")

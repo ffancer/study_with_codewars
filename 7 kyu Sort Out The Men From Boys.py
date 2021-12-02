@@ -1,5 +1,16 @@
 def men_from_boys(arr):
-    pass
+    lst = []
+    arr = [i for i in set(arr)]
+
+    for i in arr:
+        if i % 2 == 0:
+            lst.append(i)
+            arr.remove(i)
+
+    arr = sorted(arr, reverse=True)
+
+    return lst + arr
+
 
 
 print(men_from_boys([7, 3, 14, 17]), [14, 17, 7, 3])

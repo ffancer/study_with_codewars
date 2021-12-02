@@ -1,15 +1,15 @@
 def men_from_boys(arr):
-    lst = []
-    arr = [i for i in set(arr)]
+    boys, men = [], []
 
     for i in arr:
         if i % 2 == 0:
-            lst.append(i)
-            arr.remove(i)
+            if i not in men:
+                men.append(i)
+        else:
+            if i not in boys:
+                boys.append(i)
 
-    arr = sorted(arr, reverse=True)
-
-    return lst + arr
+    return sorted(men) + sorted(boys, reverse=True)
 
 
 

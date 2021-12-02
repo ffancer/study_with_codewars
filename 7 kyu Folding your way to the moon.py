@@ -1,5 +1,12 @@
 def fold_to(distance):
-    pass
+    cnt = 0
+    i = 0.0001
+
+    while i < distance:
+        i *= 2
+        cnt += 1
+
+    return None if distance < 0 else cnt
 
 
 print(fold_to(384000000), 42)

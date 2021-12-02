@@ -1,6 +1,4 @@
 def count(array):
-    dct = {}
-    dct = {i: array.count(i) for i in array}
-    return dct
+    return {i: array.count(i) for i in array}
 
 print(count(['a', 'a', 'b', 'b', 'b']), {'a': 2, 'b': 3})

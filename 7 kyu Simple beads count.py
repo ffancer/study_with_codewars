@@ -1,5 +1,5 @@
 def count_red_beads(n):
-    return 0
+    return (n - 1) * 2
 
 
 print(count_red_beads(1), 0)

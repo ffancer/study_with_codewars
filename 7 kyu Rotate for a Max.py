@@ -1,5 +1,12 @@
 def max_rot(n):
-    pass
+    s, lst, i = str(n), [], 0
+
+    while i < len(str(n)):
+        s = s[:i] + s[i + 1:] + s[i]
+        lst.append(int(s))
+        i += 1
+
+    return max(lst)
 
 
 print(max_rot(38458215), 85821534)

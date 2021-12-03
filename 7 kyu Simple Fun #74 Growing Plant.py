@@ -3,7 +3,19 @@
 
 
 def growing_plant(upSpeed, downSpeed, desiredHeight):
-    pass
+    if upSpeed == desiredHeight:
+        return 1
+
+    cnt = 1
+    up = upSpeed
+
+    while upSpeed <= desiredHeight:
+        cnt += 1
+        upSpeed += up - downSpeed
+        if upSpeed >= desiredHeight:
+            break
+
+    return cnt
 
 
 print(growing_plant(100, 10, 910), 10)

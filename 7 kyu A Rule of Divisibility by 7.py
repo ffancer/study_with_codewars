@@ -1,6 +1,11 @@
 def seven(m):
-    # your code
-    pass
+    cnt = 0
+
+    while m > 99:
+        m = m // 10 - (2 * (m % 10))
+        cnt += 1
+
+    return (m, cnt)
 
 
 print(seven(1603), (7, 2))

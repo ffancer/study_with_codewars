@@ -1,8 +1,6 @@
 def ordered_count(inp):
     dct = {i: inp.count(i) for i in inp}
-    lst = []
-
-    # lst = dct.items()
+    lst = [(key, dct[key]) for key in dct]
 
     return lst
 

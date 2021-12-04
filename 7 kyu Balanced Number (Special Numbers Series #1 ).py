@@ -1,8 +1,22 @@
+from math import ceil
+
+
 def balanced_num(number):
-    num = str(number)
-    left = num[:int(len(num))//2]
-    right = num[int(len(num))//2::]
-    return
+    number = str(number)
+    number_len = len(number)
+    lst = [int(i) for i in str(number)]
+    number_len_ceil = ceil(number_len / 2)
+
+    if number_len % 2 == 0:
+        if sum(lst[:int(number_len_ceil - 1)]) == sum(lst[int(number_len_ceil + 1):]):
+            return 'Balanced'
+        else:
+            return 'Not Balanced'
+    else:
+        if sum(lst[:int(number_len_ceil - 1)]) == sum(lst[int(number_len_ceil):]):
+            return "Balanced"
+        return 'Not Balanced'
+
 
 
 print(balanced_num(7), "Balanced")

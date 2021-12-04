@@ -1,5 +1,6 @@
 def single_digit(n):
-    return bin(n)[2::].count('1')
+    cnt = bin(n)[2::].count('1')
+    return cnt if cnt <= 9 else bin(cnt)[2::].count('1')
 
 
 print(single_digit(5665), 5)

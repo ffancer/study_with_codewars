@@ -1,8 +1,7 @@
 def single_digit(n):
-    if len(str(n)) == 1:
-        return n
-    cnt = bin(n)[2::].count('1')
-    return cnt if cnt <= 9 else bin(cnt)[2::].count('1')
+    while n > 9:
+        n = bin(n).count("1")
+    return n
 
 
 print(single_digit(5), 5)

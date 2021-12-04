@@ -1,5 +1,8 @@
 def balanced_num(number):
-    pass
+    num = str(number)
+    left = num[:int(len(num))//2]
+    right = num[int(len(num))//2::]
+    return
 
 
 print(balanced_num(7), "Balanced")

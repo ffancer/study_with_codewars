@@ -1,5 +1,5 @@
 def single_digit(n):
-    pass
+    return bin(n)[2::].count('1')
 
 
 print(single_digit(5665), 5)

@@ -1,13 +1,13 @@
 def solve(arr):
     neg_lst, pos_lst = [], []
 
-    for i in arr:
+    for i in set(arr):
         if i < 0:
             neg_lst.append(i)
         else:
             pos_lst.append(i)
 
-    return sum(pos_lst), sum(neg_lst)
+    return sum(pos_lst) + sum(neg_lst)
 
 
 print(solve([1, -1, 2, -2, 3]), 3)

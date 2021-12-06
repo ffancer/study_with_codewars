@@ -1,5 +1,11 @@
 def digits(n):
-    return len(str(n))
+    cnt = 0
+
+    for i in str(n):
+        if i.isdigit():
+            cnt += 1
+
+    return cnt
 
 
 print(digits(5), 1)

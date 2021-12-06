@@ -1,14 +1,16 @@
+# best practice 1
+def solve(arr): return sum(set(arr))
+
+# best practice 2
 def solve(arr):
-    neg_lst, pos_lst = [], []
+    for a in arr:
+        if -a not in arr:
+            return a
 
-    for i in set(arr):
-        if i < 0:
-            neg_lst.append(i)
-        else:
-            pos_lst.append(i)
 
-    return sum(pos_lst) + sum(neg_lst)
-
+# best practice 3
+def solve(arr):
+    return [i for i in arr if -i not in arr][0]
 
 print(solve([1, -1, 2, -2, 3]), 3)
 print(solve([-3, 1, 2, 3, -1, -4, -2]), -4)

@@ -1,9 +1,9 @@
 def digits(n):
-    cnt = 0
+    cnt = 1
 
-    for i in str(n):
-        if i.isdigit():
-            cnt += 1
+    while n // 10 > 0:
+        n //= 10
+        cnt += 1
 
     return cnt
 

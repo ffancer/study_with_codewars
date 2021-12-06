@@ -1,5 +1,11 @@
 def find_deleted_number(arr, mixed_arr):
-    pass
+    del_digit = 0
+
+    for i in arr:
+        if i not in mixed_arr:
+            del_digit = i
+
+    return del_digit
 
 
 print(find_deleted_number([1, 2, 3, 4, 5], [3, 4, 1, 5]), 2, 'Deletion')

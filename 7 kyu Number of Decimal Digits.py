@@ -1,6 +1,5 @@
 def digits(n):
-    # your code here
-    pass
+    return len(str(n))
 
 
 print(digits(5), 1)

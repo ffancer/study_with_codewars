@@ -1,5 +1,5 @@
 def solve(arr):
-    pass
+    return sum(arr)
 
 
 print(solve([1, -1, 2, -2, 3]), 3)

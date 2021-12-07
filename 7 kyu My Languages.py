@@ -1,9 +1,11 @@
 def my_languages(results):
+    result = sorted(results.items(), key=lambda t: t[1], reverse=True)
     lst = []
-    for i,j in results.items():
-        if j >= 60:
-            # lst.append(results[i])
-            lst.append(i)
+
+    for i in result:
+        if i[1] >= 60:
+            lst.append(i[0])
+
     return lst
 
 

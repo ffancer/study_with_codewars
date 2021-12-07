@@ -1,10 +1,9 @@
 def my_languages(results):
     lst = []
-
-    for i, j in results.items():
+    for i,j in results.items():
         if j >= 60:
+            # lst.append(results[i])
             lst.append(i)
-
     return lst
 
 

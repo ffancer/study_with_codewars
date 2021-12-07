@@ -1,6 +1,6 @@
 def add(n):
     def add_temp(x):
-        return n + 3
+        return n + x
 
     return add_temp
 

@@ -1,10 +1,5 @@
-def multiply_all(arr, n):
-    lst = []
-
-    for i in arr:
-        lst.append(i * n)
-
-    return lst
+def multiply_all(lst):
+    return lambda n: [i * n for i in lst]
 
 
 print(multiply_all([1], 1))

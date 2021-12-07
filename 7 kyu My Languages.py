@@ -1,6 +1,11 @@
 def my_languages(results):
-    # your fantastic code here
-    return []
+    lst = []
+
+    for i, j in results.items():
+        if j >= 60:
+            lst.append(i)
+
+    return lst
 
 
 print(my_languages({"Java": 10, "Ruby": 80, "Python": 65}),

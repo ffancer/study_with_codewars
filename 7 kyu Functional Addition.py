@@ -1,5 +1,8 @@
 def add(n):
-    pass
+    def add_temp(x):
+        return n + 3
+
+    return add_temp
 
 
 add_one = add(1)

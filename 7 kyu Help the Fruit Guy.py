@@ -1,10 +1,5 @@
 def remove_rotten(bag_of_fruits):
-    lst = []
-
-    for i in bag_of_fruits:
-        lst.append(i.replace('rotten', '').lower())
-
-    return lst
+    return [i.replace('rotten', '').lower() for i in bag_of_fruits]
 
 
 print(remove_rotten(["rottenApple","rottenBanana","rottenApple","rottenPineapple","rottenKiwi"]), ["apple","banana","apple","pineapple","kiwi"])

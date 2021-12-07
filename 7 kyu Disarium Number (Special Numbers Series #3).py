@@ -1,5 +1,11 @@
 def disarium_number(number):
-    pass
+    num = str(number)
+    lst = []
+
+    for i in range(len(num)):
+        lst.append(int(num[i]) ** int(i+1))
+
+    return "Disarium !!" if sum(lst) == number else "Not !!"
 
 
 print(disarium_number(89), "Disarium !!")

@@ -1,7 +1,10 @@
-# left blank for unlimited creativity :)
-
 def multiply_all(arr, n):
-    pass
+    lst = []
+
+    for i in arr:
+        lst.append(i * n)
+
+    return lst
 
 
 print(multiply_all([1], 1))

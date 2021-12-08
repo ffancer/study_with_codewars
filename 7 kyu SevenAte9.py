@@ -1,7 +1,9 @@
 def seven_ate9(str_):
-    for i in range(len(str_)-2):
-        if str_[i] == '7' and str_[i+1] == '9' and str_[i+2] == '7':
-            str_.replace(str_[i+1], '')
+    cnt = 0
+
+    while cnt != len(str_):
+        str_ = str_.replace('797', '77')
+        cnt += 1
     return str_
 
 

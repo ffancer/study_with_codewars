@@ -1,5 +1,12 @@
+from math import factorial
+
+
 def strong_num(number):
-    pass
+    total = 0
+
+    for i in str(number):
+        total += factorial(int(i))
+    return "STRONG!!!!" if total == number else "Not Strong !!"
 
 
 print(strong_num(1), "STRONG!!!!")

@@ -1,5 +1,12 @@
 def capitalize(s, ind):
-    pass
+    s1 = ''
+    for i in ind:
+        if s[i].islower():
+            s1 += s[i].upper()
+        else:
+            s1 += s[i]
+    return s1
+
 
 
 print(capitalize("abcdef", [1, 2, 5]), 'aBCdeF')

@@ -1,5 +1,5 @@
 def capitalize(s, ind):
-    lst = [s]
+    lst = list(s)
     for i in ind:
         try:
             lst[i] = lst[i].upper()

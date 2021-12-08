@@ -1,11 +1,11 @@
 def capitalize(s, ind):
-    s1 = ''
+    lst = [s]
     for i in ind:
-        if s[i].islower():
-            s1 += s[i].upper()
-        else:
-            s1 += s[i]
-    return s1
+        try:
+            lst[i] = lst[i].upper()
+        except IndexError:
+            break
+    return ''.join(lst)
 
 
 

@@ -2,7 +2,7 @@
 # All Inclusive?
 
 def contain_all_rots(strng, arr):
-    return False if strng not in arr and arr.count(strng) != 1 else True
+    return all(strng[i:] + strng[:i] in arr for i in range(len(strng)))
 
 
 print(contain_all_rots("", []), True)

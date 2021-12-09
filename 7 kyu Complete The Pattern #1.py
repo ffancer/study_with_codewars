@@ -1,9 +1,5 @@
 def pattern(n):
-    s = ''
-    for i in range(1, n + 1):
-        s += i * f'{i}' + '\n'
-
-    return s[:-1]
+    return ''.join(i * f'{i}' + '\n' for i in range(1, n + 1))[:-1]
 
 
 print(pattern(1), "1")

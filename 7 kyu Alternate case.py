@@ -1,13 +1,5 @@
 def alternate_case(s):
-    answer = ''
-
-    for i in s:
-        if i.islower():
-            answer += i.capitalize()
-        else:
-            answer += i.lower()
-
-    return answer
+    return s.swapcase()
 
 
 print(alternate_case("ABC"), "abc")

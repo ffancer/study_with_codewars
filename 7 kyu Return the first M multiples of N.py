@@ -1,10 +1,5 @@
 def multiples(m, n):
-    lst = []
-
-    for i in range(1, m+1):
-        lst.append(i * n)
-
-    return lst
+    return [i * n for i in range(1, m+1)]
 
 
 print(multiples(3, 5), [5, 10, 15])

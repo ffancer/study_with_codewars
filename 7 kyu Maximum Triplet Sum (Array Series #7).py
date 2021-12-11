@@ -1,5 +1,5 @@
 def max_tri_sum(numbers):
-    pass
+    return sum(sorted(list(set(numbers)), reverse=True)[:3])
 
 
 print(max_tri_sum([3, 2, 6, 8, 2, 3]), 17)

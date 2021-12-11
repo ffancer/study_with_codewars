@@ -1,5 +1,5 @@
 def discover_original_price(discounted_price, sale_percentage):
-    pass
+    return round(discounted_price / (100 - sale_percentage) * 100, 2)
 
 
 print(discover_original_price(75, 25), 100)

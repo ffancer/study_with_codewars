@@ -24,7 +24,8 @@ dct = {
     'W': 'W',
     'X': 'X',
     'Y': 'Y',
-    'Z': '2'
+    'Z': '2',
+    ' ': ' '
 }
 
 
@@ -32,13 +33,10 @@ def to_leet_speak(str):
     s = ''
 
     for i in str:
-        if i in dct.keys() :
+        if i in dct.keys():
             s += dct[i]
-        elif i == ' ':
-            s += ' '
 
     return s
-
 
 
 print(to_leet_speak("LEET"), "1337")

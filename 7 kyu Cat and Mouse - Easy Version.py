@@ -1,5 +1,5 @@
 def cat_mouse(x):
-    pass
+    return "Escaped!" if x.count('.') > 3 else "Caught!"
 
 
 print(cat_mouse('C....m'), "Escaped!")

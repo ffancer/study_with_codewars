@@ -1,5 +1,6 @@
 def sort_bytes(number):
-    pass
+    a, b, c, d = sorted((number >> i * 8) & 0xff for i in range(4))
+    return a | b << 8 | c << 16 | d << 24
 
 print(sort_bytes(0), 0)
 print(sort_bytes(1), 16777216)

@@ -1,5 +1,12 @@
 def jumping_number(number):
-    pass
+    number = str(number)
+
+    for i in range(len(number)-1):
+        if abs(int(number[i]) - int(number[i+1])) == 1:
+            continue
+        return "Not!!"
+
+    return "Jumping!!"
 
 
 print(jumping_number(1), "Jumping!!")

@@ -32,8 +32,10 @@ def to_leet_speak(str):
     s = ''
 
     for i in str:
-        if i in dct.keys():
+        if i in dct.keys() :
             s += dct[i]
+        elif i == ' ':
+            s += ' '
 
     return s
 

@@ -29,7 +29,14 @@ dct = {
 
 
 def to_leet_speak(str):
-    pass
+    s = ''
+
+    for i in str:
+        if i in dct.keys():
+            s += dct[i]
+
+    return s
+
 
 
 print(to_leet_speak("LEET"), "1337")

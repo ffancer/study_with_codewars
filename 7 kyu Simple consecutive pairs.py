@@ -1,5 +1,14 @@
 def pairs(ar):
-    pass
+    i, j = 0, 1
+    cnt = 0
+
+    while j < len(ar):
+        if ar[i] - ar[j] == 1 or ar[j] - ar[i] == 1:
+            cnt += 1
+        i += 2
+        j += 2
+
+    return cnt
 
 
 print(pairs([1, 2, 5, 8, -4, -3, 7, 6, 5]), 3)

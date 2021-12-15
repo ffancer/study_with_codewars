@@ -1,5 +1,15 @@
 def solve(s):
-    pass
+    string_for_split = ''
+
+    for i in s:
+        if i.islower():
+            string_for_split += ' '
+        if i.isdigit():
+            string_for_split += i
+
+    lst = sorted(int(i) for i in string_for_split.split(' ') if i.isdigit())
+
+    return lst[-1]
 
 
 print(solve('gh12cdy695m1'), 695)

@@ -1,6 +1,6 @@
-def stringify(node):
-    pass
+def stringify(list):
+    return 'None' if list == None else str(list.data) + ' -> ' + stringify(list.next)
 
 
-print(stringify(None), 'None')
+
 

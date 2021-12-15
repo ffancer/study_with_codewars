@@ -1,5 +1,10 @@
 def max_product(lst, n_largest_elements):
-    return sorted(lst, reverse=True)[:n_largest_elements]
+    total = 1
+
+    for i in sorted(lst, reverse=True)[:n_largest_elements]:
+        total *= i
+
+    return total
 
 
 print(max_product([0] * 10, 5), 0)

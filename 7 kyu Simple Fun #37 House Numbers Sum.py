@@ -10,6 +10,7 @@ def house_numbers_sum(inp):
             total += i
         else:
             lst.append(total)
+            total = 0
 
     return max(lst)
 

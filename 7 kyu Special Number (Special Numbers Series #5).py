@@ -1,5 +1,9 @@
 def special_number(number):
-    pass
+    for i in str(number):
+        if i in ['0', '1', '2', '3', '4', '5']:
+            continue
+        return "NOT!!"
+    return "Special!!"
 
 
 print(special_number(2), "Special!!")

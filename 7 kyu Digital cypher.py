@@ -1,8 +1,13 @@
 def encode(message, key):
     lst = []
+    j = 0
+
+    key = [int(i) for i in str(key)]
 
     for i in message:
-        lst.append((ord(i)-96)% 26)
+        x = ord(i) + key[j]
+        lst.append(x - 96)
+        j = (j + 1) % len(key)
 
     return lst
 

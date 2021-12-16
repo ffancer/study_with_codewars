@@ -1,5 +1,8 @@
+from math import ceil
+
+
 def cooking_time(eggs):
-    pass
+    return 5 * ceil(eggs / 8)
 
 
 print(cooking_time(0), 0)

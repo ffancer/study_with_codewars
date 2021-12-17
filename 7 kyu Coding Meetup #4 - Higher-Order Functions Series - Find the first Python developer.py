@@ -1,6 +1,8 @@
 def get_first_python(users):
-    pass
-
+    for i in users:
+        if i["language"] == "Python":
+            return f'{i["first_name"]}, {i["country"]}'
+    return "There will be no Python developers"
 
 list1 = [
     {"first_name": "Mark", "last_name": "G.", "country": "Scotland", "continent": "Europe", "age": 22,

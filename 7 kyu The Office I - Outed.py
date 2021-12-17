@@ -1,5 +1,14 @@
 def outed(meet, boss):
-    pass
+    total = 0
+
+    for i, j in meet.items():
+        if boss == i:
+            total += j * 2
+        else:
+            total += j
+
+    return 'Get Out Now!' if total / len(meet) <= 5 else 'Nice Work Champ!'
+
 
 print(outed(
     {'tim': 0, 'jim': 2, 'randy': 0, 'sandy': 7, 'andy': 0, 'katie': 5, 'laura': 1, 'saajid': 2, 'alex': 3,

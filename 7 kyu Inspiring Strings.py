@@ -1,6 +1,5 @@
 def longest_word(string_of_words):
-    # Give me back the longest word!
-    pass
+    return sorted(string_of_words.split(), key=len)[-1]
 
 
 print(longest_word('a b c d e fgh'), "fgh")

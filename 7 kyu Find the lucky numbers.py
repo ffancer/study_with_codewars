@@ -1,12 +1,5 @@
 def filter_lucky(lst):
-    lst = [str(i) for i in lst]
-    arr = []
-
-    for i in lst:
-        if '7' in i:
-            arr.append(i)
-
-    return [int(i) for i in arr]
+    return [i for i in lst if '7' in str(i)]
 
 
 

@@ -1,13 +1,5 @@
 def remove_vowels(strng):
-    s = ''
-
-    for i in strng:
-        if i in ['a', 'e', 'i', 'o', 'u']:
-            continue
-        else:
-            s += i
-
-    return s
+    return [i for i in strng if i in 'aeiou']
 
 
 print(remove_vowels("drake"), "drk")

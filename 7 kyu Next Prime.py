@@ -1,9 +1,11 @@
 def next_prime(n):
-    answer = n
+    n += 1
 
-    if answer + 1 % 1 == 0 and answer + 1 % answer == 0:
-        return answer
-
+    for i in range(1, n-2):
+        if n % i == 0:
+            n += 1
+        if n % n == 0 and n % 1 == 0:
+            return n
 
 print(next_prime(0), 2)
 print(next_prime(2), 3)

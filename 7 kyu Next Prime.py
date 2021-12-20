@@ -1,11 +1,13 @@
+import math
+
+
 def next_prime(n):
     n += 1
-
-    for i in range(1, n-2):
-        if n % i == 0:
-            n += 1
-        if n % n == 0 and n % 1 == 0:
+    while True:
+        if n % 1 == 0 and n % n ==0:
             return n
+        else:
+            n += 1
 
 print(next_prime(0), 2)
 print(next_prime(2), 3)

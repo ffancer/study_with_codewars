@@ -1,6 +1,15 @@
 def calc(x):
-    # your code here
-    return n
+    total1, total2 = '', ''
+
+    for i in x:
+        total1 += str(ord(i))
+
+    total2 = total1.replace('7', '1')
+
+    total1_sum = sum(int(i) for i in total1)
+    total2_sum = sum(int(i) for i in total2)
+
+    return total1_sum - total2_sum
 
 
 print(calc('abcdef'), 6)

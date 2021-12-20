@@ -1,9 +1,5 @@
 def calc(x):
-    total1, total2 = '', ''
-
-    for i in x:
-        total1 += str(ord(i))
-
+    total1 = ''.join(str(ord(i)) for i in x)
     total2 = total1.replace('7', '1')
 
     total1_sum = sum(int(i) for i in total1)

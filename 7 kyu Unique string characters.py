@@ -1,11 +1,15 @@
 def solve(a, b):
-    c = a + b
+    s = ''
 
-    for i in c:
-        if c.count(i) >= 2:
-            c = c.replace(i, '')
+    for i in a:
+        if i not in b:
+            s += i
 
-    return c
+    for j in b:
+        if j not in a:
+            s += j
+
+    return s
 
 
 

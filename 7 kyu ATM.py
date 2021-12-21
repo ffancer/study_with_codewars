@@ -1,11 +1,11 @@
 def solve(n):
     cnt = 0
-
-    while n > 500:
-            n = n % 500
+    money = [500, 200, 100, 50, 20, 10]
+    for i in money:
+        while n >= i:
+            n -= i
             cnt += 1
-
-    return cnt, n
+    return cnt
 
 
 print(solve(770), 4, "Wrong result for 770")

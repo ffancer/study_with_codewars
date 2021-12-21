@@ -1,5 +1,5 @@
 def average(array):
-    pass
+    return round(sum(array) / len(array))
 
 
 print(average([5, 78, 52, 900, 1]), 207)

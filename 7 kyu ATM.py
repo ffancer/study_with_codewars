@@ -1,10 +1,15 @@
 def solve(n):
+    if n % 10:
+        return -1
+
     cnt = 0
     money = [500, 200, 100, 50, 20, 10]
+
     for i in money:
         while n >= i:
             n -= i
             cnt += 1
+
     return cnt
 
 

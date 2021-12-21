@@ -2,12 +2,7 @@ def spacify(string):
     if len(string) == 1 or string == '':
         return string
 
-    s = ''
-
-    for i in string:
-        s += i + ' '
-
-    return s[:-1]
+    return ' '.join(i for i in string)
 
 
 

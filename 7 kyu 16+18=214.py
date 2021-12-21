@@ -3,9 +3,9 @@ def add(num1, num2):
     answer = ''
 
     if len(num1) > len(num2):
-        num2 = num2.zfill(len(num1) - len(num2)+len(num2))
+        num2 = num2.zfill(len(num1))
     if len(num2) > len(num1):
-        num1 = num1.zfill(len(num2) - len(num1)+len(num1))
+        num1 = num1.zfill(len(num2))
 
     while len(num1) != 0:
         answer += str(int(num1[0]) + int(num2[0]))

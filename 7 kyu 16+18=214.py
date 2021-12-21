@@ -1,15 +1,12 @@
 def add(num1, num2):
-    answer = ''
+    num1, num2 = str(num1), str(num2)
 
-    last_digit1 = num1 % 10
-    last_digit2 = num2 % 10
+    if len(num1) > len(num2):
+        num2 = num2.zfill(len(num1) - len(num2)+len(num2))
+    if len(num2) > len(num1):
+        num1 = num1.zfill(len(num2) - len(num1)+len(num1))
 
-    while len(str(num1)) != len(str(num2)):
-        answer += str(last_digit1 + last_digit2)
-        last_digit1 = str(num1)[:-1] % 10
-        last_digit2 = str(num2)[:-1] % 10
-    return answer
-
+    return num1, num2
 
 print(add(2, 11), 13)
 print(add(0, 1), 1)

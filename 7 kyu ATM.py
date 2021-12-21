@@ -1,5 +1,11 @@
 def solve(n):
-    pass
+    cnt = 0
+
+    while n > 500:
+            n = n % 500
+            cnt += 1
+
+    return cnt, n
 
 
 print(solve(770), 4, "Wrong result for 770")

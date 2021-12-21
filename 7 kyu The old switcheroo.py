@@ -1,5 +1,18 @@
 def vowel_2_index(string):
-    pass
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    s = ''
+
+    for i in string:
+        if i in vowels:
+            s += str(string.find(i)+1)
+            string = string[1:]
+        else:
+            s += i
+            string = string[1:]
+
+    return s
+
+
 
 print(vowel_2_index('this is my string'), 'th3s 6s my str15ng')
 print(vowel_2_index('Codewars is the best site in the world'),

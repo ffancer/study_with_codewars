@@ -8,11 +8,11 @@ def add(num1, num2):
         num1 = num1.zfill(len(num2) - len(num1)+len(num1))
 
     while len(num1) != 0:
-        answer += str(int(num1[-1]) + int(num2[-1]))
-        num1 = num1[:-1]
-        num2 = num2[:-1]
+        answer += str(int(num1[0]) + int(num2[0]))
+        num1 = num1[1:]
+        num2 = num2[1:]
 
-    return answer
+    return int(answer)
 
 print(add(2, 11), 13)
 print(add(0, 1), 1)

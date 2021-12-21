@@ -1,8 +1,5 @@
 def spacify(string):
-    if len(string) == 1 or string == '':
-        return string
-
-    return ' '.join(i for i in string)
+    return ' '.join(string)
 
 
 

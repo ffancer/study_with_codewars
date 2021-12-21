@@ -1,12 +1,13 @@
 def solve(a, b):
-    s = ''
-    for i in a:
-        if i in b:
-            continue
-        else:
-            s += i
+    c = a + b
 
-    return s
+    for i in c:
+        if c.count(i) >= 2:
+            c = c.replace(i, '')
+
+    return c
+
+
 
 print(solve("xyab", "xzca"), "ybzc")
 print(solve("xyabb", "xzca"), "ybbzc")

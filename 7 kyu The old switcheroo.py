@@ -1,17 +1,14 @@
 def vowel_2_index(string):
-    vowels = ['a', 'e', 'i', 'o', 'u']
+    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
     s = ''
 
-    for i in string:
-        if i in vowels:
-            s += str(string.find(i)+1)
-            string = string[1:]
+    for i, j in enumerate(string, 1):
+        if j in vowels:
+            s += str(i)
         else:
-            s += i
-            string = string[1:]
+            s += j
 
     return s
-
 
 
 print(vowel_2_index('this is my string'), 'th3s 6s my str15ng')

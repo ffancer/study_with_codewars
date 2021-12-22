@@ -1,8 +1,11 @@
 def compare(s1,s2):
-    if s1 in [None, ''] or s2 in [None, '']:
-        return True
-    sum_of_s1 = sum(ord(i.upper()) for i in s1)
-    sum_of_s2 = sum(ord(i.upper()) for i in s2)
+    if s1 in [None, ''] or not s1.isalpha():
+        s1 = ''
+    elif s2 in [None, ''] or not s2.isalpha():
+        s2 = ''
+
+    sum_of_s1 = sum(ord(i) for i in s1.upper())
+    sum_of_s2 = sum(ord(i) for i in s2.upper())
     return sum_of_s1 == sum_of_s2
 
 

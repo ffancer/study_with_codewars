@@ -1,8 +1,8 @@
 def get_sum_of_digits(num):
-    sum = ''
+    sum = 0
     digits = str(num)
     for x in digits:
-        sum += x
+        sum += int(x)
     return sum
 
 

@@ -1,6 +1,5 @@
 def lost_sheep(friday,saturday,total):
-    #your awesome code here
-    return 0
+    return total - sum(friday + saturday)
 
 
 print(lost_sheep([1, 2], [3, 4], 15), 5)

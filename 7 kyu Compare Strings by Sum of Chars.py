@@ -1,5 +1,9 @@
 def compare(s1,s2):
-    pass
+    if s1 in [None, ''] or s2 in [None, '']:
+        return True
+    sum_of_s1 = sum(ord(i.upper()) for i in s1)
+    sum_of_s2 = sum(ord(i.upper()) for i in s2)
+    return sum_of_s1 == sum_of_s2
 
 
 print(compare("AD", "BC"), True, "\'AD\' vs \'BC\'")

@@ -1,5 +1,11 @@
-def last(s):
-    pass
+def last(x):
+    lst = x.split(' ')
+
+    def last_letter(lst):
+        return lst[-1]
+
+    lst.sort(key=last_letter)
+    return lst
 
 
 print(last("man i need a taxi up to ubud"), ["a", "need", "ubud", "i", "taxi", "man", "to", "up"])

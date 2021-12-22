@@ -1,6 +1,5 @@
 def greet(name):
-    # your code here
-    pass
+    return None if name == '' or name is None else f'hello {name}!'
 
 
 print(greet("Niks"), "hello Niks!", "didn't work for 'Niks'")

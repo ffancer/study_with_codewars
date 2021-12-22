@@ -1,6 +1,11 @@
 def hydrate(drink_string):
-    # your code here
-    pass
+    total = 0
+
+    for i in drink_string:
+        if i.isdigit():
+            total += int(i)
+
+    return f'{total} glass of water'
 
 
 print(hydrate("1 beer"), "1 glass of water")

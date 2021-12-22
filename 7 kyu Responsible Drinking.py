@@ -5,7 +5,7 @@ def hydrate(drink_string):
         if i.isdigit():
             total += int(i)
 
-    return f'{total} glass of water'
+    return f'{total} glasses of water' if total > 1 else f'{total} glass of water'
 
 
 print(hydrate("1 beer"), "1 glass of water")

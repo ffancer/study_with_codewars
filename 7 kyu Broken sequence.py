@@ -8,8 +8,8 @@ def find_missing_number(sequence):
 
     for i, j in zip(sorted(list(map(int, sequence.split()))), range(1, len(sequence) + 1)):
         if i != j:
-            return 1
-
+            return j
+    return 0
 
 print(find_missing_number("1 2 3 5"), 4, "It must work for missing middle terms")
 print(find_missing_number("1 5"), 2, "It must work for missing more than one element")

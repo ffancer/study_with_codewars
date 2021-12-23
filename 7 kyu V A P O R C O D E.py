@@ -2,12 +2,12 @@ def vaporcode(s):
     answer = ''
 
     for i in s:
-        if i.isalpha():
-            answer += i.upper() + '  '
+        if i == ' ':
+            answer += ' '
         else:
-            answer += i
+            answer += i.upper() + '  '
 
-    return answer
+    return answer[:-2]
 
 
 print(vaporcode("Lets go to the movies"), "L  E  T  S  G  O  T  O  T  H  E  M  O  V  I  E  S")

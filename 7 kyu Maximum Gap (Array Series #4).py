@@ -1,5 +1,6 @@
 def max_gap(numbers):
-    pass
+    answer = 0
+    return sorted(numbers, reverse=True)
 
 
 print(max_gap([13, 10, 2, 9, 5]), 4)

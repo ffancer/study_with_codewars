@@ -1,8 +1,13 @@
 def find_missing_number(sequence):
     if sequence == '':
         return 0
+
     for i in sequence.split():
         if not i.isdigit():
+            return 1
+
+    for i, j in zip(sorted(list(map(int, sequence.split()))), range(1, len(sequence) + 1)):
+        if i != j:
             return 1
 
 

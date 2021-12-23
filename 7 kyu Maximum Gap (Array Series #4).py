@@ -1,13 +1,13 @@
 def max_gap(numbers):
-    lst = []
+    lst, i = [], 0
     numbers = sorted(numbers, reverse=True)
-    i = 0
-    while True:
-        if i == len(numbers) - 1:
-            break
-        lst.append(numbers[i] - numbers[i+1])
+
+    while i < len(numbers)-1:
+        lst.append(numbers[i] - numbers[i + 1])
         i += 1
-    return lst
+
+    return max(lst)
+
 
 print(max_gap([13, 10, 2, 9, 5]), 4)
 print(max_gap([13, 3, 5]), 8)

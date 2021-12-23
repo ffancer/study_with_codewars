@@ -1,13 +1,5 @@
 def vaporcode(s):
-    answer = ''
-
-    for i in s:
-        if i == ' ':
-            answer += ' '
-        else:
-            answer += i.upper() + '  '
-
-    return answer[:-2]
+    return '  '.join(list(s))
 
 
 print(vaporcode("Lets go to the movies"), "L  E  T  S  G  O  T  O  T  H  E  M  O  V  I  E  S")

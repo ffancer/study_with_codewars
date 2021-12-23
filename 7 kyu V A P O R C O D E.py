@@ -1,6 +1,7 @@
 def vaporcode(s):
-    return type(s.split())
-    # return '  '.join(i.upper() for i in list(s))
+    s = s.split()
+    s = ''.join(s)
+    return s
 
 
 print(vaporcode("Lets go to the movies"), "L  E  T  S  G  O  T  O  T  H  E  M  O  V  I  E  S")

@@ -1,5 +1,6 @@
 def find_missing_number(sequence):
-    pass
+    if sequence == '':
+        return 0
 
 
 print(find_missing_number("1 2 3 5"), 4, "It must work for missing middle terms")

@@ -10,8 +10,12 @@ def zombie_shootout(zombies, distance, ammo):
         distance -= 0.5
         zombies -= 1
         shot_zomb += 1
-        if zombies == 0 or distance == 0 or ammo == 0:
-            break
+        # if zombies == 0 or distance == 0 or ammo == 0:
+        #     break
+        if zombies == 0:
+            return f'You shot all {shot_zomb} zombies.'
+        if distance == 0:
+            return f'You shot {shot_zomb} zombies before being eaten: overwhelmed.'
 
     return zombies, distance, ammo, shot_zomb
 

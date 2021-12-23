@@ -16,8 +16,9 @@ def zombie_shootout(zombies, distance, ammo):
             return f'You shot all {shot_zomb} zombies.'
         if distance == 0:
             return f'You shot {shot_zomb} zombies before being eaten: overwhelmed.'
-
-    return zombies, distance, ammo, shot_zomb
+        if ammo == 0:
+            return f"You shot {shot_zomb} zombies before being eaten: ran out of ammo."
+    # return zombies, distance, ammo, shot_zomb
 
 
 print(zombie_shootout(3, 10, 10), "You shot all 3 zombies.")

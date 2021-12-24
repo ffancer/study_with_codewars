@@ -1,12 +1,18 @@
 def ones_counter(inp):
     lst = []
     dig_sum = 0
-    for i in inp:
-        if i == 0:
-            lst.append(dig_sum)
-        dig_sum += i
-
+    i = 0
+    while i < len(inp):
+        dig_sum += inp[i]
+        if inp[i] == 0:
+            if dig_sum != 0:
+                lst.append(dig_sum)
+            dig_sum = 0
+        i += 1
+    if dig_sum != 0:
+        lst.append(dig_sum)
     return lst
+
 
 print(ones_counter([0]), [])
 print(ones_counter([1, 0, 1, 1]), [1, 2])

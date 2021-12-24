@@ -1,5 +1,6 @@
 def double_every_other(lst):
-    pass
+    for i in range(len(lst)):
+        print(lst[i], i)
 
 
 print(double_every_other([1, 2, 3, 4, 5]), [1, 4, 3, 8, 5])

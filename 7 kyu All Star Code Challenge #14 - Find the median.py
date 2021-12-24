@@ -1,4 +1,5 @@
 def median(array):
+    array = sorted(array)
     if len(array) % 2 != 0:
         return array[len(array)//2]
     else:

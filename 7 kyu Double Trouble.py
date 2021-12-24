@@ -1,13 +1,12 @@
 def trouble(x, t):
-    i, j = 0, 1
+    for i in range(len(x)-1):
+        # if x[i] + x[i+1] != t:
+        #     continue
+        if x[i] + x[i+1] == t:
+            del x[i+1]
 
-    while i < len(x)-1:
-        if x[i] + x[j] != t:
-            i += 1
-            j += 1
-        else:
-            x.remove(x[j])
     return x
+
 
 
 print(trouble([1, 3, 5, 6, 7, 4, 3], 7))  # [1, 3, 5, 6, 7, 4]

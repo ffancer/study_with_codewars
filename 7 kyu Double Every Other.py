@@ -1,8 +1,5 @@
 def double_every_other(lst):
-    for i in range(len(lst)):
-        if i % 2 != 0:
-            lst[i] = lst[i] * 2
-    return lst
+    return [lst[i] * 2 if i % 2 != 0 else lst[i] for i in range(len(lst))]
 
 
 print(double_every_other([1, 2, 3, 4, 5]), [1, 4, 3, 8, 5])

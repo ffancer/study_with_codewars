@@ -1,5 +1,6 @@
 def trouble(x, t):
-    pass
+    for i in range(len(x)-1):
+        print(x[i] + x[i+1])
 
 
 print(trouble([1, 3, 5, 6, 7, 4, 3], 7))

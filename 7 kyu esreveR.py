@@ -1,10 +1,8 @@
 def reverse(lst):
     empty_list = list()
-    i = len(lst) - 1
 
-    while i != -1:
-        empty_list.append(lst[i])
-        i -= 1
+    for i in lst:
+        empty_list.insert(0, i)
 
     return empty_list
 

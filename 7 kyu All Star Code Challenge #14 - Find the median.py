@@ -1,9 +1,6 @@
 def median(array):
     array = sorted(array)
-    if len(array) % 2 != 0:
-        return array[len(array)//2]
-    else:
-        return (array[len(array)//2] + array[(len(array)-1)//2]) /2
+    return array[len(array) // 2] if len(array) % 2 != 0 else (array[len(array) // 2] + array[(len(array) - 1) // 2]) / 2
 
 print(median([3, 2, 1]), 2)
 print(median([1]), 1)

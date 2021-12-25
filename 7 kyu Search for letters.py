@@ -1,6 +1,5 @@
 def change(st):
-    st = st.lower()
-    return ''.join(str(int(chr(i) in st)) for i in range(97, 123))
+    return ''.join(str(int(chr(i) in st.lower())) for i in range(97, 123))
 
 print(change("a **&  bZ"), "11000000000000000000000001")
 print(change('Abc e  $$  z'), "11101000000000000000000001")

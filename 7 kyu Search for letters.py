@@ -1,7 +1,10 @@
 def change(st):
     s = '00000000000000000000000000'
-    print(len(s))
 
+    for i in st:
+        if i.isalpha():
+            s.replace('0', str(ord(i)-96))
+    return s
 print(change("a **&  bZ"), "11000000000000000000000001")
 print(change('Abc e  $$  z'), "11101000000000000000000001")
 print(change("!!a$%&RgTT"), "10000010000000000101000000")

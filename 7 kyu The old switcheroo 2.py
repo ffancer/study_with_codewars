@@ -1,6 +1,12 @@
 def encode(string):
+    s = ''
     for i in string:
-        print(ord(i)-96, end='')
+        if i.isalpha():
+            s += ord(i)-96
+        else:
+            s += i
+
+    return s
 
 
 print(encode('abc'), '123')

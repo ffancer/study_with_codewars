@@ -1,5 +1,6 @@
 def encode(string):
-    pass
+    for i in string:
+        print(ord(i)-96, end='')
 
 
 print(encode('abc'), '123')

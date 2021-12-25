@@ -1,7 +1,6 @@
 def change(st):
-    # your code here
-    pass
-
+    s = '00000000000000000000000000'
+    print(len(s))
 
 print(change("a **&  bZ"), "11000000000000000000000001")
 print(change('Abc e  $$  z'), "11101000000000000000000001")

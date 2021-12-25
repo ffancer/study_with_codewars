@@ -3,7 +3,7 @@ def change(st):
 
     for i in st:
         if i.isalpha():
-            s.replace('0', str(ord(i)-96))
+            s.replace(str(st.find(ord(i)-96)), '1')
     return s
 print(change("a **&  bZ"), "11000000000000000000000001")
 print(change('Abc e  $$  z'), "11101000000000000000000001")

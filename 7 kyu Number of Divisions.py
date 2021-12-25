@@ -1,5 +1,8 @@
+from math import log
+
+
 def divisions(n, divisor):
-    pass
+    print(log(n, divisor))
 
 
 print(divisions(6, 2), 2)

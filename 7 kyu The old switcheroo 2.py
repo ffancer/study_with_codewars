@@ -1,8 +1,9 @@
 def encode(string):
     s = ''
-    for i in string:
+
+    for i in string.lower():
         if i.isalpha():
-            s += ord(i)-96
+            s += str(ord(i)-96)
         else:
             s += i
 

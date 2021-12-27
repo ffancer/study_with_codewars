@@ -1,5 +1,17 @@
 def solve(s):
-    pass
+    upper_cnt, lower_cnt, num_cnt, special_cnt = 0, 0, 0, 0
+
+    for i in s:
+        if i.isupper():
+            upper_cnt += 1
+        if i.islower():
+            lower_cnt += 1
+        if i.isdigit():
+            num_cnt += 1
+        else:
+            special_cnt += 1
+
+    return [upper_cnt, lower_cnt, num_cnt, special_cnt]
 
 
 print(solve("Codewars@codewars123.com"), [1, 18, 3, 2])

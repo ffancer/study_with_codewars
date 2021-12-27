@@ -4,9 +4,9 @@ def solve(s):
     for i in s:
         if i.isupper():
             upper_cnt += 1
-        if i.islower():
+        elif i.islower():
             lower_cnt += 1
-        if i.isdigit():
+        elif i.isdigit():
             num_cnt += 1
         else:
             special_cnt += 1

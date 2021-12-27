@@ -1,15 +1,8 @@
 def buy(x, arr):
     if len(arr) < 2 or sum(arr) < x:
         return None
-    i, j = 0,1
-
-    while i < len(arr):
-        if arr[i] + arr[j]==x:
-            return [i, j]
-        j += 1
-        if j == len(arr):
-            j = 0
-            i += 1
+    for i in range(len(arr)):
+        print(i, arr[i])
 
 
 

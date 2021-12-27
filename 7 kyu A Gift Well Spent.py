@@ -4,6 +4,10 @@ def buy(x, arr):
     while i < len(arr):
         if arr[i] + arr[j]==x:
             return [i, j]
+        j += 1
+        if j == len(arr):
+            j = 0
+            i += 1
 
 
 

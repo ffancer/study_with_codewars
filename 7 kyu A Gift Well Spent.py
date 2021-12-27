@@ -2,7 +2,9 @@ def buy(x, arr):
     if len(arr) < 2 or sum(arr) < x:
         return None
     for i in range(len(arr)):
-        print(i, arr[i])
+        # print(i, arr[i])
+        for j in range(len(arr)):
+            print(j, arr[j])
 
 
 

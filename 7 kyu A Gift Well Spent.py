@@ -1,5 +1,16 @@
 def buy(x, arr):
-    return None
+    i = 0
+    j = 1
+    lst = []
+    while i < len(arr):
+        if arr[i] + arr[j] == x:
+            lst.append(i)
+            lst.append(j)
+        else:
+            j += 1
+        if j == len(arr)-1:
+            i += 1
+    return lst
 
 
 print(buy(2, [1, 1]), [0, 1])

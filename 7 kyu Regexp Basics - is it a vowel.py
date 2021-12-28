@@ -2,8 +2,11 @@
 # Regexp Basics - is it a vowel?
 
 def is_vowel(s):
-    # your code here
-    pass
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    for i in s.lower():
+        if i not in vowels:
+            return False
+    return True
 
 
 print(is_vowel(""), False)

@@ -1,6 +1,7 @@
 def max_redigit(num):
-    if 99 < num < 1000:
+    if not 99 < num < 1000:
         return None
+
     lst = [i for i in str(num) if i.isdigit()]
     return int(''.join(sorted(lst, reverse=True)))
 

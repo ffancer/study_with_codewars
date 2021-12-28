@@ -2,11 +2,15 @@
 # Regexp Basics - is it a vowel?
 
 def is_vowel(s):
+    if s == '' or len(s) != 1:
+        return False
+
     vowels = ['a', 'e', 'i', 'o', 'u']
+
     for i in s.lower():
-        if i not in vowels:
-            return False
-    return True
+        if i in vowels:
+            return True
+    return False
 
 
 print(is_vowel(""), False)

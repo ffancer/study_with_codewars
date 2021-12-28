@@ -2,10 +2,12 @@ def minimum_steps(numbers, value):
     numbers = sorted(numbers)
     i = 1
     lst = numbers[:i]
+
     while sum(lst) < value:
         i += 1
         lst = numbers[:i]
-    return i
+
+    return i - 1
 
 
 print(minimum_steps([4, 6, 3], 7), 1)

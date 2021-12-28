@@ -1,5 +1,8 @@
 def minimum_steps(numbers, value):
-    pass
+    n = 0
+
+    # while n < value:
+    return sorted(numbers)[:2]
 
 
 print(minimum_steps([4, 6, 3], 7), 1)

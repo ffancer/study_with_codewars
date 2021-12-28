@@ -1,5 +1,6 @@
 def flip_bit(value, bit_index):
-    #Go
+    n = bin(value)[2:]
+    return n
 
 
 print(flip_bit(0, 16), 1 << 15)

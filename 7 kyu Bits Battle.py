@@ -6,7 +6,7 @@ def bits_battle(numbers):
             s_odd += bin(i)[2:]
         else:
             s_even += bin(i)[2:]
-    return s_odd, s_even
+    return s_odd.count('1'), s_even.count('0')
 
 
 print(bits_battle([5, 3, 14]), 'odds win')

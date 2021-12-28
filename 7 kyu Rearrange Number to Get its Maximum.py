@@ -1,7 +1,6 @@
 def max_redigit(num):
-    # your code here
-    pass
-
+    lst = [int(i) for i in str(num)]
+    print(lst)
 
 print(max_redigit(123), 321)
 print(max_redigit(555), 555)

@@ -4,7 +4,7 @@ def modified_sum(a, n):
     for i in a:
         sum_of_pow += pow(i, n)
 
-    return sum_of_pow
+    return sum_of_pow - sum(a)
 
 
 print(modified_sum([1, 2, 3], 3), 30)

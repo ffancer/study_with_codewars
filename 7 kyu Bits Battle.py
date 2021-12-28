@@ -1,15 +1,12 @@
 def bits_battle(numbers):
-    lst_odd, lst_even = [], []
+    s_odd, s_even = '', ''
 
     for i in numbers:
         if i % 2 != 0:
-            lst_odd.append(i)
-            lst_odd.append(bin(i)[2:])
+            s_odd += bin(i)[2:]
         else:
-            lst_even.append(i)
-            lst_even.append(bin(i)[2:])
-
-    return lst_odd, lst_even
+            s_even += bin(i)[2:]
+    return s_odd, s_even
 
 
 print(bits_battle([5, 3, 14]), 'odds win')

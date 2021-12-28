@@ -1,5 +1,8 @@
 def meeting(rooms):
-    pass
+    for i,j in enumerate(rooms):
+        if j == 'O':
+            return i
+    return 'None available!'
 
 
 print(meeting(['X', 'O', 'X']), 1)

@@ -1,7 +1,8 @@
 def minimum_steps(numbers, value):
     numbers = sorted(numbers)
     i = 1
-
+    lst = numbers[:i]
+    print(lst)
 
 
 print(minimum_steps([4, 6, 3], 7), 1)

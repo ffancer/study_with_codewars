@@ -1,8 +1,9 @@
 def minimum_steps(numbers, value):
     n = 0
-
+    lst = sorted(numbers)
     # while n < value:
-    return sorted(numbers)[:2]
+    #     n = sum(lst[2:])
+    return sum(lst[:2])
 
 
 print(minimum_steps([4, 6, 3], 7), 1)

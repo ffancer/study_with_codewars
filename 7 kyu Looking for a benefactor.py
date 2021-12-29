@@ -1,5 +1,5 @@
 def new_avg(arr, newavg):
-    pass
+    return (len(arr) + 1) * newavg
 
 
 print(new_avg([14, 30, 5, 7, 9, 11, 16], 90), 628)

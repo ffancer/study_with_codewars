@@ -14,7 +14,7 @@ class Block:
         return self.height
 
     def get_volume(self):
-        pass
+        return self.width * self.length * self.height
 
     def get_surface_area(self):
         pass

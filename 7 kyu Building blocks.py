@@ -17,7 +17,7 @@ class Block:
         return self.width * self.length * self.height
 
     def get_surface_area(self):
-        pass
+        return 2 * self.length * self.width + 2 * self.length * self.height + 2 * self.height * self.width
 
 
 block1 = Block([2, 2, 2])

@@ -1,9 +1,10 @@
 def get_strings(city):
     s = ''
 
-    for i in city:
+    for i in city.lower():
         if i.isalpha():
-            s += f'{i}:{"*" * city.count(i)}'
+            if i not in s:
+                s += f'{i}:{"*" * city.count(i)},'
 
     return s
 print(get_strings("Chicago"), "c:**,h:*,i:*,a:*,g:*,o:*")

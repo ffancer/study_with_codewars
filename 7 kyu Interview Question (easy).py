@@ -1,5 +1,9 @@
 def get_strings(city):
-    pass
+    s = ''
+
+    for i in city:
+        if i.isalpha():
+            s +=
 
 
 print(get_strings("Chicago"), "c:**,h:*,i:*,a:*,g:*,o:*")

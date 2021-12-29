@@ -3,7 +3,7 @@
 
 
 def circle_of_numbers(n, fst):
-    pass
+    return fst + n // 2
 
 
 print(circle_of_numbers(10, 2), 7)

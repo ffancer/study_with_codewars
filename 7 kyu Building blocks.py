@@ -5,13 +5,13 @@ class Block:
         self.height = lst[2]
 
     def get_width(self):
-        return Block[0]
+        return self.width
 
     def get_length(self):
-        return Block[1]
+        return self.length
 
     def get_height(self):
-        return Block[2]
+        return self.height
 
     def get_volume(self):
         pass

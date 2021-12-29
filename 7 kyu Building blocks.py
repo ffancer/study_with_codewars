@@ -1,12 +1,17 @@
 class Block:
+    def __init__(self, lst):
+        self.width = lst[0]
+        self.length = lst[1]
+        self.height = lst[2]
+
     def get_width(self):
-        pass
+        return Block[0]
 
     def get_length(self):
-        pass
+        return Block[1]
 
     def get_height(self):
-        pass
+        return Block[2]
 
     def get_volume(self):
         pass

@@ -1,6 +1,5 @@
 def get_min_max(seq):
-    # your code here
-    pass
+    return min(seq), max(seq)
 
 
 print(get_min_max([1]), (1, 1))

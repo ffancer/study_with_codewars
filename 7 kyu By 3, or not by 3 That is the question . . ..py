@@ -8,7 +8,8 @@ def divisible_by_three(st):
     for i in st:
         total += int(i)
 
-    return total % 3 == 0
+    return str(total / 3)[2] == '0'
+
 
 
 print(divisible_by_three('123'), True,

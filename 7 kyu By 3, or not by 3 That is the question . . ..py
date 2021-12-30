@@ -3,8 +3,12 @@
 
 
 def divisible_by_three(st):
-    # your code here
-    pass
+    total = 0
+
+    for i in st:
+        total += int(i)
+
+    return total % 3 == 0
 
 
 print(divisible_by_three('123'), True,

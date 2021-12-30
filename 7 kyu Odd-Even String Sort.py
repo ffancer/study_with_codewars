@@ -1,6 +1,11 @@
 def sort_my_string(S):
-    # Your code here =)
-    return ''
+    even_lst, odd_lst = [], []
+    for i,j in enumerate(S):
+        if i % 2 == 0:
+            even_lst.append(j)
+        else:
+            odd_lst.append(j)
+    return even_lst, odd_lst
 
 
 print(sort_my_string("CodeWars"), "CdWr oeas")

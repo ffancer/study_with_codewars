@@ -5,14 +5,14 @@
 def sc(s):
     i, j = 0, 1
     time = 1
+
     while j < len(s):
-        time += 1
         if s[i] != s[j]:
             time += 5
-        else:
-            time += 2
+        time += 2
         i += 1
         j += 1
+
     return time
 
 

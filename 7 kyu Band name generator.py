@@ -1,5 +1,5 @@
 def band_name_generator(name):
-    pass
+    return f'The {name.title()}'
 
 
 print(band_name_generator("knife"), "The Knife")

@@ -3,7 +3,11 @@
 
 
 def divisible_by_three(st):
-    lst = [3, 6, 9,12,15,18,21]
+    lst = []
+
+    for i in range(0, 500, 3):
+        lst.append(i)
+
     total = 0
 
     for i in st:

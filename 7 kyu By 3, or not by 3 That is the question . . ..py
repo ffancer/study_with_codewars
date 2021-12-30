@@ -3,12 +3,13 @@
 
 
 def divisible_by_three(st):
+    lst = [3, 6, 9,12,15,18,21]
     total = 0
 
     for i in st:
         total += int(i)
 
-    return str(total / 3)[2] == '0'
+    return total in lst
 
 
 

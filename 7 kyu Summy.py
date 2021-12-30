@@ -1,11 +1,5 @@
 def summy(string_of_ints):
-    string_of_ints = string_of_ints.split()
-    total = 0
-
-    for i in string_of_ints:
-        total += int(i)
-
-    return total
+    return sum(int(i) for i in string_of_ints.split())
 
 
 print(summy("1 2 3"), 6)

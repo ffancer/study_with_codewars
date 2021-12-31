@@ -1,5 +1,14 @@
+import multiprocessing.pool
+
+
 def arithmetic_sequence_elements(a, r, n):
-    pass
+    lst = []
+
+    for i in range(a, n*r, r):
+        lst.append(i)
+
+    return lst
+
 
 
 print(arithmetic_sequence_elements(1, 2, 5), '1, 3, 5, 7, 9')

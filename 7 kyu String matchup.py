@@ -1,5 +1,13 @@
 def solve(a, b):
-    return [a.count(b[0]), a.count(b[1]), a.count(b[2])]
+    lst = []
+
+    for i, j in enumerate(a):
+        if j in b:
+            print(i, j)
+            lst.append(a.count(j))
+
+    return lst
+
 
 print(solve(['abc', 'abc', 'xyz', 'abcd', 'cde'], ['abc', 'cde', 'uap']), [2, 1, 0])
 print(solve(['abc', 'xyz', 'abc', 'xyz', 'cde'], ['abc', 'cde', 'xyz']), [2, 1, 2])

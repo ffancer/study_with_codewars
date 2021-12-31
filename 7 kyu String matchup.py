@@ -1,10 +1,5 @@
 def solve(a, b):
-    lst = []
-
-    for i in b:
-        lst.append(a.count(i))
-
-    return lst
+    return [a.count(i) for i in b]
 
 
 print(solve(['abc', 'abc', 'xyz', 'abcd', 'cde'], ['abc', 'cde', 'uap']), [2, 1, 0])

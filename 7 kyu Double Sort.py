@@ -7,7 +7,7 @@ def db_sort(arr):
         else:
             lst_letters.append(i)
 
-    return
+    return sorted(lst_nums) + sorted(lst_letters)
 
 
 print(db_sort([6, 2, 3, 4, 5]), [2, 3, 4, 5, 6])

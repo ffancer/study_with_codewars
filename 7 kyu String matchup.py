@@ -1,10 +1,8 @@
 def solve(a, b):
     lst = []
 
-    for i, j in enumerate(a):
-        if j in b:
-            print(i, j)
-            lst.append(a.count(j))
+    for i in b:
+        print(a.count(i))
 
     return lst
 

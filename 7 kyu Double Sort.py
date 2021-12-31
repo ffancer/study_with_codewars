@@ -1,5 +1,13 @@
 def db_sort(arr):
-    pass
+    lst_nums, lst_letters = [], []
+
+    for i in arr:
+        if type(i) == int:
+            lst_nums.append(i)
+        else:
+            lst_letters.append(i)
+
+    return
 
 
 print(db_sort([6, 2, 3, 4, 5]), [2, 3, 4, 5, 6])

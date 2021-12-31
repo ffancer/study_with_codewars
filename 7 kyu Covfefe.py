@@ -1,5 +1,5 @@
 def covfefe(s):
-    pass
+    return s.replace('coverage', 'covfefe')
 
 
 print(covfefe("coverage"), "covfefe")

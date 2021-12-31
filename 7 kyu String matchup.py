@@ -2,7 +2,7 @@ def solve(a, b):
     lst = []
 
     for i in b:
-        print(a.count(i))
+        lst.append(a.count(i))
 
     return lst
 

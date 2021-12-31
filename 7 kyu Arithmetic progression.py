@@ -1,15 +1,9 @@
 def arithmetic_sequence_elements(a, r, n):
-    try:
-        lst = []
+    lst = []
+    for i in range(n):
+        lst.append(a +(i*r))
 
-        for i in range(a, n*r, r):
-            lst.append(i)
-
-        return ''.join(str(lst))
-    except:
-        return str([1] * n)
-
-
+    return lst
 
 print(arithmetic_sequence_elements(1, 2, 5), '1, 3, 5, 7, 9')
 print(arithmetic_sequence_elements(1, 0, 5), '1, 1, 1, 1, 1')

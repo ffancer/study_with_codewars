@@ -1,13 +1,13 @@
-import multiprocessing.pool
-
-
 def arithmetic_sequence_elements(a, r, n):
-    lst = []
+    try:
+        lst = []
 
-    for i in range(a, n*r, r):
-        lst.append(i)
+        for i in range(a, n*r, r):
+            lst.append(i)
 
-    return lst
+        return ''.join(str(lst))
+    except:
+        return str([1] * n)
 
 
 

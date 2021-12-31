@@ -1,5 +1,7 @@
 def covfefe(s):
-    return s.replace('coverage', 'covfefe')
+    if 'coverage' in s:
+        return s.replace('coverage', 'covfefe')
+    return s + ' covfefe'
 
 
 print(covfefe("coverage"), "covfefe")

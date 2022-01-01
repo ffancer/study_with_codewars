@@ -1,5 +1,5 @@
 def evens_and_odds(n):
-    pass
+    return bin(n) if n % 2 ==0 else hex(n)
 
 
 print(evens_and_odds(2), '10')

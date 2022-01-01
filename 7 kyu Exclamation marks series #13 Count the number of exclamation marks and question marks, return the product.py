@@ -3,7 +3,7 @@
 
 
 def product(s):
-    pass
+    return s.count('!') * s.count('?')
 
 
 print(product(''), 0)

@@ -1,11 +1,5 @@
 def count_letters_and_digits(s):
-    cnt_letters = 0
-
-    for i in s:
-        if i.isalpha() or i.isdigit():
-            cnt_letters += 1
-
-    return cnt_letters
+    return sum(1 for i in s if i.isalpha() or i.isdigit())
 
 
 print(count_letters_and_digits('n!!ice!!123'), 7)

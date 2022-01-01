@@ -1,5 +1,5 @@
 def area_largest_square(r):
-    pass
+    return r**2*2
 
 
 print(area_largest_square(5), 50)

@@ -3,8 +3,15 @@
 
 
 def even_or_odd(s):
-    # your code here
-    return ''
+    total_even, total_odd = 0,0
+
+    for i in s:
+        if int(i) % 2 == 0:
+            total_even += int(i)
+        else:
+            total_odd += int(i)
+
+    return total_even, total_odd
 
 
 print(even_or_odd('12'), 'Even is greater than Odd')

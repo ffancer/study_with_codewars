@@ -1,7 +1,6 @@
 def spoonerize(words):
-    # ...aaaaand SPOONERIZE!
-    return ""
-
+    a, b = words.split()[0][0], words.split()[-1][0]
+    return
 
 print(spoonerize("nit picking"), "pit nicking")
 print(spoonerize("wedding bells"), "bedding wells")

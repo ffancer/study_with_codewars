@@ -1,11 +1,16 @@
 def check_len(year):
-    return len(set(str(year))) != len(str(year))
+    return len(set(str(year))) == len(str(year))
 
 
 def next_happy_year(year):
     if check_len(year):
         year += 1
+
+    while not check_len(year):
+        year += 1
+
     return year
+
 
 print(next_happy_year(1001), 1023)
 print(next_happy_year(1123), 1203)

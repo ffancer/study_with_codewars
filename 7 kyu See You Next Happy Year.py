@@ -1,5 +1,7 @@
 def next_happy_year(year):
-    return set(str(year))
+    if len(set(str(year))) != len(str(year)):
+        year += 1
+    return year
 
 print(next_happy_year(1001), 1023)
 print(next_happy_year(1123), 1203)

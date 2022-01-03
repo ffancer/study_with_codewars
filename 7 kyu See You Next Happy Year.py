@@ -1,14 +1,8 @@
-def check_len(year):
-    return len(set(str(year))) == len(str(year))
-
-
 def next_happy_year(year):
-    if check_len(year):
-        year += 1
+    year += 1
 
-    while not check_len(year):
+    while len(set(str(year))) != 4:
         year += 1
-
     return year
 
 

@@ -1,5 +1,11 @@
 def next_happy_year(year):
-    pass
+    i, j = 0, 1
+    while j < len(str(year)):
+        if str(year)[i] == str(year)[j]:
+            j += 1
+        year += 1
+
+    return year
 
 print(next_happy_year(1001), 1023)
 print(next_happy_year(1123), 1203)

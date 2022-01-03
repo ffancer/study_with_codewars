@@ -3,7 +3,9 @@ def check_len(year):
 
 
 def next_happy_year(year):
-    return check_len(year)
+    if check_len(year):
+        year += 1
+    return year
 
 print(next_happy_year(1001), 1023)
 print(next_happy_year(1123), 1203)

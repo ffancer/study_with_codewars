@@ -1,6 +1,6 @@
 def find_screen_height(width, ratio):
     wdh, hgt = ratio.split(':')
-    return wdh, hgt
+    return width * int(ratio.split(':')[0]) / int(ratio.split(':')[1])
 
 
 print(find_screen_height(1024, "4:3"), "1024x768")

@@ -1,9 +1,12 @@
 def next_happy_year(year):
     i, j = 0, 1
-    while j < len(str(year)):
-        if str(year)[i] == str(year)[j]:
+    while j < len(str(year))-1:
+        if str(year)[i] != str(year)[j]:
             j += 1
-        year += 1
+            if j == len(str(year)):
+                i += 1
+        if str(year)[i] == str(year)[j]:
+            year += 1
 
     return year
 

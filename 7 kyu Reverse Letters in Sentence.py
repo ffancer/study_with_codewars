@@ -1,10 +1,5 @@
 def reverser(sentence):
-    lst = []
-
-    for i in sentence.split(' '):
-        lst.append(i[::-1])
-
-    return ' '.join(lst)
+    return ' '.join(i[::-1] for i in sentence.split(' '))
 
 print(reverser("Hi mom"), "iH mom")
 print(reverser("friendzone"), "enozdneirf")

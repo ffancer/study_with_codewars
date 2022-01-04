@@ -1,9 +1,12 @@
 def flatten(lst):
     ans = []
+
     for i in lst:
         if type(i) == list:
             for j in i:
                 ans.append(j)
+        else:
+            ans.append(i)
 
     return ans
 

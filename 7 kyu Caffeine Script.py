@@ -1,5 +1,13 @@
 def caffeine_buzz(n):
-    pass
+    if n % 3 == 0 and n % 4 == 0 and n % 2 == 0:
+        return 'CoffeeScript'
+    if n % 3 == 0 and n % 2 == 0:
+        return 'JavaScript'
+    if n % 3 == 0:
+        return 'Java'
+    if n % 3 == 0 and n % 4 == 0:
+        return 'Coffee'
+    return "mocha_missing!"
 
 
 print(caffeine_buzz(1), "mocha_missing!")

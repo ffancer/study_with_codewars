@@ -1,5 +1,7 @@
 def circle_area(r):
-    pass
+    if type(r) != int or r <= 0:
+        return "Incorrect radius"
+
 
 
 print(circle_area(2), 12.57, "Incorrect radius")

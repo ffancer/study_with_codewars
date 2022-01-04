@@ -3,7 +3,7 @@ from math import pi
 
 def circle_area(r):
     if type(r) != int or r <= 0:
-        return "Incorrect radius"
+        return False
     return round(r ** 2 * pi, 2)
 
 

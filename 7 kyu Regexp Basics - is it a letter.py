@@ -3,8 +3,7 @@
 
 
 def is_letter(s):
-    # your code here
-    return True or False
+    return ord('a')
 
 
 print(is_letter(""), False)

@@ -1,13 +1,14 @@
 def flatten(lst):
     ans = []
-
     for i in lst:
-        ans.append(i)
+        if type(i) == list:
+            for j in i:
+                ans.append(j)
 
     return ans
 
 
-print(flatten([]), [], "[]")
+# print(flatten([]), [], "[]")
 print(flatten([1, 2, 3]), [1, 2, 3], "[1,2,3]")
 print(flatten([[1, 2, 3], ["a", "b", "c"], [1, 2, 3]]), [1, 2, 3, "a", "b", "c", 1, 2, 3],
       '[[1,2,3],["a","b","c"],[1,2,3]]')

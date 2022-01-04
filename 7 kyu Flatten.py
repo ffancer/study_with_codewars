@@ -1,5 +1,10 @@
 def flatten(lst):
-    pass
+    ans = []
+
+    for i in lst:
+        ans.append(i)
+
+    return ans
 
 
 print(flatten([]), [], "[]")

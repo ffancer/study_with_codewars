@@ -2,9 +2,7 @@ from math import factorial as fctrl
 
 
 def factorial(n):
-    if n in [0, 1]:
-        return 1
-    return fctrl(n) if n > 1 else None
+    return fctrl(n) if n >= 0 else None
 
 
 print(factorial(0), 1, 'Your math may be incorrect')

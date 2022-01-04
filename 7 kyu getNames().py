@@ -1,5 +1,5 @@
 def itemgetter(item):
-    item['name']
+    return item['name']
 
 
 def get_names(data):
@@ -12,5 +12,4 @@ data = [
     {'name': 'Kate', 'age': 23}
 ]
 
-print("should work correctly")(
-    lambda: print(get_names(data), ['Joe', 'Bill', 'Kate']))
+print(get_names(data))

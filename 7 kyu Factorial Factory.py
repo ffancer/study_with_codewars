@@ -1,6 +1,8 @@
-# This function should return n!
+from math import factorial as fctrl
+
+
 def factorial(n):
-    pass
+    return fctrl(n)
 
 
 print(factorial(2), 2, 'Your math may be incorrect')

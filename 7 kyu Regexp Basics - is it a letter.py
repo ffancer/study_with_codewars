@@ -3,7 +3,7 @@
 
 
 def is_letter(s):
-    return ord('a')
+    return len(s) == 1 and s.isalpha()
 
 
 print(is_letter(""), False)

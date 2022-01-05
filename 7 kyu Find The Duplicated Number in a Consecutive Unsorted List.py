@@ -1,5 +1,12 @@
 def find_dup(arr):
-    return len(arr), len(set(arr))
+    lst = []
+    duplicate = ''
+    for i in arr:
+        if i not in lst:
+            lst.append(i)
+        else:
+            duplicate += str(i)
+    return len(arr), len(set(arr)), lst, int(duplicate)
     # if len(arr) == len(set(arr)):
     #     return 'x'
 

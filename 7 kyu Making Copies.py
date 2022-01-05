@@ -1,7 +1,5 @@
 def copy_list(l):
-    t = l
-    t_copy = l.copy()
-    return t_copy
+    return l.copy()
 
 
 t = [1, 2, 3, 4]

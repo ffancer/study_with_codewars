@@ -1,17 +1,17 @@
 def head(lst):
-    pass
+    return lst[0]
 
 
 def tail(lst):
-    pass
+    return lst[1:]
 
 
 def init(lst):
-    pass
+    return lst[:-1]
 
 
 def last(lst):
-    pass
+    return lst[-1]
 
 
 print(head([5, 1]), 5)

@@ -1,6 +1,6 @@
-def last(*x):
-    return type(x)
-
+def last(*args):
+    lst = args[len(args)-1]
+    return lst
 
 print(last([1, 2, 3, 4, 5]), 5)
 print(last("abcde"), "e")

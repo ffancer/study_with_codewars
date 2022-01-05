@@ -1,4 +1,12 @@
-# TODO: solve the barking problem!
+class Dog:
+    def __init__(self, name, breed, sex, age):
+        self.name = name
+        self.breed = breed
+        self.sex = sex
+        self.age = age
+
+
+
 
 
 apollo = Dog('Apollo', 'Dobermann', 'male', '4')

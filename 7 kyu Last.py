@@ -1,6 +1,8 @@
 def last(*args):
-    lst = args[len(args)-1]
-    return lst
+    try:
+        return args[-1][-1]
+    except:
+        return args[-1]
 
 print(last([1, 2, 3, 4, 5]), 5)
 print(last("abcde"), "e")

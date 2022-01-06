@@ -1,6 +1,5 @@
 def search_names(logins):
-    for i in logins:
-        print(i)
+    return filter('_', logins)
 
 
 a = [["foo", "foo@foo.com"], ["bar_", "bar@bar.com"]]

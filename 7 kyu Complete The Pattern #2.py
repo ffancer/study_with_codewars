@@ -1,5 +1,12 @@
 def pattern(n):
-    pass
+    num, ans = '', ''
+
+    while n > 0:
+        num += str(n)
+        ans = num + (ans + '\n')
+        n -= 1
+
+    return ans
 
 
 print(pattern(1), "1")

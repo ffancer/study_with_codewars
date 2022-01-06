@@ -1,16 +1,13 @@
-def capitals(word):
-    # first:
-    # def capitals(word):
-    #     lst = []
-    #
-    #     for i in range(len(word)):
-    #         if word[i].istitle():
-    #             lst.append(i)
-    #
-    #     return lst
-
-    # second:
-    return [i for i in range(len(word)) if word[i].istitle()]
+def capital(capitals):
+    # your code here
+    pass
 
 
-print(capitals('CodEWaRs'))
+state_capitals = [{'state': 'Maine', 'capital': 'Augusta'}]
+print(capital(state_capitals), ["The capital of Maine is Augusta"])
+
+country_capitals = [{'country': 'Spain', 'capital': 'Madrid'}]
+print(capital(country_capitals), ["The capital of Spain is Madrid"])
+
+mixed_capitals = [{"state": 'Maine', 'capital': 'Augusta'}, {'country': 'Spain', "capital": "Madrid"}]
+print(capital(mixed_capitals), ["The capital of Maine is Augusta", "The capital of Spain is Madrid"])

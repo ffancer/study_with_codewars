@@ -1,9 +1,5 @@
 def pattern(n):
-    s = []
-    for i in range(1, n+1):
-        for j in range(i, n + 1):
-            s = ''.join(str(j))
-    return '\n'.join(s)
+    return (str(i) * i for i in range(1, n + 1))
 
 
 

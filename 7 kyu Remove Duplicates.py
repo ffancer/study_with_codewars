@@ -1,5 +1,11 @@
 def unique(integers):
-    pass
+    lst = []
+
+    for i in integers:
+        if i not in lst:
+            lst.append(i)
+
+    return lst
 
 
 print(unique([]), [])

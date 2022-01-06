@@ -1,10 +1,5 @@
 def sum_args(*args):
-    total = 0
-
-    for i in args:
-        total += i
-
-    return total
+    return sum(args)
 
 
 print(sum_args(1), 1)

@@ -2,7 +2,12 @@ def capital(capitals):
     lst = []
 
     for i in capitals:
-        return i['capital']
+        try:
+            lst.append(f"The capital of {i['state']} is {i['capital']}")
+        except KeyError:
+            lst.append(f"The capital of {i['country']} is {i['capital']}")
+
+    return lst
 
 
 state_capitals = [{'state': 'Maine', 'capital': 'Augusta'}]

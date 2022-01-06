@@ -1,12 +1,10 @@
 def pattern(n):
-    num, ans = '', ''
+    s = []
+    for i in range(1, n+1):
+        for j in range(i, n + 1):
+            s = ''.join(str(j))
+    return '\n'.join(s)
 
-    while n > 0:
-        num += str(n)
-        ans = num + (ans + '\n')
-        n -= 1
-
-    return ans
 
 
 print(pattern(1), "1")

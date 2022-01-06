@@ -1,5 +1,5 @@
-def nthterm(first, n, c):
-    return first + c * n
+def nthterm(*args):
+    return args[0] + args[1] * args[2]
 
 
 print(nthterm(1, 2, 3), 7)

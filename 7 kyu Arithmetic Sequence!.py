@@ -1,5 +1,5 @@
 def nthterm(first, n, c):
-    pass
+    return first + c * n
 
 
 print(nthterm(1, 2, 3), 7)

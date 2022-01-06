@@ -1,6 +1,9 @@
 class Calculator:
     @staticmethod
     def average(*args):
-        return sum(args) / len(args)
+        try:
+            return sum(args) / len(args)
+        except:
+            return 0
 
 

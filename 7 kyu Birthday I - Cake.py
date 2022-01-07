@@ -1,5 +1,6 @@
 def cake(candles, debris):
-    pass
+    for i in debris:
+        print(ord(i))
 
 
 print(cake(900, 'abcdef'), 'That was close!')

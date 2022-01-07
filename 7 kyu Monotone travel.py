@@ -1,7 +1,5 @@
 def is_monotone(heights):
-    return all(i <= j for i,j in zip(heights, heights[1:]))
-
-
+    return sorted(heights) == heights
 
 
 print(is_monotone(list(range(1, 11))), 'Should work on increasing lists')

@@ -1,9 +1,10 @@
 def cake(candles, debris):
     total = 0
+
     for i in debris:
         total += ord(i)-96
 
-    return total
+    return 'Fire!' if candles * 0.7 < total else 'That was close!'
 
 
 print(cake(900, 'abcdef'), 'That was close!')

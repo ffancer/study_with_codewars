@@ -1,6 +1,9 @@
 def cake(candles, debris):
+    total = 0
     for i in debris:
-        print(ord(i))
+        total += ord(i)-96
+
+    return total
 
 
 print(cake(900, 'abcdef'), 'That was close!')

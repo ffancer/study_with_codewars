@@ -1,7 +1,5 @@
 def is_monotone(heights):
-
-    for i,j in zip(heights, heights[1:]):
-        return i <= j
+    return all(i <= j for i,j in zip(heights, heights[1:]))
 
 
 

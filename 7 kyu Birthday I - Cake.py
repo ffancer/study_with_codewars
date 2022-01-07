@@ -3,9 +3,14 @@ def cake(candles, debris):
 
     for i,j in enumerate(debris):
         # total += ord(i)-96
-        print(i, j)
+        # print(i, j)
+        if i % 2 == 0:
+            total += ord(j)
+        else:
+            total += ord(j)-96
 
-    # return 'Fire!' if candles * 0.7 < total else 'That was close!'
+
+    return 'Fire!' if candles * 0.7 < total else 'That was close!'
     # return total
 
 

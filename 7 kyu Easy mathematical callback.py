@@ -1,10 +1,5 @@
 def process_array(arr, callback):
-    lst = []
-
-    for i in arr:
-        lst.append(callback(i))
-
-    return lst
+    return [callback(i) for i in arr]
 
 
 

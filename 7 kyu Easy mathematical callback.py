@@ -1,5 +1,7 @@
 def process_array(arr, callback):
-    pass
+    return map(arr, callback)
+
+
 
 
 my_array = [4, 8, 2, 7, 5]

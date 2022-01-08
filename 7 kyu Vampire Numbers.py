@@ -1,11 +1,9 @@
+from collections import Counter
+
+
 def vampire_test(x, y):
-    z = x * y
-    a = str(x) + str(y)
-    cnt = 0
-    for i in a:
-        if i in str(z):
-            cnt += 1
-    return cnt
+    return Counter(x), Counter(y)
+
 
 
 print(vampire_test(21, 6), "Basic: 21 * 6 = 126 should return True")

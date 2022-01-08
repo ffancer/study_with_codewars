@@ -1,5 +1,5 @@
 def largest(n, xs):
-    return sorted(xs)
+    return sorted(xs)[len(xs)-n:]
 
 
 print(largest(2, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]), [9, 10])

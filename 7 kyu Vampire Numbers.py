@@ -2,7 +2,7 @@ from collections import Counter
 
 
 def vampire_test(x, y):
-    return Counter(x), Counter(y)
+    return Counter(str(x) + str(y))
 
 
 

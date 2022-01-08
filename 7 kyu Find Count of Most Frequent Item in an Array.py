@@ -4,7 +4,7 @@ def most_frequent_item_count(collection):
     for i in collection:
         lst.append(collection.count(i))
 
-    return max(lst)
+    return 0 if len(lst) < 1 else max(lst)
 
 
 print(most_frequent_item_count([3, -1, -1]), 2, "didn't work for [3, -1, -1]")

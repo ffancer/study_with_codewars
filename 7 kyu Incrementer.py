@@ -2,11 +2,11 @@ def incrementer(nums):
     lst = []
 
     for i, j in enumerate(nums, 1):
-        print(i, j)
         if i + j > 9:
-            lst.append(str(i+j)[-1])
+            lst.append(int(str(i+j)[-1]))
         else:
             lst.append(i+j)
+
     return lst
 
 print(incrementer([]), [])

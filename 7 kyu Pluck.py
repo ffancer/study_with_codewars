@@ -1,10 +1,5 @@
 def pluck(objs, name):
-    lst = []
-
-    for i in objs:
-        lst.append(i.get(name))
-
-    return lst
+    return [i.get(name) for i in objs]
 
 
 objs = [{'a': 1, 'b': 2, 'c': 3}, {'a': 4, 'b': 5, 'c': 6}, {'a': 7, 'b': 8, 'c': 9}, {'a': 10, 'b': 11}]

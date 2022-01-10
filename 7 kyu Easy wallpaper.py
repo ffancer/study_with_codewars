@@ -1,6 +1,8 @@
 def wallpaper(l, w, h):
-    pass
+    numbers = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven",
+               "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"]
 
+    return numbers[10]
 
 print(wallpaper(6.3, 4.5, 3.29), "sixteen")
 print(wallpaper(7.8, 2.9, 3.29), "sixteen")

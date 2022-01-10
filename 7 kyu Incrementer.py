@@ -3,7 +3,11 @@ def incrementer(nums):
 
     for i, j in enumerate(nums, 1):
         print(i, j)
-
+        if i + j > 9:
+            lst.append(str(i+j)[-1])
+        else:
+            lst.append(i+j)
+    return lst
 
 print(incrementer([]), [])
 print(incrementer([1, 2, 3]), [2, 4, 6])

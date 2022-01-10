@@ -1,5 +1,13 @@
 def incrementer(nums):
-    pass
+    lst = []
+
+    for i in range(len(nums)):
+        if len(str(i+1 + nums[i])) > 1:
+            lst.append((i+1 + nums[i])[-1])
+        else:
+            lst.append(i+1 + nums[i])
+
+    return lst
 
 
 print(incrementer([]), [])

@@ -1,4 +1,5 @@
-# Create a function args_count, that returns count of passed arguments
+def args_count(*args):
+    return len(args)
 
 
 print(args_count(100), 1)

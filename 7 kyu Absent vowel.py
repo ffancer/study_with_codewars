@@ -2,7 +2,8 @@ def absent_vowel(x):
     dct = {'a': 0, 'e': 1, 'i': 2, 'o': 3, 'u': 4}
 
     for i, j in dct.items():
-        print(i, j)
+        if i not in x:
+            return j
 
 
 print(absent_vowel("John Doe hs seven red pples under his bsket"), 0)

@@ -5,7 +5,7 @@ def word_search(query, seq):
         if query in i.lower():
             lst.append(i)
 
-    return lst
+    return ['None'] if lst == [] else lst
 
 
 print(word_search("ab", ["za", "ab", "abc", "zab", "zbc"]), ["ab", "abc", "zab"])

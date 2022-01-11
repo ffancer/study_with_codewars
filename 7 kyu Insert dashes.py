@@ -1,5 +1,15 @@
 def insert_dash(num):
-    pass
+    num = str(num)
+    s = ''
+
+    for i in range(len(num)):
+        if num[i] % 2 != 0 and num[i+1] % 2 != 0:
+            s += '-'
+        else:
+            s += num[i]
+
+    return s
+
 
 
 print(insert_dash(454793), '4547-9-3')

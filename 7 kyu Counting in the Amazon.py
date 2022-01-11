@@ -1,7 +1,7 @@
 def count_arara(n):
-    # ...
-    pass
+    lst = ['anane', 'adak', 'adak anane', 'adak adak', 'adak adak anane', 'adak adak adak', 'adak adak adak anane', 'adak adak adak adak']
 
+    return lst[n-1]
 
 print(count_arara(1), "anane")
 print(count_arara(2), "adak")

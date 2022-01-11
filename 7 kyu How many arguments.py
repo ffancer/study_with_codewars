@@ -1,6 +1,5 @@
-def args_count(*args):
-    return len(args)
-
+def args_count(*args, **kwargs):
+    return len(args) + len(kwargs)
 
 print(args_count(100), 1)
 print(args_count(100, 2, 3), 3)

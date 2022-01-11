@@ -1,14 +1,19 @@
 def insert_dash(num):
     num = str(num)
     s = ''
+    i, j = 0, 1
 
-    for i in range(len(num)):
-        if num[i] % 2 != 0 and num[i+1] % 2 != 0:
-            s += '-'
+    while j < len(num):
+        if int(num[i]) % 2 != 0 and int(num[j]) % 2 != 0:
+            s += num[j] + '-'
         else:
             s += num[i]
+            # s += num[j]
+        i += 1
+        j += 1
 
     return s
+
 
 
 

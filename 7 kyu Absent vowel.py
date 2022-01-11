@@ -1,6 +1,5 @@
 def absent_vowel(x):
-    # your code here
-    pass
+    dct = {'a': 0, 'e': 1, 'i': 2, 'o': 3, 'u': 4}
 
 
 print(absent_vowel("John Doe hs seven red pples under his bsket"), 0)

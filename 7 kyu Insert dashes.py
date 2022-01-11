@@ -5,14 +5,12 @@ def insert_dash(num):
 
     while j < len(num):
         if int(num[i]) % 2 != 0 and int(num[j]) % 2 != 0:
-            s += num[j] + '-'
-        else:
-            s += num[i]
-            # s += num[j]
+            s += '-'
+        s += num[j]
         i += 1
         j += 1
 
-    return s
+    return num[0] + s
 
 
 

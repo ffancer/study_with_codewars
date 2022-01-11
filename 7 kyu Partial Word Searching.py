@@ -2,7 +2,7 @@ def word_search(query, seq):
     lst = []
 
     for i in seq:
-        if query in i.lower():
+        if query.lower() in i.lower():
             lst.append(i)
 
     return ['None'] if lst == [] else lst

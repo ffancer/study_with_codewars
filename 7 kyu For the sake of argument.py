@@ -1,8 +1,5 @@
 def numbers(*args):
-    for i in args:
-        if type(i) not in [int, float]:
-            return False
-    return True
+    return all(type(i) in [int, float] for i in args)
 
 
 print(numbers(1, 2, 3, 4), True)

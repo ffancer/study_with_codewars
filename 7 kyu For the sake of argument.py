@@ -1,5 +1,5 @@
 def numbers(*args):
-    return all(args) == type(int)
+    return all(type(i) == int for i in args)
 
 
 print(numbers(1, 2, 3, 4), True)

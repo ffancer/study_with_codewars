@@ -1,7 +1,8 @@
-# write your numbers functions here
+def numbers(*args):
+    return all(args) == type(int)
 
 
-((1, 2, 3, 4), True),
-(("a", 2, 4, 5), False),
-((None, 2, 3), False),
-((1, 2, 10, 50), True)
+print(numbers(1, 2, 3, 4), True)
+print(numbers("a", 2, 4, 5), False)
+print(numbers(None, 2, 3), False)
+print(numbers(1, 2, 10, 50), True)

@@ -6,10 +6,11 @@ class LinkedList:
 
 def list_to_array(node):
     lst = []
+    temp = node
 
-    while node:
-        lst.append(node.value)
-        node = node.next
+    while temp:
+        lst.append(temp.value)
+        temp = temp.next
 
     return lst
 

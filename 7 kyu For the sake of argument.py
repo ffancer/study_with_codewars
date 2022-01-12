@@ -1,5 +1,8 @@
 def numbers(*args):
-    return all(type(i) == int for i in args) or all(type(i) == float for i in args)
+    for i in args:
+        if type(i) not in [int, float]:
+            return False
+    return True
 
 
 print(numbers(1, 2, 3, 4), True)

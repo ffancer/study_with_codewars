@@ -4,9 +4,8 @@ class LinkedList:
         self.next = next
 
 
-def list_to_array(node):
-    # ???
-    return []
+def list_to_array(str(node)):
+    return [str(i) for i in node]
 
 
 u = LinkedList(1)

@@ -3,9 +3,11 @@
 
 
 def get_nice_names(people):
-    # your code here
-    pass
-
+    lst = []
+    for i in people:
+        if i['was_nice']:
+            lst.append(i['name'])
+    return lst
 
 def get_naughty_names(people):
     # your code here

@@ -4,8 +4,13 @@ class LinkedList:
         self.next = next
 
 
-def list_to_array(str(node)):
-    return [str(i) for i in node]
+def list_to_array(node):
+    lst = []
+    for i in str(node):
+        if i.isdigit():
+            lst.append(i)
+
+    return lst
 
 
 u = LinkedList(1)

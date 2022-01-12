@@ -5,7 +5,13 @@ class LinkedList:
 
 
 def list_to_array(node):
-    print(node.value)
+    lst = []
+
+    while node:
+        lst.append(node.value)
+        node = node.next
+
+    return lst
 
 
 u = LinkedList(1)

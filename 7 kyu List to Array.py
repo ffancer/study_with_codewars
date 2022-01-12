@@ -5,12 +5,7 @@ class LinkedList:
 
 
 def list_to_array(node):
-    lst = []
-    for i in str(node):
-        if i.isdigit():
-            lst.append(i)
-
-    return lst
+    print(node.value)
 
 
 u = LinkedList(1)

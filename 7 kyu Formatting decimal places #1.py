@@ -1,5 +1,5 @@
 def two_decimal_places(number):
-    return str(number).split('.')
+    return str(number).split('.')[1][:2]
 
 
 print(two_decimal_places(10.1289767789), 10.12, "didn't work for 10.1289767789")

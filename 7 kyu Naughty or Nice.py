@@ -3,23 +3,11 @@
 
 
 def get_nice_names(people):
-    lst = []
-
-    for i in people:
-        if i['was_nice']:
-            lst.append(i['name'])
-
-    return lst
+    return [i['name'] for i in people if i['was_nice']]
 
 
 def get_naughty_names(people):
-    lst = []
-
-    for i in people:
-        if not i['was_nice']:
-            lst.append(i['name'])
-
-    return lst
+    return [i['name'] for i in people if not i['was_nice']]
 
 
 naughty = [{'name': 'xDranik', 'was_nice': False}]

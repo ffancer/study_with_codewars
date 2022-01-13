@@ -12,7 +12,11 @@ letters = {
 
 
 def nato(word):
-    pass
+    s = ''
 
+    for i in word:
+        if i in letters.keys():
+            s += letters[i]
+    return s
 
 print(nato("babble"), "Bravo Alpha Bravo Bravo Lima Echo")

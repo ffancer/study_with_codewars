@@ -1,5 +1,5 @@
 def not_visible_cubes(n):
-    pass
+    return (n-2) * (n-2) * (n-2)
 
 
 print(not_visible_cubes(0), 0)

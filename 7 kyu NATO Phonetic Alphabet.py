@@ -15,8 +15,9 @@ def nato(word):
     s = ''
 
     for i in word:
-        if i in letters.keys():
-            s += letters[i]
+        # if i in letters.keys():
+        #     s += letters[i]
+        print(letters.get(i))
     return s
 
 print(nato("babble"), "Bravo Alpha Bravo Bravo Lima Echo")

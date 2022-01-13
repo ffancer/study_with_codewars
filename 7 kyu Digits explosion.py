@@ -2,7 +2,7 @@ def explode(s):
     ans = ''
 
     for i in s:
-        ans += str(int(i) * 3)
+        ans += i * int(i)
 
     return ans
 

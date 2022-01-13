@@ -1,10 +1,5 @@
 def explode(s):
-    ans = ''
-
-    for i in s:
-        ans += i * int(i)
-
-    return ans
+    return ''.join(i * int(i) for i in s)
 
 
 print(explode("312"), "333122")

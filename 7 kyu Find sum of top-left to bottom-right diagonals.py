@@ -1,6 +1,8 @@
 def diagonal_sum(array):
-    # your code here
-    return
+    total = 0
+
+    for i in array:
+        print(i)
 
 
 print(diagonal_sum([

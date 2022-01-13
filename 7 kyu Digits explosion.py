@@ -1,5 +1,10 @@
 def explode(s):
-    pass
+    ans = ''
+
+    for i in s:
+        ans += str(int(i) * 3)
+
+    return ans
 
 
 print(explode("312"), "333122")

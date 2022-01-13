@@ -1,5 +1,5 @@
 def sort_list(sort_by, lst):
-    return  # sorted list
+    return sorted(lst, key=sort_by)
 
 
 print(sort_list("a",

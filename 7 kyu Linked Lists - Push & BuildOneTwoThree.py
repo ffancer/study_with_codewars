@@ -5,15 +5,14 @@ class Node(object):
 
 
 def push(head, data):
-
-
-    pass
+    temp = Node(data)
+    temp.next = head
+    return temp
 
 
 def build_one_two_three():
+    return push(push(push(None, 3), 2), 1)
 
-
-    pass
 
 print(push(None, 1).data, 1, "Should be able to create a new linked list with push().")
 print(push(None, 1).next, None, "Should be able to create a new linked list with push().")

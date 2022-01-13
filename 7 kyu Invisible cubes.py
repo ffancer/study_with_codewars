@@ -1,5 +1,5 @@
 def not_visible_cubes(n):
-    return (n-2) * (n-2) * (n-2)
+    return 0 if n < 3 else (n-2) * (n-2) * (n-2)
 
 
 print(not_visible_cubes(0), 0)

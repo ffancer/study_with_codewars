@@ -1,10 +1,5 @@
 def diagonal_sum(array):
-    total = 0
-
-    for i,j in enumerate(array):
-        total += j[i]
-
-    return total
+    return sum(j[i] for i,j in enumerate(array))
 
 
 print(diagonal_sum([

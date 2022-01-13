@@ -12,12 +12,7 @@ letters = {
 
 
 def nato(word):
-    s = ''
-
-    for i in word:
-        s += letters.get(i.upper()) + ' '
-
-    return s[:-1]
+    return ' '.join(letters.get(i.upper()) for i in word)
 
 
 print(nato("babble"), "Bravo Alpha Bravo Bravo Lima Echo")

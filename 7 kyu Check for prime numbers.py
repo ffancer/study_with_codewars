@@ -1,7 +1,14 @@
 def is_prime(n):
     if n < 2:
         return False
-    return n % 1 == n and n % n == 1
+    cnt = 0
+
+    if n % 1 == n:
+        cnt += 1
+    if n % n == 1:
+        cnt += 1
+
+    return cnt == 2
 
 
 print(is_prime(0), False)

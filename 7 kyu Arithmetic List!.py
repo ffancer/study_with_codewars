@@ -1,8 +1,9 @@
 def seqlist(first, c, l):
-    lst = []
+    lst = [first]
 
-    for i in range(first, l, c):
-        lst.append(i)
+    while first < l:
+        lst.append(first + c)
+        first = first + c
 
     return lst
 

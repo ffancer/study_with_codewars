@@ -1,21 +1,6 @@
 def solve(s):
-    if ' ' not in s:
-        return s[::-1]
-
-    space_lst = [i for i, j in enumerate(s) if j == ' ']
-
-    s = s[::-1]
-    answer = ''
-    for i, j in enumerate(s):
-        if i in space_lst:
-            answer += ' '
-        else:
-            answer += j
-    # space = s.index(' ')
-    # a = s.replace(' ', '')[::-1]
-    # a[:space] + ' ' + a[space:]
-    return answer
-
+    s_reverse_list = list(''.join(s[::-1].split()))
+    return s_reverse_list
 
 print(solve("codewars"), "srawedoc")
 print(solve("your code"), "edoc ruoy")

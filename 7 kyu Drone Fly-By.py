@@ -1,5 +1,5 @@
 def fly_by(lamps, drone):
-    pass
+    return lamps[:len(drone)]
 
 
 print(fly_by('xxxxxx', '====T'), 'ooooox')

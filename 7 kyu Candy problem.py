@@ -2,11 +2,11 @@ def candies(s):
     if len(s) < 2:
         return -1
 
-    max_candys = max(s)
+    max_candies = max(s)
     total = 0
 
     while s:
-        total += max_candys - s[0]
+        total += max_candies - s[0]
         s = s[1:]
 
     return total

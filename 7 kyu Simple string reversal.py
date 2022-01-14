@@ -4,10 +4,17 @@ def solve(s):
 
     space_lst = [i for i, j in enumerate(s) if j == ' ']
 
+    s = s[::-1]
+    answer = ''
+    for i, j in enumerate(s):
+        if i in space_lst:
+            answer += ' '
+        else:
+            answer += j
     # space = s.index(' ')
     # a = s.replace(' ', '')[::-1]
     # a[:space] + ' ' + a[space:]
-    return space_lst
+    return answer
 
 
 print(solve("codewars"), "srawedoc")

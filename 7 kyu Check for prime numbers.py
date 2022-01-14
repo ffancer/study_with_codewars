@@ -1,5 +1,7 @@
 def is_prime(n):
-    'Return True if n is a prime number otherwise return False'
+    if n < 2:
+        return False
+    return n % 1 == n and n % n == 1
 
 
 print(is_prime(0), False)

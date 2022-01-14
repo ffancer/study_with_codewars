@@ -1,5 +1,10 @@
 def extra_perfect(n):
-    pass
+    lst = []
+
+    for i in range(1, n+1, 2):
+        lst.append(i)
+
+    return lst
 
 
 print(extra_perfect(3), [1, 3])

@@ -5,7 +5,7 @@ def solve(s):
         if j == ' ':
             s_reverse_list.insert(i, ' ')
 
-    return s_reverse_list
+    return ''.join(s_reverse_list)
 
 print(solve("codewars"), "srawedoc")
 print(solve("your code"), "edoc ruoy")

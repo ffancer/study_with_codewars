@@ -1,5 +1,11 @@
 def solve(s):
-    pass
+    if ' ' not in s:
+        return s[::-1]
+
+    space = s.index(' ')
+    a = s.replace(' ', '')[::-1]
+
+    return a[:space] + ' ' + a[space:]
 
 
 print(solve("codewars"), "srawedoc")

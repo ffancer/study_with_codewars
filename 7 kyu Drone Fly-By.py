@@ -1,8 +1,5 @@
 def fly_by(lamps, drone):
-    a = lamps[:len(drone)]
-    b = lamps[len(drone):]
-    a = a.replace('x', 'o')
-    return a + b
+    return lamps[:len(drone)].replace('x', 'o') + lamps[len(drone):]
 
 
 print(fly_by('xxxxxx', '====T'), 'ooooox')

@@ -1,5 +1,5 @@
-def scale(strng, k, v):
-    return strng.split('\n')
+def scale(strng, k, n):
+    return '\n'.join(''.join(j * k for j in i) for i in strng.split('\n') for _ in range(n)) if strng else ''
 
 
 a = "abcd\nefgh\nijkl\nmnop"

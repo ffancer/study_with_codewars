@@ -7,13 +7,7 @@ dictionary = {'d': 'disturbing',
 
 
 def make_backronym(acronym):
-    lst = []
-
-    for i in acronym:
-        i = i.upper()
-        lst.append(dictionary[i])
-
-    return ' '.join(lst)
+    return ' '.join(dictionary[i] for i in acronym.upper())
 
 
 print(make_backronym("dgm"), "disturbing gregarious mustache")

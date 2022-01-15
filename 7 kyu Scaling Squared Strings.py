@@ -1,5 +1,5 @@
 def scale(strng, k, v):
-    pass
+    return strng.split('\n')
 
 
 a = "abcd\nefgh\nijkl\nmnop"

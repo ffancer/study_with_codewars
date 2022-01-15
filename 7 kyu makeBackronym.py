@@ -1,7 +1,14 @@
-# preloaded variable: "dictionary"
+# dunno why but author don't publish dictionary :(
+# so i make my own
+dct = {'d': 'disturbing',
+       'g': 'gregarious',
+       'm': 'mustache'
+       }
+
 
 def make_backronym(acronym):
-    pass
+    for i in acronym:
+        print(dct[i])
 
 
 print(make_backronym("dgm"), "disturbing gregarious mustache")

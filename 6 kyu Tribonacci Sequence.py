@@ -1,5 +1,6 @@
 def tribonacci(signature, n):
-    pass
+    lst = signature
+    return lst
 
 
 print(tribonacci([1, 1, 1], 10), [1, 1, 1, 3, 5, 9, 17, 31, 57, 105])

@@ -1,5 +1,7 @@
 def tribonacci(signature, n):
     lst = signature
+    for i in range(n):
+        lst.append(sum(lst[:4]))
     return lst
 
 

@@ -1,5 +1,9 @@
 def elevator_distance(array):
-    pass
+    i, j = 0, 1
+    total = 0
+
+    while j < len(array):
+
 
 
 print(elevator_distance([5, 2, 8]), 9)

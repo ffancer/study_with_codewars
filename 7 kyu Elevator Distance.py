@@ -3,7 +3,11 @@ def elevator_distance(array):
     total = 0
 
     while j < len(array):
+        total += abs(array[i] - array[j])
+        i += 1
+        j += 1
 
+    return total
 
 
 print(elevator_distance([5, 2, 8]), 9)

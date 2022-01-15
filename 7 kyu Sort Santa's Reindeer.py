@@ -1,11 +1,15 @@
 def sort_reindeer(reindeer_names):
-    lst_last_names = []
+    lst = []
 
+    for i in reindeer_names:
+        lst.append(i.split())
 
-    for i, j in enumerate(reindeer_names):
-        lst_last_names.append(j.split()[-1])
+    ans = []
 
-    return sorted(lst_last_names)
+    for i in sorted(lst, key=lambda x: x[-1]):
+        ans.append(' '.join(i))
+
+    return ans
 
 
 print(sort_reindeer(['Kenjiro Mori', 'Susumu Tokugawa', 'Juzo Okita', 'Akira Sanada']),

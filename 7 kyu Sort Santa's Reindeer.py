@@ -1,5 +1,6 @@
 def sort_reindeer(reindeer_names):
-    pass
+    for i, j in enumerate(reindeer_names):
+        print(i, j.split()[-1])
 
 
 print(sort_reindeer(['Kenjiro Mori', 'Susumu Tokugawa', 'Juzo Okita', 'Akira Sanada']),

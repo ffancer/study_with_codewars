@@ -4,9 +4,9 @@ from random import randint
 
 
 class Warrior:
-    def __init__(self, name):
+    def __init__(self, name, health=100):
+        self.health = health
         self.name = name
-        self.health = 100
 
         def strike(enemy, swings):
             # health cannot go below zero

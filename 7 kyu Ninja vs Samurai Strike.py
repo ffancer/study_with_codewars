@@ -8,9 +8,9 @@ class Warrior:
         self.health = health
         self.name = name
 
-        def strike(enemy, swings):
-            # health cannot go below zero
-            enemy.health = max([-1, enemy.health - (swings * 10)])
+    def strike(self, enemy, swings):
+        # health cannot go below zero
+        enemy.health = max([0, enemy.health - (swings * 10)])
 
 
 name = ['Hattori Hanzo', 'Sasuke Sarutobi', 'Jubei Kibagami', 'Kotaro Fuma'][randint(0, 3)]

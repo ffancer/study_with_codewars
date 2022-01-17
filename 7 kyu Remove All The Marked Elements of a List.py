@@ -1,7 +1,10 @@
 class List:
     def remove_(self, integer_list, values_list):
-        # your code here
-        return []
+        for i in values_list:
+            while i in integer_list:
+                integer_list.remove(i)
+
+        return integer_list
 
 
 l = List()

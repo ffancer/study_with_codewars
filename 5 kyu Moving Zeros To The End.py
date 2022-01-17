@@ -1,6 +1,11 @@
 def move_zeros(array):
     cnt_zero = array.count(0)
-    return cnt_zero
+
+    for i in array:
+        while 0 in array:
+            array.remove(0)
+
+    return array
 
 
 print(move_zeros([1, 2, 0, 1, 0, 1, 0, 3, 0, 1]))

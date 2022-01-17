@@ -1,6 +1,11 @@
 def fusc(n):
-    assert type(n) == int and n >= 0
-    # Your code here
+    # assert type(n) == int and n >= 0
+    if n == 0 or n == 1:
+        return n
+
+    if n % 2 == 0:
+        return fusc(n // 2)
+    return fusc((n - 1) // 2) + fusc((n + 1) // 2)
 
 
 print(fusc(0), 0)

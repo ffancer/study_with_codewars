@@ -5,7 +5,7 @@ def move_zeros(array):
         while 0 in array:
             array.remove(0)
 
-    return array
+    return array + [0] * cnt_zero
 
 
 print(move_zeros([1, 2, 0, 1, 0, 1, 0, 3, 0, 1]))

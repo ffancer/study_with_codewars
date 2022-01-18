@@ -7,7 +7,7 @@ def get_villain_name(birthdate):
     last = ["Mustache", "Pickle", "Hood Ornament", "Raisin", "Recycling Bin", "Potato", "Tomato", "House Cat",
             "Teaspoon", "Laundry Basket"]
 
-    return f'{first[birthdate.month]} {last[birthdate.day]}'
+    return f'{first[birthdate.month - 1]} {last[birthdate.day % 10]}'
 
 
 format_str = '%d/%m/%Y'  # The format

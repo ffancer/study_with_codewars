@@ -1,6 +1,6 @@
 def even_chars(st):
-    # your code here
-    pass
+    for i, j in enumerate(st, 1):
+        print(i, j)
 
 
 print(even_chars("a"), "invalid string")

@@ -2,13 +2,7 @@ def even_chars(st):
     if len(st) > 100 or len(st) < 2:
         return "invalid string"
 
-    lst = []
-
-    for i, j in enumerate(st):
-        if i % 2 != 0:
-            lst.append(j)
-
-    return lst
+    return [j for i, j in enumerate(st) if i % 2 != 0]
 
 
 print(even_chars("a"), "invalid string")

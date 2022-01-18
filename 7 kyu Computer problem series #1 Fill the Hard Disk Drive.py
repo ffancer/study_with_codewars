@@ -3,9 +3,14 @@
 
 
 def save(sizes, hd):
-    # your code here
+    i = 0
+    total = 0
 
-    return None
+    while total <= hd:
+        total += sizes[i]
+        i += 1
+
+    return total
 
 
 print(save([4, 4, 4, 3, 3], 12), 3)

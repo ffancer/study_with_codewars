@@ -1,10 +1,11 @@
 def even_chars(st):
     lst = []
+
     for i, j in enumerate(st, 1):
-        # print(i, j)
         if i % 2 == 0:
             lst.append(j)
-    return lst
+
+    return "invalid string" if len(lst) < 3 else lst
 
 
 print(even_chars("a"), "invalid string")

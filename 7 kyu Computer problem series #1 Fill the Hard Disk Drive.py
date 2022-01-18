@@ -3,15 +3,11 @@
 
 
 def save(sizes, hd):
-    if not sizes or sizes[0] > hd:
-        return 0
-
-    lst = []
-    while sizes and sum(lst) < hd:
-        lst.append(sizes.pop(0))
-        if sizes and sizes[0] + sum(lst) > hd:
-            break
-    return len(lst)
+    for i, j in enumerate(sizes):
+        if hd < j:
+            return i
+        hd -= j
+    return len(sizes)
 
 
 print(save([4, 4, 4, 3, 3], 12), 3)

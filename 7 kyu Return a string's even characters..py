@@ -5,7 +5,7 @@ def even_chars(st):
         if i % 2 == 0:
             lst.append(j)
 
-    return "invalid string" if len(lst) < 3 else lst
+    return "invalid string" if len(lst) < 3 or len(st) > 100 else lst
 
 
 print(even_chars("a"), "invalid string")

@@ -3,15 +3,17 @@
 
 
 def save(sizes, hd):
+    cnt, total1, total2 = 0,0,0
     i = 0
-    total = 0
-    cnt = 0
+
     while i < len(sizes):
         cnt += 1
-        total += sizes[i]
+        total2 += sizes[i]
+        total1 = total2
         i += 1
-
-    return cnt
+        if total2 >= hd:
+            return cnt
+        # return cnt - 1
 
 
 print(save([4, 4, 4, 3, 3], 12), 3)

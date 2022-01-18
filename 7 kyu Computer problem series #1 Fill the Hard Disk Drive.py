@@ -5,12 +5,13 @@
 def save(sizes, hd):
     i = 0
     total = 0
-
-    while total <= hd:
+    cnt = 0
+    while i < len(sizes):
+        cnt += 1
         total += sizes[i]
         i += 1
 
-    return total
+    return cnt
 
 
 print(save([4, 4, 4, 3, 3], 12), 3)

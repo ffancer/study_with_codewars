@@ -1,5 +1,5 @@
 def solve(st):
-    pass
+    return sorted(st)
 
 
 print(solve("abc"), True)

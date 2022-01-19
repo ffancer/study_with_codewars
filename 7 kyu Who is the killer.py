@@ -3,7 +3,9 @@
 
 
 def killer(suspect_info, dead):
-    pass
+    for i,j in suspect_info.items():
+        print(i, j)
+    print(dead)
 
 
 print(

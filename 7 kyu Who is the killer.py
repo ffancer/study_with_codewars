@@ -3,9 +3,11 @@
 
 
 def killer(suspect_info, dead):
-    for i, j in suspect_info.items():
-        if all([i for i in dead]) in j:
-            return i
+    for i,j in suspect_info.items():
+        # print(i, j)
+        for k in dead:
+            if k in j:
+                return i
 
 
 print(

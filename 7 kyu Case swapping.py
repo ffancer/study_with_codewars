@@ -1,5 +1,5 @@
 def swap(string_):
-    pass
+    return string_.swapcase()
 
 
 print(swap('HelloWorld'), 'hELLOwORLD')

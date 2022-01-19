@@ -7,6 +7,7 @@ def killer(suspect_info, dead):
         for k in dead:
             if k in j:
                 return i
+    return suspect_info.keys()
 
 
 print(

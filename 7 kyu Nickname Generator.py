@@ -1,5 +1,9 @@
 def nickname_generator(name):
-    pass
+    if len(name) < 4:
+        return "Error: Name too short"
+    # if name[3] in ['a', 'e', 'i', 'o', 'u']:  #'aeiou'
+    #     return name[:3]
+    return name[:3]
 
 
 print(nickname_generator("Jimmy"), "Jim")

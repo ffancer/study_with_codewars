@@ -1,5 +1,13 @@
 def swap(string_):
-    return string_.swapcase()
+    s = ''
+
+    for i in string_:
+        if i.islower():
+            s += i.upper()
+        else:
+            s += i.lower()
+
+    return s
 
 
 print(swap('HelloWorld'), 'hELLOwORLD')

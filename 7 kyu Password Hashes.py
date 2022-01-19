@@ -1,5 +1,8 @@
+import hashlib
+
+
 def pass_hash(str):
-    pass
+    return hashlib.md5(str.encode('utf-8')).hexdigest()
 
 
 print(pass_hash("password"))

@@ -1,5 +1,7 @@
 def solve(st):
-    return sorted(st)
+    for i in st:
+        if st.count(i) > 1:
+            return False
 
 
 print(solve("abc"), True)

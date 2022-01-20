@@ -1,8 +1,8 @@
 def find_missing_letter(chars):
-    lst = []
     first = ord(chars[0])
     last = ord(chars[-1])
-    return ord('a')
+    lst = [chr(i) for i in range(first, last+1)]
+    return lst
 
 
 print(find_missing_letter(['a', 'b', 'c', 'd', 'f']), 'e')

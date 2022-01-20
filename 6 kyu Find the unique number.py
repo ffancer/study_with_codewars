@@ -1,3 +1,4 @@
+from collections import Counter
 def find_uniq(arr):
     # first = arr[0]
     # last = arr[-1]
@@ -10,7 +11,23 @@ def find_uniq(arr):
     #     if i != first:
     #         return i
 
-    return list(set(arr))
+    # return list(set(arr)), arr[:3]
+    # return
+    # for i in arr[:3]:
+    #     if i in list(set(arr)):
+    #         return i
+
+    # i, j = 0, 1
+    # while j < len(arr):
+    #     if arr[i] != arr[j] and arr[i] != arr[j+1]:
+    #         return arr[j]
+    #
+    #     i += 1
+    #     j += 1
+
+    return Counter(arr)
+
+
 
 
 

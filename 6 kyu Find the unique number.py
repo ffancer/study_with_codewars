@@ -1,6 +1,8 @@
 def find_uniq(arr):
-    # your code here
-    return n  # n: unique number in the array
+    n = arr[0]
+    for i in arr:
+        if i != n:
+            return i
 
 
 print(find_uniq([1, 1, 1, 2, 1, 1]), 2)

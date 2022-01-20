@@ -1,8 +1,7 @@
-import string
-
 def is_pangram(s):
     s = s.lower()
-    ascii_s = string.ascii_lowercase
+    ascii_s = 'abcdefghijklmnopqrstuvwxyz'
+
     for i in s:
         if i in ascii_s:
             ascii_s = ascii_s.replace(i, '')

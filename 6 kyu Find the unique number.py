@@ -2,9 +2,10 @@ from collections import Counter
 
 
 def find_uniq(arr):
+    for i, j in Counter(arr).items():
+        if j == 1:
+            return i
 
-   for i, j in Counter(arr).items():
-       print(i, j)
 
 print(find_uniq([1, 1, 1, 2, 1, 1]), 2)
 print(find_uniq([0, 0, 0.55, 0, 0]), 0.55)

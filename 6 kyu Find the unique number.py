@@ -10,11 +10,7 @@ def find_uniq(arr):
     #     if i != first:
     #         return i
 
-    dct = {i: arr.count(i) for i in arr}
-
-    for i, j in dct.items():
-        if j == 1:
-            return i
+    return list(set(arr))
 
 
 

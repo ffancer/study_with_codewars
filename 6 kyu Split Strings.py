@@ -1,5 +1,6 @@
 def solution(s):
-    pass
+    if len(s) % 2 != 0:
+        return '____'
 
 
 print(solution("asdfadsf"), ['as', 'df', 'ad', 'sf'])

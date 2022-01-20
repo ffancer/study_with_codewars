@@ -1,6 +1,7 @@
 import string
 
 def is_pangram(s):
+    s = s.lower()
     ascii_s = string.ascii_lowercase
     for i in s:
         if i in ascii_s:

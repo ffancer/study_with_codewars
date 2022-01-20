@@ -12,7 +12,10 @@ def find_uniq(arr):
 
     dct = {i: arr.count(i) for i in arr}
 
-    return dct
+    for i, j in dct.items():
+        if j == 1:
+            return i
+
 
 
 print(find_uniq([1, 1, 1, 2, 1, 1]), 2)

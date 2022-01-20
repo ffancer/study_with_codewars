@@ -1,5 +1,10 @@
 def narcissistic(value):
-    pass
+    num = 0
+
+    for i in str(value):
+        num += int(i) ** int(len(str(value)))
+
+    return num
 
 
 print(narcissistic(7), True, '7 is narcissistic')

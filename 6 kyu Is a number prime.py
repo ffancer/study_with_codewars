@@ -3,7 +3,11 @@
 
 
 def is_prime(num):
-  pass
+    if num > 1:
+        for i in range(1, num):
+            if num % i == 0:
+                return True
+    return False
 
 
 print(is_prime(0), False, "0  is not prime")

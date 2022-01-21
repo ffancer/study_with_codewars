@@ -2,7 +2,8 @@ def dig_pow(n, p):
     s = 0
     for i, j in enumerate(str(n)):
         s += pow(int(j), i + p)
-    return s
+
+    return s//n
 
 
 print(dig_pow(89, 1), 1)

@@ -1,6 +1,6 @@
 def dig_pow(n, p):
-    # your code
-    return -1
+    for i, j in enumerate(str(n)):
+        print(i, j)
 
 
 print(dig_pow(89, 1), 1)

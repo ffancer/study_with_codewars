@@ -4,7 +4,8 @@
 
 def is_prime(num):
     if num > 1:
-        for i in range(1, num):
+        temp = int(num ** .5)
+        for i in range(1, temp):
             if num % i == 0:
                 return True
     return False

@@ -1,14 +1,19 @@
 # 6 kyu
 # Is a number prime?
 
+from math import floor
+
 
 def is_prime(num):
-    if num > 1:
-        temp = int(num ** .5)
-        for i in range(1, temp):
-            if num % i == 0:
-                return True
-    return False
+    if num <= 1:
+        return False
+
+    temp = floor(num ** 0.5)
+
+    for i in range(2, temp + 1):
+        if num % i == 0:
+            return False
+    return True
 
 
 print(is_prime(0), False, "0  is not prime")

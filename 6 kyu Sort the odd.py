@@ -1,6 +1,7 @@
 def sort_array(source_array):
-    dct = {i: source_array.index(i) for i in source_array if i % 2 != 0}
-    return sorted(dct.items())
+    lst_odd = sorted((i for i in source_array if i % 2 != 0), reverse=True)
+
+    return lst_odd
 
 
 print(sort_array([5, 8, 6, 3, 4]), [3, 8, 6, 5, 4])

@@ -1,9 +1,11 @@
 def find_nb(m):
-    i, cnt = 1,0
+    i, cnt = 1, 0
 
-    # while m < 0:
-    #     m = pow(i, 3)
-    return pow(100, 3)
+    while m > 0:
+        m = pow(i, 3)
+        i += 1
+        cnt += 1
+    return cnt
 
 
 print(find_nb(4183059834009), 2022)

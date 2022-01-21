@@ -1,17 +1,7 @@
 def find_even_index(arr):
-    if len(list(set(arr))) == 1:
-        return arr[0]
-    i, j = 0, -1
-    sum_left, sum_right = 0, 0
-
-    while i < len(arr):
-
-        sum_left += arr[i]
-        sum_right += arr[j]
-        if sum_left != sum_right:
-            return sum_left
-        i += 1
-        j -= 1
+    for i in range(len(arr)):
+        if sum(arr[:i]) == sum(arr[i+1:]):
+            return i
     return -1
 
 

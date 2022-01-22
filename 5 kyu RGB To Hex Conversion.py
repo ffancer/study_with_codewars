@@ -2,12 +2,8 @@ def rgb(r, g, b):
     def round_our_rgb(num):
         return min(255, max(num, 0))
 
-    return round_our_rgb(r), round_our_rgb(b), round_our_rgb(g)
-
-
-# return f'{hex(r)[2:].upper()}{hex(g)[2:].upper()}{hex(b)[2:].upper()}'
-
-# return ("{:02X}" * 3).format(hex(r)[2:].upper(), hex(g)[2:].upper(), hex(b)[2:].upper())
+    return "{:02X}{:02X}{:02X}".format(round_our_rgb(r), round_our_rgb(g), round_our_rgb(b))
+    #       {:02X} * 3 will be work here too
 
 
 print(rgb(0, 0, 0), "000000", "testing zero values")

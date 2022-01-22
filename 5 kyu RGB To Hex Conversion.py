@@ -1,6 +1,5 @@
 def rgb(r, g, b):
-    # your code here :)
-    pass
+    return f'{hex(r)}{hex(g)}{hex(b)}'
 
 
 print(rgb(0, 0, 0), "000000", "testing zero values")

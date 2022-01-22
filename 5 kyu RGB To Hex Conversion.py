@@ -1,5 +1,5 @@
 def rgb(r, g, b):
-    return f'{hex(r)}{hex(g)}{hex(b)}'
+    return f'{hex(r)[2:].upper()}{hex(g)[2:].upper()}{hex(b)[2:].upper()}'
 
 
 print(rgb(0, 0, 0), "000000", "testing zero values")

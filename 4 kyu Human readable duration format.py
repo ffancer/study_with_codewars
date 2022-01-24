@@ -1,9 +1,18 @@
 def format_duration(seconds):
+    if seconds == 0:
+        return 'now'
     second = seconds % 10
     minute = seconds // 60 % 60
     hour = seconds // 3600
 
-    return hour
+    s = ''
+
+    if 2 > hour > 0:
+        s += "1 hour, "
+    if hour > 1:
+        s += f"{hour} hours, "
+
+    return s
 
 
 print(format_duration(1), "1 second")

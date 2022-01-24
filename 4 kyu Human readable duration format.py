@@ -1,11 +1,7 @@
 def format_duration(seconds):
     if seconds == 0:
         return 'now'
-    # second = seconds % 10
-    # minute = seconds // 60 % 60
-    # hour = seconds // 3600
-    # day = seconds // 86400 % 365
-    # year = seconds // 31536000
+
     year = seconds // 31536000
     seconds = seconds % 31536000
     day = seconds // 86400
@@ -18,6 +14,8 @@ def format_duration(seconds):
 
     lst = []
 
+    if year == 1:
+        lst.append("1 year")
     if year >= 2:
         lst.append(str(year) + " years")
     if day == 1:
@@ -43,7 +41,6 @@ def format_duration(seconds):
         return " and ".join(lst)
     if len(lst) > 2:
         return ", ".join(lst[:len(lst) - 1]) + " and " + lst[-1]
-    # return lst
 
 
 print(format_duration(1), "1 second")

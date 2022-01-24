@@ -7,24 +7,25 @@ def format_duration(seconds):
     day = seconds // 86400 % 365
     year = seconds // 31536000
 
-    s = ''
+    lst = []
+
     if year >= 2:
-        s += str(year) + " years"
+        lst.append(str(year) + " years")
     if day == 1:
-        s += "1 day, "
+        lst.append("1 day, ")
     if day >= 2:
-        s += f"{day} days, "
+        lst.append(f"{day} days, ")
     if 2 > hour > 0:
-        s += "1 hour, "
+        lst.append("1 hour, ")
     if hour > 1:
-        s += f"{hour} hours, "
+        lst.append(f"{hour} hours, ")
     if 2 > minute > 0:
-        s += "1 minute, "
+        lst.append("1 minute, ")
     if second == 1:
-        s += "1 second"
+        lst.append("1 second")
     if seconds > 2:
-        s += f"{second} seconds"
-    return s
+        lst.append(f"{second} seconds")
+    return lst
 
 
 print(format_duration(1), "1 second")

@@ -4,14 +4,22 @@ def format_duration(seconds):
     second = seconds % 10
     minute = seconds // 60 % 60
     hour = seconds // 3600
+    day = seconds // 86400 % 365
+    year = seconds // 31536000
 
     s = ''
-
+    if year >= 2:
+        s += str(year) + " years"
+    if day == 1:
+        s += "1 day, "
+    if day >= 2:
+        s += f"{day} days, "
     if 2 > hour > 0:
         s += "1 hour, "
     if hour > 1:
         s += f"{hour} hours, "
-
+    if 2 > minute > 0:
+        s += "1 minute, "
     return s
 
 

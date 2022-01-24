@@ -12,19 +12,22 @@ def format_duration(seconds):
     if year >= 2:
         lst.append(str(year) + " years")
     if day == 1:
-        lst.append("1 day, ")
+        lst.append("1 day ")
     if day >= 2:
-        lst.append(f"{day} days, ")
+        lst.append(f"{day} days ")
     if 2 > hour > 0:
-        lst.append("1 hour, ")
+        lst.append("1 hour ")
     if hour > 1:
-        lst.append(f"{hour} hours, ")
+        lst.append(f"{hour} hours ")
     if 2 > minute > 0:
-        lst.append("1 minute, ")
+        lst.append("1 minute ")
     if second == 1:
         lst.append("1 second")
     if seconds > 2:
         lst.append(f"{second} seconds")
+
+    if len(lst) == 2:
+        return "and ".join(lst)
     return lst
 
 

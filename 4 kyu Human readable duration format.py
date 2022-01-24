@@ -20,6 +20,10 @@ def format_duration(seconds):
         s += f"{hour} hours, "
     if 2 > minute > 0:
         s += "1 minute, "
+    if second == 1:
+        s += "1 second"
+    if seconds > 2:
+        s += f"{second} seconds"
     return s
 
 

@@ -1,5 +1,9 @@
 def format_duration(seconds):
-    pass
+    second = seconds % 10
+    minute = seconds // 60 % 60
+    hour = seconds // 3600
+
+    return hour
 
 
 print(format_duration(1), "1 second")

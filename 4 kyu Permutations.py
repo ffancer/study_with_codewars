@@ -2,9 +2,7 @@ from itertools import permutations as perm
 
 
 def permutations(string):
-    lst = [''.join(i) for i in perm(string)]
-    lst = list(set(lst))
-    return lst
+    return list(set(''.join(i) for i in perm(string)))
 
 
 print(permutations('a'), ['a'])

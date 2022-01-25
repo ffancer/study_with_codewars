@@ -1,7 +1,12 @@
+from itertools import permutations as perm
+
+
 def permutations(string):
-    pass
+    lst = [''.join(i) for i in perm(string)]
+    lst = list(set(lst))
+    return lst
 
 
-print(sorted(permutations('a')), ['a'])
-print(sorted(permutations('ab')), ['ab', 'ba'])
-print(sorted(permutations('aabb')), ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa'])
+print(permutations('a'), ['a'])
+print(permutations('ab'), ['ab', 'ba'])
+print(permutations('aabb'), ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa'])

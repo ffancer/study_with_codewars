@@ -1,6 +1,12 @@
 def wave(people):
-    pass
+    lst = []
 
+    for i in people:
+        if i[0] != ' ':
+            i = i[0].upper() + i[1:]
+            lst.append(i)
+
+    return lst
 
 print(wave("hello"))
 print(wave("codewars"))

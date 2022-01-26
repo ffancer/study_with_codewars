@@ -1,10 +1,9 @@
 def wave(people):
     lst = []
 
-    for i in people:
-        if i[0] != ' ':
-            i = i[0].upper() + i[1:]
-            lst.append(i)
+    for i in range(len(people)):
+        if people[i] != ' ':
+            lst.append()
 
     return lst
 

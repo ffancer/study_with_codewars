@@ -11,12 +11,17 @@ def max_sequence(arr):
     # lst = []
     #
     # for i in arr:
+    lst = []
+    total = 0
     maximum = 0
     for i in range(len(arr)):
-        if arr[i-1] > 0:
-            arr[i] += arr[i-1]
-        maximum = max(maximum, arr[i])
-
+        total += arr[i]
+        lst.append(arr[i])
+        if total < 0:
+            total = 0
+            lst = []
+        if total > 0:
+            maximum = total
     return maximum
 
 

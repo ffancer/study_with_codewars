@@ -1,13 +1,5 @@
 def cakes(recipe, available):
-    minimum = float('inf')
-
-    for i in recipe:
-        if i in available:
-            minimum = min(minimum, available[i] // recipe[i])
-        else:
-            return 0
-
-    return minimum
+    return min(available.get(k, 0)//recipe[k] for k in recipe)
 
 
 recipe = {"flour": 500, "sugar": 200, "eggs": 1}

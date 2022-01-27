@@ -1,16 +1,23 @@
 def max_sequence(arr):
-    if not arr:
-        return 0
-    if all(i for i in arr) > 0:
-        return sum(arr)
-    if all(i for i in arr) < 0:
-        return 0
+    # if not arr:
+    #     return 0
+    # if all(i for i in arr) > 0:
+    #     return sum(arr)
+    # if all(i for i in arr) < 0:
+    #     return 0
 
     # sum_1 = 0
     # sum_2 = 0
     # lst = []
     #
     # for i in arr:
+    maximum = 0
+    for i in range(len(arr)):
+        if arr[i-1] > 0:
+            arr[i] += arr[i-1]
+        maximum = max(maximum, arr[i])
+
+    return maximum
 
 
 

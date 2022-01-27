@@ -1,11 +1,11 @@
 def cakes(recipe, available):
-    # minimum = -1
     minimum = float('inf')
 
     for i in recipe:
         if i in available:
             minimum = min(minimum, available[i] // recipe[i])
-        return 0
+        else:
+            return 0
 
     return minimum
 

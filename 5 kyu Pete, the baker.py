@@ -2,8 +2,11 @@ def cakes(recipe, available):
     lst = []
 
     for i, j in recipe.items():
-        print(i, j)
-
+        # print(i, j)
+        if recipe[i] in available.items():
+            # lst.append(available[i] / recipe[i])
+            print(available.keys())
+    # return lst
 
 # recipe = {"flour": 500, "sugar": 200, "eggs": 1}
 # available = {"flour": 1200, "sugar": 1200, "eggs": 5, "milk": 200}

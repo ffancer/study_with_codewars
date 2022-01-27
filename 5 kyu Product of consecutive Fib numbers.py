@@ -1,6 +1,5 @@
 def productFib(prod):
-    # your code
-    return
+    first, second = 0, 1
 
 
 print(productFib(4895), [55, 89, True])

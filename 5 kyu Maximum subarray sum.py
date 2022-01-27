@@ -11,18 +11,14 @@ def max_sequence(arr):
     # lst = []
     #
     # for i in arr:
-    lst = []
+    mininmum = 0
     total = 0
-    maximum = 0
+    ans = 0
     for i in range(len(arr)):
         total += arr[i]
-        lst.append(arr[i])
-        if total < 0:
-            total = 0
-            lst = []
-        if total > 0:
-            maximum = total
-    return maximum
+        mininmum = min(total, mininmum)
+        ans = max(ans, total - mininmum)
+    return ans
 
 
 

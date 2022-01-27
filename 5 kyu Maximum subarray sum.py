@@ -1,5 +1,17 @@
 def max_sequence(arr):
-    pass
+    if not arr:
+        return 0
+    if all(i for i in arr) > 0:
+        return sum(arr)
+    if all(i for i in arr) < 0:
+        return 0
+
+    # sum_1 = 0
+    # sum_2 = 0
+    # lst = []
+    #
+    # for i in arr:
+
 
 
 print(max_sequence([]), 0)

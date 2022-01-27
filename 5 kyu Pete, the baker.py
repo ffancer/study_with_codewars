@@ -1,13 +1,11 @@
 def cakes(recipe, available):
-    lst = []
+    minimum = 0
 
-    for i, j in recipe.items():
-        # print(i, j)
-        if recipe[i] in available.items():
-            # lst.append(available[i] / recipe[i])
-            print(available.keys())
-    # return lst
+    for i in recipe:
+        if i in available:
+            minimum = (minimum, available[i] / recipe[i])
 
+    return minimum
 # recipe = {"flour": 500, "sugar": 200, "eggs": 1}
 # available = {"flour": 1200, "sugar": 1200, "eggs": 5, "milk": 200}
 # print(cakes(recipe, available), 2, 'example #1')

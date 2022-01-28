@@ -4,13 +4,18 @@ def rank(st, we, n):
 
     participants = {i: 0 for i in st.split(',')}
 
+    if n > len(participants):
+        return "Not enough participants"
+
     for i,j in enumerate(participants):
-        # print(i, j)
-        total = 0
+        total = len(j)
         for k in j:
             total += ord(k)-96
-        return total
+        participants[j] += total
 
+
+
+        return participants
 
 
 print(rank("Addison,Jayden,Sofia,Michael,Andrew,Lily,Benjamin", [4, 2, 1, 4, 3, 1, 2], 4), "Benjamin")

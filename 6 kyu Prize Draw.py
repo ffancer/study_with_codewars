@@ -1,5 +1,8 @@
 def rank(st, we, n):
-    pass
+    total = 0
+
+    for i in n:
+        total += ord(i)-96
 
 
 print(rank("Addison,Jayden,Sofia,Michael,Andrew,Lily,Benjamin", [4, 2, 1, 4, 3, 1, 2], 4), "Benjamin")

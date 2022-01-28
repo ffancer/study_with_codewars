@@ -1,8 +1,8 @@
 def first_non_repeating_letter(string):
     for i in string:
         if string.lower().count(i) == 1:
-            print(i)
-            break
+            return i
+    return ''
 
 print(first_non_repeating_letter('a'), 'a')
 print(first_non_repeating_letter('stress'), 't')

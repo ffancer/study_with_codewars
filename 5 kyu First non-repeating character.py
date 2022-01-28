@@ -1,5 +1,7 @@
 def first_non_repeating_letter(string):
-    pass
+    for i in string:
+        if string.lower().count(i) == 1:
+            print(i)
 
 
 print(first_non_repeating_letter('a'), 'a')

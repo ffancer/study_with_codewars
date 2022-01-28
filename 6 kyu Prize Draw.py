@@ -19,7 +19,7 @@ def rank(st, we, n):
     sorted_by_name = sorted(participants.items(), key=itemgetter(0))
     sorted_by_value = sorted(sorted_by_name, key=itemgetter(1), reverse=True)
 
-    return list(sorted_by_value)[n - 1]
+    return list(sorted_by_value)[n - 1][0]
 
 
 print(rank("Addison,Jayden,Sofia,Michael,Andrew,Lily,Benjamin", [4, 2, 1, 4, 3, 1, 2], 4), "Benjamin")

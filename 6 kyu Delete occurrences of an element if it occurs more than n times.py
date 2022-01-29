@@ -7,7 +7,9 @@ def delete_nth(order, max_e):
             dct[i] = 0
         else:
             dct[i] += 1
-    return dct
+        if dct[i] < max_e:
+            lst.append(i)
+    return lst
 
     # dct = {i: order.count(i) for i in order}
     # return dct

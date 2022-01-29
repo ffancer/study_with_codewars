@@ -3,7 +3,7 @@
 
 
 def comp(array1, array2):
-    if len(array1) != len(array2):
+    if (array1 is None or array2 is None) or len(array1) != len(array2):
         return False
     for i in array1:
         sqrt_num = i ** 2

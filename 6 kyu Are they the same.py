@@ -7,6 +7,7 @@ def comp(array1, array2):
         sqrt_num = i ** 2
         if sqrt_num not in array2:
             return False
+        array2.remove(sqrt_num)
 
 
 a1 = [121, 144, 19, 161, 19, 144, 19, 11]

@@ -1,16 +1,9 @@
 def delete_nth(order, max_e):
-    lst = []
-    dct = {}
+    ans = []
 
-    for i in order:
-        if i not in dct:
-            dct[i] = 0
-        else:
-            dct[i] += 1
-        if dct[i] < max_e:
-            lst.append(i)
-
-    return lst
+    for o in order:
+        if ans.count(o) < max_e: ans.append(o)
+    return ans
 
 
 print(delete_nth([20, 37, 20, 21], 1), [20, 37, 21])

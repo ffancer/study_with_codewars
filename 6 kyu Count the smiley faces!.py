@@ -1,5 +1,7 @@
 def count_smileys(arr):
-    return  # the number of valid smiley faces in array/list
+    cnt = 0
+    for i in arr:
+        print(i)
 
 
 print(count_smileys([]), 0)

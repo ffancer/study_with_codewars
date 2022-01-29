@@ -1,7 +1,10 @@
 def count_smileys(arr):
-    cnt = 0
+    lst = []
     for i in arr:
-        print(i)
+        if i[0] in [':', ';']:
+            if i[1] in['-', '~', ')', 'D']:
+                lst.append(i)
+    return len(lst)
 
 
 print(count_smileys([]), 0)

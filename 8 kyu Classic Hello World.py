@@ -3,8 +3,8 @@ class Solution:
         pass
 
 
-    def main(self):
-        return "Hello World!"
+    def main(self, *args):
+        print("Hello World!")
 
-Solution.main, result="Hello World!"
-Solution.main, ["Hola mundo!"], result="Hello World!"
+
+

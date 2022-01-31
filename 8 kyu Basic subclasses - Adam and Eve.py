@@ -4,12 +4,17 @@ def God():
     return [man, woman]
 
 
-class Man:
+class Human:
     def __init__(self):
         pass
 
 
-class Woman:
+class Man(Human):
+    def __init__(self):
+        pass
+
+
+class Woman(Human):
     def __init__(self):
         pass
 

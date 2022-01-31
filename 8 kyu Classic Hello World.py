@@ -1,7 +1,10 @@
 class Solution:
+    def __init__(self):
+        pass
 
 
-# your code here
+    def main(self):
+        return "Hello World!"
 
-print(Solution.main, result="Hello World!")
-print(Solution.main, ["Hola mundo!"], result="Hello World!")
+Solution.main, result="Hello World!"
+Solution.main, ["Hola mundo!"], result="Hello World!"

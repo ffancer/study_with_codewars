@@ -1,6 +1,8 @@
-class Person
-    def __init__(name,age)
-        self.info="#{name}s age is #{age}"
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        print(f"#{name}s age is #{age}")
 
 
 

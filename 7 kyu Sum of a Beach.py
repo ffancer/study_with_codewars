@@ -1,11 +1,6 @@
 def sum_of_a_beach(beach):
-    cnt = 0
-
-    for i in ["sand", "water", "fish", "sun"]:
-        if i in beach.lower():
-            cnt += 1
-
-    return cnt
+    beach = beach.lower()
+    return beach[:3]
 
 
 print(sum_of_a_beach("SanD"), 1)

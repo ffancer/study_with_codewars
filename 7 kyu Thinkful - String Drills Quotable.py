@@ -3,7 +3,7 @@
 
 
 def quotable(name, quote):
-    return name + ' said: ' + '"' + quote + '"'
+    return f'{name} said: "{quote}"'
 
 
 print(quotable('Grae', 'Practice makes perfect'), 'Grae said: "Practice makes perfect"')

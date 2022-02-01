@@ -1,5 +1,12 @@
 def to_currency(price):
-    return price / 1000
+    i = -3
+    lst = []
+    while i < 0:
+        lst.append(str(price)[-3:])
+        price = str(price)[:-3]
+
+    return lst
+    # return list(str(price)).pop(3)
 
 
 print(to_currency(123456), "123,456")

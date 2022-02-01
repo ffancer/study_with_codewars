@@ -1,11 +1,12 @@
 def remove_consecutive_duplicates(s):
+    s = s.split()
     lst = []
 
-    for i in s.split():
-        if i not in lst:
-            lst.append(i)
+    for i in range(len(s)-1):
+        if s[i] != s[i+1]:
+            lst.append(s[i])
 
-    return lst
+    return ' '.join(lst)
 
 
 print(remove_consecutive_duplicates('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'),

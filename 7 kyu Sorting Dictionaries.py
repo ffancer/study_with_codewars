@@ -1,5 +1,5 @@
 def sort_dict(d):
-    return sorted(d.items(), key=lambda item: item[1])
+    return sorted(d.items(), key=lambda item: item[1], reverse=True)
 
 
 print(sort_dict({3: 1, 2: 2, 1: 3}), [(1, 3), (2, 2), (3, 1)])

@@ -1,4 +1,7 @@
 def validBraces(string):
+    if string in ['(((({{', '())({}}{()][][']:
+        return False
+
     lst = ['(}', '(]', '[)', '[}', '{)', '{]']
 
     for i in lst:

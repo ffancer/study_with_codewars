@@ -3,8 +3,10 @@
 
 
 def in_array(array1, array2):
-    # your code
-    return array1
+    lst = []
+    for i in array1:
+        for j in array2:
+            print(i, j)
 
 
 a1 = ["live", "arp", "strong"]

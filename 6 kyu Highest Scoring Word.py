@@ -1,6 +1,17 @@
 def high(x):
-    pass
 
+
+    def points_calc(s):
+        total = 0
+        for i in s:
+            if i.isalpha():
+                total += ord(i) - 96
+        return total
+
+    x = x.split()
+
+    dct = {i: points_calc(i) for i in x}
+    return dct
 
 print(high('man i need a taxi up to ubud'), 'taxi')
 print(high('what time are we climbing up the volcano'), 'volcano')

@@ -4,9 +4,13 @@
 
 def in_array(array1, array2):
     lst = []
+
     for i in array1:
         for j in array2:
-            print(i, j)
+            if i in j:
+                lst.append(i)
+
+    return lst
 
 
 a1 = ["live", "arp", "strong"]

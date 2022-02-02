@@ -1,6 +1,5 @@
 def high(x):
 
-
     def points_calc(s):
         total = 0
         for i in s:
@@ -11,7 +10,8 @@ def high(x):
     x = x.split()
 
     dct = {i: points_calc(i) for i in x}
-    return dct
+
+    return sorted(dct.values(), reverse=True)[0]
 
 print(high('man i need a taxi up to ubud'), 'taxi')
 print(high('what time are we climbing up the volcano'), 'volcano')

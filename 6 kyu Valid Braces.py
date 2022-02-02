@@ -1,5 +1,9 @@
 def validBraces(string):
-    pass
+    lst = ['(}', '(]', '[)', '[}', '{)', '{]']
+
+    for i in lst:
+        if i in string:
+            return False
 
 
 print(validBraces("()"), True)

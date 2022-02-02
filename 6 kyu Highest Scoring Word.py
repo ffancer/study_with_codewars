@@ -1,17 +1,5 @@
 def high(x):
-    def points_calc(s):
-        total = 0
-        for i in s:
-            if i.isalpha():
-                total += ord(i) - 96
-        return total
-
-    x = x.split()
-
-    dct = {i: points_calc(i) for i in x}
-    sorted_tuple = sorted(dct.items(), key=lambda y: y[1], reverse=True)
-
-    return sorted_tuple[0][0]
+    return max(x.split(), key=lambda k: sum(ord(c) - 96 for c in k))
 
 
 print(high('man i need a taxi up to ubud'), 'taxi')

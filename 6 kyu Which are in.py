@@ -10,7 +10,7 @@ def in_array(array1, array2):
             if i in j:
                 lst.append(i)
 
-    return lst
+    return sorted(list(set(lst)))
 
 
 a1 = ["live", "arp", "strong"]

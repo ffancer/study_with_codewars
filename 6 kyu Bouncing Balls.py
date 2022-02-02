@@ -1,6 +1,8 @@
+from math import log
+
+
 def bouncing_ball(h, bounce, window):
-    # your code
-    return -1
+    return 2 * int(log(window / float(h)) / log(bounce)) + 1 if h > window else -1
 
 
 print(bouncing_ball(2, 0.5, 1))  # 1

@@ -1,12 +1,14 @@
+from math import floor
+
+
 def zeros(n):
-    m = 5
-    s = 0
+    num = 0
 
-    while n >= m:
-        s = s + (n / m)
-        m = m * 5
+    while n > 4:
+        n = floor(n / 5)
+        num += n
 
-    return round(s)
+    return num
 
 
 print(zeros(0), 0, "Testing with n = 0")

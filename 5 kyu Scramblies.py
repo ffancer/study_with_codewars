@@ -1,6 +1,9 @@
 def scramble(s1, s2):
-    pass
-
+    cnt = 0
+    for i in s2:
+        if i in s1:
+            cnt += 1
+    return cnt
 
 print(scramble('rkqodlw', 'world'), True)
 print(scramble('cedewaraaossoqqyt', 'codewars'), True)

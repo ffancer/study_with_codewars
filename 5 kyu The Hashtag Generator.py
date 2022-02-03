@@ -1,5 +1,5 @@
 def generate_hashtag(s):
-    pass
+    s = s.split()
 
 
 print(generate_hashtag(''), False, 'Expected an empty string to return False')

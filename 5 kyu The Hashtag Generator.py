@@ -1,5 +1,8 @@
 def generate_hashtag(s):
     s = s.split()
+    s = [i.capitalize() for i in s]
+    s = '#' + ''.join(s)
+
 
 
 print(generate_hashtag(''), False, 'Expected an empty string to return False')

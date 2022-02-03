@@ -1,5 +1,12 @@
 def zeros(n):
-    return 0
+    m = 5
+    s = 0
+
+    while n >= m:
+        s = s + (n / m)
+        m = m * 5
+
+    return round(s)
 
 
 print(zeros(0), 0, "Testing with n = 0")

@@ -2,11 +2,11 @@ def generate_hashtag(s):
     s = s.split()
     s = [i.capitalize() for i in s]
     s = '#' + ''.join(s)
-
+    return s
 
 
 print(generate_hashtag(''), False, 'Expected an empty string to return False')
-print(generate_hashtag('Do We have A Hashtag'), '#', 'Expeted a Hashtag (#) at the beginning.')
+print(generate_hashtag('Do We have A Hashtag')[0], '#', 'Expeted a Hashtag (#) at the beginning.')
 print(generate_hashtag('Codewars'), '#Codewars', 'Should handle a single word.')
 print(generate_hashtag('Codewars      '), '#Codewars', 'Should handle trailing whitespace.')
 print(generate_hashtag('Codewars Is Nice'), '#CodewarsIsNice', 'Should remove spaces.')

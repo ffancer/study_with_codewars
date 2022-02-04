@@ -1,6 +1,6 @@
 def solution(string, markers):
     s = string.split('\n')
-    answer = ''
+    lst = []
 
     for i in s:
         length = len(i)
@@ -8,9 +8,9 @@ def solution(string, markers):
             if k in markers:
                 length = j
                 break
-        answer += i[:length].strip() + '\n'
+        lst.append(i[:length].strip())
 
-    return answer[:-1]
+    return '\n'.join(lst)
 
 
 print(solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"]), "apples, pears\ngrapes\nbananas")

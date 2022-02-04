@@ -1,5 +1,5 @@
 def solution(string, markers):
-    pass
+    return string.split('\n')
 
 
 print(solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"]), "apples, pears\ngrapes\nbananas")

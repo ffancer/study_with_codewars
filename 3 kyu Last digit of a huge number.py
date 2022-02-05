@@ -1,6 +1,9 @@
 def last_digit(lst):
-    # Your Code Here
-    pass
+    num = 1
+
+    for i in lst[::-1]:
+        num = i ** (num if num < 4 else num % 4 + 4)
+    return num % 10
 
 
 print(last_digit([]))

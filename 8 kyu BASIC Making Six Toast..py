@@ -3,7 +3,7 @@
 
 
 def six_toast(num):
-    pass
+    return 6 - num if num < 6 else num - 6
 
 
 print(six_toast(15), 9)

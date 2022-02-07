@@ -3,7 +3,7 @@
 
 
 def if_chuck_says_so():
-    pass
+    return 1 == 2
 
 
 print(if_chuck_says_so(), False)

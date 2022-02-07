@@ -1,9 +1,10 @@
 from typing import Tuple
+from math import ceil
 
 
 def aspect_ratio(x: int, y: int) -> Tuple[int, int]:
-    # 頑張って！
-    pass
+    return [ceil(y*16/9), y]
+
 
 
 def assertion_str(x, y, actual, expected):

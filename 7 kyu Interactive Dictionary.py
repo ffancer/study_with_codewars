@@ -1,12 +1,15 @@
 class Dictionary():
     def __init__(self):
-        self.dct = {}
+        self.lookup = dict()
 
     def newentry(self, word, definition):
-        self.dct = {word: definition}
+        self.lookup[word] = definition
 
     def look(self, key):
-        return self.dct.get(key, f"Can't find entry for {key}")
+        try:
+            return self.lookup[key]
+        except KeyError:
+            return f"Can't find entry for {key}"
 
 
 

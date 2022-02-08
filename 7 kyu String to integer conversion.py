@@ -2,8 +2,8 @@ def my_parse_int(string):
     answer = ''
 
     for i in string.strip():
-        if '.' in i:
-            continue
+        if '.' in i or i.isalpha():
+            return 'NaN'
         if i.isdigit():
             answer += i
 

@@ -1,5 +1,16 @@
 def my_parse_int(string):
-    pass
+    answer = ''
+
+    for i in string.strip():
+        if '.' in i:
+            continue
+        if i.isdigit():
+            answer += i
+
+    try:
+        return int(answer)
+    except:
+        return 'NaN'
 
 
 print(my_parse_int("1"), 1)

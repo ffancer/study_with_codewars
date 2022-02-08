@@ -1,6 +1,6 @@
 def validate_word(word):
     word = word.lower()
-
+    return set(list(word)), list(word)
 
 print(validate_word("abcabc"), True)
 print(validate_word("Abcabc"), True)

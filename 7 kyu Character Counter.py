@@ -1,7 +1,7 @@
 def validate_word(word):
     word = word.lower()
     dct = {i: word.count(i) for i in word}
-    return dct
+    return set(dct.values())
 
 print(validate_word("abcabc"), True)
 print(validate_word("Abcabc"), True)

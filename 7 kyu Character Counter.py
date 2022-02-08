@@ -1,6 +1,6 @@
 def validate_word(word):
     word = word.lower()
-    return set(list(word)), list(word)
+    return len(list(word)) % len(set(list(word))) == 0
 
 print(validate_word("abcabc"), True)
 print(validate_word("Abcabc"), True)
@@ -12,3 +12,4 @@ print(validate_word("abc123"), True)
 print(validate_word("abcabcd"), False)
 print(validate_word("abc!abc!"), True)
 print(validate_word("abc:abc"), False)
+print(validate_word('dD???^D?^d^ddd^'), False)

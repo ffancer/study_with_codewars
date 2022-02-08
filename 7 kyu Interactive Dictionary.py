@@ -5,12 +5,10 @@ class Dictionary():
     def newentry(self, word, definition):
         self.dct = {word: definition}
 
-
     def look(self, key):
-        # try:
-        return self.dct[key]
-        # except:
-        #     return f"Can't find entry for {key}"
+        return self.dct.get(key, f"Can't find entry for {key}")
+
+
 
 d = Dictionary()
 

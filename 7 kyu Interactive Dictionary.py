@@ -1,12 +1,13 @@
 class Dictionary():
     def __init__(self):
-        pass
+        self.dct = {}
 
     def newentry(self, word, definition):
-        pass
+        self.dct = {word: definition}
+
 
     def look(self, key):
-        pass
+        return self.dct[key]
 
 
 d = Dictionary()

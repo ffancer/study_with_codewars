@@ -7,8 +7,10 @@ class Dictionary():
 
 
     def look(self, key):
+        # try:
         return self.dct[key]
-
+        # except:
+        #     return f"Can't find entry for {key}"
 
 d = Dictionary()
 

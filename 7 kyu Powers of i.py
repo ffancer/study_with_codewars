@@ -1,5 +1,6 @@
 def pofi(n):
-    return 'i'
+    # return 'i'
+    return n % 4
 
 
 print(pofi(0), '1')

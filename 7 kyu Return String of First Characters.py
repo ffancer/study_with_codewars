@@ -1,8 +1,11 @@
 def make_string(s):
     s = s.split()
-    for i in s:
-        print(i[0])
+    answer = ''
 
+    for i in s:
+        answer += i[0]
+
+    return answer
 
 print(make_string("sees eyes xray yoat"), "sexy", "Wrong result for 'sees eyes xray yoat'")
 print(make_string("brown eyes are nice"), "bean", "Wrong result for 'brown eyes are nice'")

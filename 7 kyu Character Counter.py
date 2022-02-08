@@ -1,6 +1,5 @@
 def validate_word(word):
-    # your code here
-    pass
+    word = word.lower()
 
 
 print(validate_word("abcabc"), True)

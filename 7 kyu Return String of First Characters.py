@@ -1,5 +1,7 @@
 def make_string(s):
-    pass
+    s = s.split()
+    for i in s:
+        print(i[0])
 
 
 print(make_string("sees eyes xray yoat"), "sexy", "Wrong result for 'sees eyes xray yoat'")

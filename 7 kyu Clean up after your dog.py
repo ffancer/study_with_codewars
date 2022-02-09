@@ -8,11 +8,13 @@ def crap(garden, bags, cap):
             if j == 'D':
                 cnt_dog += 1
 
+    cap_of_bags = bags * cap
+
     if cnt_dog >= 1:
         return 'Dog!!'
-    if cnt_a > cap:
+    if cnt_a > cap_of_bags:
         return 'Cr@p'
-    if cnt_a <= cap:
+    if cnt_a <= cap_of_bags:
         return 'Clean'
 
 

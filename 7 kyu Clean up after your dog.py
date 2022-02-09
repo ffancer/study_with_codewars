@@ -5,10 +5,9 @@ def crap(garden, bags, cap):
         cnt_a = i.count('@')
         cnt_dog = i.count('D')
 
-    if cnt_dog > 0:
-        return "Dog!!"
+    return cnt_a
 
-    return "Clean" if bags - cnt_a > 0 else "Cr@p"
+
 
 print(crap([['_', '_', '_', '_'], ['_', '_', '_', '@'], ['_', '_', '@', '_']], 2, 2), "Clean")
 print(crap([['_', '_', '_', '_'], ['_', '_', '_', '@'], ['_', '_', '@', '_']], 1, 1), "Cr@p")

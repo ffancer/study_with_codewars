@@ -1,5 +1,7 @@
 def solution(n, d):
-    pass
+    if d < 1:
+        return []
+    return n % 10 ** d
 
 
 print(solution(1, 1), [1])

@@ -2,10 +2,13 @@ def crap(garden, bags, cap):
     cnt_a, cnt_dog = 0, 0
 
     for i in garden:
-        cnt_a = i.count('@')
-        cnt_dog = i.count('D')
+        for j in i:
+            if j == '@':
+                cnt_a += 1
+            if j == 'D':
+                cnt_dog += 1
 
-    return cnt_a
+    return cnt_dog
 
 
 

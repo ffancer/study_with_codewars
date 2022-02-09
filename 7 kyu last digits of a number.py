@@ -1,13 +1,5 @@
 def solution(n, d):
-    if d <= 0:
-        return []
-
-    lst = []
-
-    for i in str(n)[-d:]:
-        lst.append(int(i))
-
-    return lst
+    return [] if d <= 0 else [int(i) for i in str(n)[-d:]]
 
 
 

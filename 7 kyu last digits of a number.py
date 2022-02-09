@@ -1,13 +1,5 @@
 def solution(n, d):
-    if d < 1:
-        return []
-
-    lst = []
-
-    for i in str(n % 10 ** d):
-        lst.append(int(i))
-
-    return lst
+    return str(n)[-d:]
 
 
 

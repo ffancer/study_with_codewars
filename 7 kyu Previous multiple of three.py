@@ -1,12 +1,11 @@
 def prev_mult_of_three(n):
-    if n == 1:
-        return None
+    n = str(n)
+    i = -1
 
-
-    while n > 0:
-        if n % 3 == 0:
-            return n
-        n = n % 10
+    while i < 0:
+        if int(n[i] + n[i-1]) % 3 != 0:
+            i -= 1
+        return int(n[i] + n[i-1])
     return None
 
 print(prev_mult_of_three(1), None)

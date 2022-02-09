@@ -1,5 +1,5 @@
 def number_of_rectangles(m, n):
-    pass
+    return ((m ** 2) + m) * ((n ** 2) + n) // 4
 
 
 print(number_of_rectangles(4, 4), 100, "Should be 100")

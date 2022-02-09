@@ -1,7 +1,14 @@
 def solution(n, d):
     if d < 1:
         return []
-    return n % 10 ** d
+
+    lst = []
+
+    for i in str(n % 10 ** d):
+        lst.append(int(i))
+
+    return lst
+
 
 
 print(solution(1, 1), [1])

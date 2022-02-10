@@ -1,5 +1,5 @@
 def arrow_area(a, b):
-    pass
+    return a * b / 4
 
 
 print(arrow_area(4, 2), 2)

@@ -1,13 +1,8 @@
+from math import prod
+
+
 def product(numbers):
-    if numbers is None or numbers == []:
-        return None
-
-    total = 1
-
-    for i in numbers:
-        total *= i
-
-    return total
+    return None if numbers is None or numbers == [] else prod(i for i in numbers)
 
 
 print(product([5, 4, 1, 3, 9]), 540)

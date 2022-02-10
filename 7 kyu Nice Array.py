@@ -1,5 +1,5 @@
 def is_nice(arr):
-    pass
+    return all(i+1 or i-1 for i in arr)
 
 
 print(is_nice([2, 10, 9, 3]), True)

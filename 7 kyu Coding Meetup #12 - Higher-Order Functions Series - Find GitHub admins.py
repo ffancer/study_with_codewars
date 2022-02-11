@@ -1,6 +1,7 @@
 def find_admin(lst, lang):
-    # your code here
-    pass
+    for i in lst:
+        for j in i:
+            print(j)
 
 
 list1 = [

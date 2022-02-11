@@ -1,9 +1,13 @@
 def find_admin(lst, lang):
+    ans = []
+
     for i in lst:
-        if i.get('language') == 'JavaScript' and i.get('githubAdmin') == 'yes':
-            print('===============')
-        else:
-            print('////////////////')
+        if i['language'] == lang and i['githubAdmin'] == 'yes':
+            ans.append(i)
+
+    return ans
+
+
 list1 = [
     {'firstName': 'Harry', 'lastName': 'K.', 'country': 'Brazil', 'continent': 'Americas', 'age': 22,
      'language': 'JavaScript', 'githubAdmin': 'yes'},

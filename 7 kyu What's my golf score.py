@@ -3,12 +3,10 @@
 
 
 def golf_score_calculator(par_string, score_string):
-    total = 0
-    for i in par_string:
-        for j in score_string:
-            total += int(i) - int(j)
+    lst_1 = [int(i) for i in par_string]
+    lst_2 = [int(i) for i in score_string]
 
-    return total
+    return lst_1 , lst_2
 
 
 print(golf_score_calculator('443454444344544443', '353445334534445344'), -1)

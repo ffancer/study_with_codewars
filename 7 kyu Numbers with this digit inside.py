@@ -1,16 +1,16 @@
 from math import prod
 
-lst = []
-
-# for i in range(1, 12):
-#     if '1' in str(i):
-#         lst.append(i)
-# print(lst)
 
 def numbers_with_digit_inside(x, d):
-    lst = [i for i in range(d, x+1) if str(d) in str(i)]
-    return [len(lst), sum(lst), prod(lst)]
-    # return lst
+    lst = [i for i in range(d, x + 1) if str(d) in str(i) and str(i) != '0']
+    # lst = []
+    #
+    # for i in range(d, x + 1):
+    #     if str(d) in str(i) and str(i) != '0':
+    #         lst.append(i)
+    # return len(lst)
+    # return sum(lst)
+    return prod(lst)
 
 tests = (
     ((5, 6), [0, 0, 0]),

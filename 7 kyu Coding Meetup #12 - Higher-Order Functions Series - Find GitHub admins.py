@@ -1,11 +1,5 @@
 def find_admin(lst, lang):
-    ans = []
-
-    for i in lst:
-        if i['language'] == lang and i['githubAdmin'] == 'yes':
-            ans.append(i)
-
-    return ans
+    return [i for i in lst if i['language'] == lang and i['githubAdmin'] == 'yes']
 
 
 list1 = [

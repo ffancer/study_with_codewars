@@ -1,6 +1,6 @@
 def numbers_with_digit_inside(x, d):
-    pass
-
+    lst = [i for i in range(d, x+1) if str(i) in str(d)]
+    return lst
 
 tests = (
     ((5, 6), [0, 0, 0]),

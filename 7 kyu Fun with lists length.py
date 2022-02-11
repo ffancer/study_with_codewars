@@ -8,8 +8,13 @@ class Node:
 
 
 def length(head):
-    # your code here
-    pass
+    cnt = 0
+
+    while head:
+        head = head.next
+        cnt += 1
+
+    return cnt
 
 
 

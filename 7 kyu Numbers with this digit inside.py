@@ -1,21 +1,20 @@
-from math import prod
-
-
 def numbers_with_digit_inside(x, d):
-    # lst = [i for i in range(d, x + 1) if str(d) in str(i) and str(i) != '0']
     lst = []
 
     for i in range(d, x + 1):
         if str(d) in str(i) and str(i) != '0':
             lst.append(i)
 
-    # return [len(lst), sum(lst), prod(lst)]
     cnt, total, prodd = 0, 0, 1
+
     for i in lst:
         cnt += 1
         total += i
         prodd *= i
-    return [cnt, total, prodd]
+
+    return [0, 0, 0] if cnt == 0 else [cnt, total, prodd]
+
+
 tests = (
     ((5, 6), [0, 0, 0]),
     ((7, 6), [1, 6, 6]),

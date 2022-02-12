@@ -1,11 +1,5 @@
 def is_narcissistic(i):
-    n = len(str(i))
-    total = 0
-
-    for j in str(i):
-        total += int(j) ** n
-
-    return total == i
+    return sum(int(j) ** len(str(i)) for j in str(i)) == i
 
 
 print(is_narcissistic(153), True)

@@ -1,13 +1,16 @@
 def missing_no(nums):
-    nums_max, nums_min = max(nums), min(nums)
-    lst = [i for i in range(nums_min, nums_max+1)]
-    ans = ''
+    try:
+        nums_max, nums_min = max(nums), min(nums)
+        lst = [i for i in range(nums_min, nums_max+1)]
+        ans = ''
 
-    for i in lst:
-        if i not in nums:
-            ans += str(i)
+        for i in lst:
+            if i not in nums:
+                ans += str(i)
 
-    return int(ans)
+        return int(ans)
+    except ValueError:
+        return 0
 
 
 def examples():

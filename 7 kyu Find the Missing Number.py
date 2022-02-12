@@ -1,16 +1,5 @@
 def missing_no(nums):
-    try:
-        nums_max, nums_min = max(nums), min(nums)
-        lst = [i for i in range(nums_min, nums_max+1)]
-        ans = ''
-
-        for i in lst:
-            if i not in nums:
-                ans += str(i)
-
-        return int(ans)
-    except ValueError:
-        return 0
+    return 100 * 101 // 2 - sum(nums)
 
 
 def examples():

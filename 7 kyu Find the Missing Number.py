@@ -1,5 +1,13 @@
 def missing_no(nums):
-    pass
+    nums_max, nums_min = max(nums), min(nums)
+    lst = [i for i in range(nums_min, nums_max+1)]
+    ans = ''
+
+    for i in lst:
+        if i not in nums:
+            ans += str(i)
+
+    return int(ans)
 
 
 def examples():
@@ -11,3 +19,6 @@ def examples():
     nums = list(reversed(range(0, 101)))
     nums.remove(10)
     print(missing_no(nums), 10)
+
+
+print(examples())

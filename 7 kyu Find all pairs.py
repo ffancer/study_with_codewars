@@ -1,7 +1,12 @@
 def duplicates(arr):
     cnt = 0
     dct = {i: arr.count(i) for i in arr}
-    return dct
+
+    for i in dct.values():
+        if i > 1:
+            cnt += 1
+
+    return cnt
 
 print(duplicates([1, 2, 5, 6, 5, 2]), 2)
 print(duplicates([1, 2, 2, 20, 6, 20, 2, 6, 2]), 4)

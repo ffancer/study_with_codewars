@@ -3,8 +3,7 @@
 
 
 def one(sq, fun):
-    for i in sq:
-        print(fun(i))
+    return sum(fun(i) for i in sq) == 1
 
 
 equals_9 = lambda x: x == 9

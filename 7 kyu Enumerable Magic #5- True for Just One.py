@@ -4,9 +4,7 @@
 
 def one(sq, fun):
     for i in sq:
-        if i not in fun:
-            return False
-    return True
+        print(fun(i))
 
 
 equals_9 = lambda x: x == 9

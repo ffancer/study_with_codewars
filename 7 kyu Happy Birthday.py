@@ -1,5 +1,6 @@
 def wrap(height, width, length):
-    pass
+    min_value = min(height, width, length)
+
 
 
 print(wrap(17, 32, 11), 162)

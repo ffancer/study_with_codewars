@@ -3,8 +3,10 @@
 
 
 def one(sq, fun):
-    # your code here
-    pass
+    for i in sq:
+        if i not in fun:
+            return False
+    return True
 
 
 equals_9 = lambda x: x == 9

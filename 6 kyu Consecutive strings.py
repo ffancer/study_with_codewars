@@ -1,6 +1,6 @@
 def longest_consec(strarr, k):
     for i in range(len(strarr)-k+1):
-        print(i)
+        print(strarr[i:i+k])
 
 
 print(longest_consec(["zone", "abigail", "theta", "form", "libe", "zas"], 2), "abigailtheta")

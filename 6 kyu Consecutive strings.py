@@ -4,7 +4,7 @@ def longest_consec(strarr, k):
     for i in range(len(strarr)-k+1):
         lst.append(''.join(strarr[i:i+k]))
 
-    return max(lst) if strarr and 0 < k <= len(strarr) else ""
+    return max(lst, key=len) if strarr and 0 < k <= len(strarr) else ""
 
 
 print(longest_consec(["zone", "abigail", "theta", "form", "libe", "zas"], 2), "abigailtheta")

@@ -1,9 +1,5 @@
 def getSlope(p1, p2):
-    (x, y), (x2, y2) = p1, p2
-    try:
-        return (y - y2) / (x - x2)
-    except ZeroDivisionError:
-        pass
+    return None if p1[0] == p2[0] else (p2[1] - p1[1])/(p2[0] - p1[0])
 
 
 # ("Should calculate the existing non-zero between 2 points")

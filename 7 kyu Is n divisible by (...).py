@@ -2,8 +2,11 @@
 # Is n divisible by (...)?
 
 
-def is_divisible():
-    pass
+def is_divisible(*args):
+    for i in args[1::]:
+        if args[0] % i != 0:
+            return False
+    return True
 
 
 print(is_divisible(3, 3, 4), False)

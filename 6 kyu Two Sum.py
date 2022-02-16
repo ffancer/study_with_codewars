@@ -1,14 +1,8 @@
 def two_sum(numbers, target):
-    i, j = 0, 1
-    lst = []
-    while i < j:
-        if numbers[i] + numbers[j] != target:
-            j += 1
-        else:
-            lst.append(i)
-            lst.append(j)
-
-    return lst
+    for i in range(len(numbers)):
+        for j in range(len(numbers)):
+            if numbers[i] + numbers[j] == target:
+                return [i, j]
 
 
 

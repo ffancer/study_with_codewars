@@ -1,8 +1,5 @@
-from math import factorial as fac
-
-
 def am_i_wilson(n):
-    return n * fac(n-1)
+    return n in (5, 13, 563)
 
 
 print(am_i_wilson(0), False)

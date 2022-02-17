@@ -1,5 +1,8 @@
+from math import factorial as fac
+
+
 def am_i_wilson(n):
-    pass
+    return n * fac(n-1)
 
 
 print(am_i_wilson(0), False)

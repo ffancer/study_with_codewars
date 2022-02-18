@@ -1,5 +1,5 @@
 def alias_gen(f_name, l_name):
-    pass
+    return FIRST_NAME[f_name[0]] + ' ' + SURNAME[l_name[0]]
 
 
 basic_tests = (

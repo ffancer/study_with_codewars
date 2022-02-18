@@ -2,7 +2,15 @@ rooms = {'first': {
     'name': 'Bob',
     'description': 'bla-bla',
     'completed': 'yes'
-        }, 'second': 'second_room', 'third': 'third_room'}
+}, 'second': {
+    'name': 'Edgar',
+    'description': 'bla-bla',
+    'completed': 'no'
+}, 'third': {
+    'name': 'Ann',
+    'description': 'bla-bla',
+    'completed': "I don't know"
+}}
 
 
 def example_tests():

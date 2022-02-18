@@ -1,4 +1,4 @@
-rooms = {}
+rooms = {'first': 'first_room', 'second': 'second_room', 'third': 'third_room'}
 
 
 def example_tests():
@@ -12,5 +12,6 @@ def example_tests():
     def example_test_case():
         for name in rooms.values():
             print(len(name) >= 3, f'Not enough properties for room: {name}')
+
 
 print(example_tests())

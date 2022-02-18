@@ -1,5 +1,7 @@
 def generate_link(user):
-    pass
+    user = user.split()
+    # return user.split()
+    return f'http://www.codewars.com/users/{}'
 
 
 print('matt c', 'http://www.codewars.com/users/matt%20c')

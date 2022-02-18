@@ -1,5 +1,8 @@
 def alias_gen(f_name, l_name):
-    return FIRST_NAME[f_name[0]] + ' ' + SURNAME[l_name[0]]
+    try:
+        return FIRST_NAME[f_name[0].upper()] + ' ' + SURNAME[l_name[0].upper()]
+    except:
+        return 'Your name must start with a letter from A - Z.'
 
 
 basic_tests = (

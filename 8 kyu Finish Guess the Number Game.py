@@ -4,7 +4,10 @@ class Guesser:
         self.lives = lives
 
     def guess(self, n):
-        return n == self.number
+        try:
+            return n == self.number
+        except:
+            return 'Omae wa mo shindeiru'
 
 
 guesser = Guesser(10, 2)

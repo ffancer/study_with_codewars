@@ -4,7 +4,7 @@ class Guesser:
         self.lives = lives
 
     def guess(self, n):
-        return False
+        return n == self.number
 
 
 guesser = Guesser(10, 2)

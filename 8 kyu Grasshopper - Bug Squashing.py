@@ -4,10 +4,11 @@ health = 100
 position = 0
 coins = 0
 
-def (main):
-  getCoins()
-  move()
-  print_status()
-  combat()
-  rolDice()
-  attack()
+
+def(main):
+    combat()
+    buy_health
+    get_coins()
+    print_status()
+    roll_dice()
+    move()

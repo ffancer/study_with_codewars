@@ -1,6 +1,5 @@
 def count_squares(cuts):
-    # your code here
-    return x  # an integer number
+    return 6 * pow(cuts, 2) + 2 // 1
 
 
 print(count_squares(5), 152)

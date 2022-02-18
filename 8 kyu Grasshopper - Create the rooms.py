@@ -1,4 +1,8 @@
-rooms = {'first': 'first_room', 'second': 'second_room', 'third': 'third_room'}
+rooms = {'first': {
+    'name': 'Bob',
+    'description': 'bla-bla',
+    'completed': 'yes'
+        }, 'second': 'second_room', 'third': 'third_room'}
 
 
 def example_tests():

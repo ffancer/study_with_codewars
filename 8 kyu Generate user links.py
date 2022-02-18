@@ -4,7 +4,7 @@ import urllib.parse
 def generate_link(user):
     # user = user.split()
     # return f"http://www.codewars.com/users/{'%'.join(user)}"
-    return urllib.parse.quote(user)
+    return f"http://www.codewars.com/users/{urllib.parse.quote(user)}"
 
 
 print(generate_link('matt c') ,'http://www.codewars.com/users/matt%20c')

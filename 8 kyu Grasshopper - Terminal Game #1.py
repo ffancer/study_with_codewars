@@ -1,7 +1,10 @@
 class Hero(object):
     def __init__(self, name):
-        # Add default values here
-        pass
+        self.name = name
+        self.experience = 0
+        self.health = 100
+        self.position = '00'
+        self.damage = 5
 
 
 def basic_test_cases():

@@ -1,5 +1,5 @@
 def match(candidate, job):
-    pass
+    return candidate < job
 
 
 candidate1 = {'min_salary': 120000}

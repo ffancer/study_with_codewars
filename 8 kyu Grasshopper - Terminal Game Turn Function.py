@@ -1,6 +1,7 @@
 def do_turn():
-    print(Game.Logic.combat())
-
-
-print(do_turn())
-# print((len(log), 6))
+    roll_dice()
+    move()
+    combat()
+    get_coins()
+    buy_health()
+    print_status()

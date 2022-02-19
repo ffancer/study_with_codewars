@@ -1,10 +1,10 @@
 class Hero(object):
-    def __init__(self, name):
+    def __init__(self, name, experience=0, health=100, position='00', damage=5):
         self.name = name
-        self.experience = 0
-        self.health = 100
-        self.position = '00'
-        self.damage = 5
+        self.experience = experience
+        self.health = health
+        self.position = position
+        self.damage = damage
 
 
 def basic_test_cases():

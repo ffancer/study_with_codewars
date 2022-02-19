@@ -104,7 +104,8 @@ lst_fruit = [
 
 
 def subtract_sum(number):
-    return get_sum(number)
+    answer = number - get_sum(number)
+    return answer
 
 
 def get_sum(number):

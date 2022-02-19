@@ -6,12 +6,14 @@ class Cube(object):
         return self._side
 
     def set_side(self, new_side):
-        self._side = new_side
+        self._side = abs(new_side)
 
 
 c = Cube(10)
 print(c.get_side(), 10, "Should be 10")
 c = Cube()
 print(c.get_side(), 0, "Should be 0")
-print(c.get_side(), -7, "Should be 7")
-print(c.get_side(), -9, "Should be 9")
+c = Cube(-7)
+print(c.get_side(), 0, "Should be 7")
+c = Cube(-9)
+print(c.get_side(), 5, "Should be 9")

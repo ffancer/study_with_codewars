@@ -1,5 +1,5 @@
 def match(candidate, job):
-    return candidate < job
+    return candidate.get('min_salary') < job.get('max_salary')
 
 
 candidate1 = {'min_salary': 120000}

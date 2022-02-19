@@ -1,5 +1,5 @@
 def do_turn():
-    pass
+    print(Game.Logic.combat())
 
 
 print(do_turn())

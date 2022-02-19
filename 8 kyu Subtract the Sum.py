@@ -102,19 +102,20 @@ lst_fruit = [
 ]
 
 
-# def subtract_sum(number):
-#     pass
+
+def subtract_sum(number):
+    return get_sum(number)
 
 
 def get_sum(number):
     total = 0
     while number > 0:
         total += number % 10
-        number /= 10
+        number //= 10
     return total
 
 
-# print(subtract_sum(10), "apple")
-print(get_sum(10))
-print(get_sum(321))
-print(get_sum(114567))
+print(subtract_sum(10), "apple")
+# print(get_sum(10))
+# print(get_sum(321))
+# print(get_sum(114567))

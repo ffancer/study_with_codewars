@@ -102,17 +102,19 @@ lst_fruit = [
 ]
 
 
-
 def subtract_sum(number):
     answer = number - get_sum(number)
-    return answer
+    if answer < 100:
+        return lst_fruit[answer - 1]
 
 
 def get_sum(number):
     total = 0
+
     while number > 0:
         total += number % 10
         number //= 10
+
     return total
 
 

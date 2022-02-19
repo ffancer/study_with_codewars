@@ -1,5 +1,5 @@
 def quadratic(x1, x2):
-    pass
+    return 1, -(x1 + x2), x1 * x2
 
 
 print(quadratic(0, 1), (1, -1, 0))

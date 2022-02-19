@@ -106,6 +106,7 @@ def subtract_sum(number):
     answer = number - get_sum(number)
     if answer < 100:
         return lst_fruit[answer - 1]
+    return subtract_sum(number - get_sum(number))
 
 
 def get_sum(number):

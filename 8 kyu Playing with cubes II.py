@@ -1,6 +1,6 @@
 class Cube(object):
     def __init__(self, side=0):
-        self._side = side
+        self._side = abs(side)
 
     def get_side(self):
         return self._side

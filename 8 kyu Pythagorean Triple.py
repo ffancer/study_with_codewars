@@ -1,5 +1,5 @@
 def pythagorean_triple(integers):
-    pass
+    return integers[2] ** 2 == integers[0] ** 2 + integers[1] ** 2
 
 
 print(pythagorean_triple([3, 4, 5]), True)

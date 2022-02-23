@@ -1,6 +1,5 @@
 def swap(st):
-    # your code here
-    return ""
+    vowels_lst = ['e', 'u', 'i', 'o', 'a']
 
 
 print(swap("HelloWorld!"), "HEllOWOrld!")

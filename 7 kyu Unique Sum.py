@@ -1,0 +1,7 @@
+def unique_sum(lst):
+    pass
+
+
+print(unique_sum([1, 2, 3]), 6)
+print(unique_sum([1, 3, 8, 1, 8]), 12)
+print(unique_sum([-1, -1, 5, 2, -7]), -1)

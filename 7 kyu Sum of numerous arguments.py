@@ -4,7 +4,7 @@ def find_sum(*args):
     for i in args:
         if i < 0:
             return -1
-
+    return sum(args)
 
 
 print(find_sum(1, 3, 5), 9, "1 + 3 + 5 = 9")

@@ -14,7 +14,14 @@ def boredom(staff):
     for i in staff.values():
         if i in dct.keys():
             total += dct[i]
-    return total
+
+    if total <=80:
+        return 'kill me now'
+    elif 100 > total > 80:
+        return 'i can handle this'
+    elif total > 100:
+        return 'party time!!'
+
 
 
 

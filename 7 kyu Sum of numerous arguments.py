@@ -1,6 +1,9 @@
 def find_sum(*args):
     if not args:
         return 0
+    for i in args:
+        if i < 0:
+            return -1
 
 
 

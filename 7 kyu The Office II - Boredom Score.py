@@ -1,4 +1,5 @@
 def boredom(staff):
+    total = 0
     dct = {'accounts': 1,
            'finance': 2,
            'canteen': 10,
@@ -11,7 +12,10 @@ def boredom(staff):
            'pissing about': 25}
 
     for i in staff.values():
-        print(i)
+        if i in dct.keys():
+            total += dct[i]
+    return total
+
 
 
 print(boredom({"tim": "change", "jim": "accounts",

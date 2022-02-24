@@ -1,5 +1,7 @@
-def find_sum():
-    pass
+def find_sum(*args):
+    if not args:
+        return 0
+
 
 
 print(find_sum(1, 3, 5), 9, "1 + 3 + 5 = 9")

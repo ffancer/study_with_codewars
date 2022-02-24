@@ -10,6 +10,9 @@ def boredom(staff):
            'cleaning': 4,
            'pissing about': 25}
 
+    for i in staff.values():
+        print(i)
+
 
 print(boredom({"tim": "change", "jim": "accounts",
                "randy": "canteen", "sandy": "change", "andy": "change", "katie": "IS",

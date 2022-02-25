@@ -1,5 +1,13 @@
 def solve(arr):
-    pass
+    lst = []
+
+    while arr:
+        lst.append(arr.pop(arr(max(arr))))
+        lst.append(arr.pop(arr(min(arr))))
+        # lst.append(min(arr))
+
+
+    return lst
 
 
 print(solve([15, 11, 10, 7, 12]), [15, 7, 12, 10, 11])

@@ -1,9 +1,12 @@
 def solve(arr):
-    arr = sorted(arr) # [7, 10, 11, 12, 15]
-
-
-
-
+    arr = sorted(arr)  # [7, 10, 11, 12, 15]
+    lst = []
+    while arr:
+        lst.append(arr[-1])
+        del arr[-1]
+        lst.append(arr[0])
+        del arr[0]
+    return lst
 
 print(solve([15, 11, 10, 7, 12]), [15, 7, 12, 10, 11])
 print(solve([91, 75, 86, 14, 82]), [91, 14, 86, 75, 82])

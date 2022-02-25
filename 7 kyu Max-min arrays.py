@@ -1,15 +1,14 @@
 def solve(arr):
-    arr = sorted(arr)  # [7, 10, 11, 12, 15]
+    arr_copy = arr[:]
     lst = []
-    i, j = 0, -1
 
-    while j < len(arr):
-        lst.append(arr[i])
-        # arr.pop(i)
-        lst.append(arr[j])
-        # arr.pop(j)
-        i += 1
-        j -= 1
+    while arr_copy:
+        lst.append(max(arr_copy))
+        del arr_copy[arr_copy.index(max(arr_copy))]
+        if arr_copy:
+            lst.append(min(arr_copy))
+            del arr_copy[arr_copy.index(min(arr_copy))]
+
     return lst
 
 

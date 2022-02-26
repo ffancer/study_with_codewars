@@ -1,7 +1,6 @@
 def calculator(txt):
-    # This is the place to code!
-    pass
-
+    a, operator, b = txt.split()
+    return a, b, operator
 
 print(calculator("..... + ..............."), "....................")
 print(calculator("..... - ..."), "..")

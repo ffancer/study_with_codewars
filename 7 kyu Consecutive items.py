@@ -1,5 +1,5 @@
 def consecutive(arr, a, b):
-    return arr.index(a), arr.index(b)
+    return abs(arr.index(b) - arr.index(a)) == 1
 
 
 print(consecutive([1, 3, 5, 7], 3, 7), False)

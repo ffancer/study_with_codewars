@@ -1,5 +1,5 @@
-def count_char:
-    pass
+def count_char(*args):
+    return args[0].lower().count(args[1].lower())
 
 
 print(count_char("Hello there", "e"), 3)

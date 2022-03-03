@@ -1,5 +1,7 @@
 def time_correct(t):
-    return sum(i.isdigit() for i in t)
+    if sum(i.isdigit() for i in t) == 6 and t.count(':') == 2:
+        return True
+    return False
 
 
 # print(time_correct(None), None)

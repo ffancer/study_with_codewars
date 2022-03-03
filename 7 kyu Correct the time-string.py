@@ -1,8 +1,8 @@
 def time_correct(t):
-    pass
+    return sum(i.isdigit() for i in t)
 
 
-print(time_correct(None), None)
+# print(time_correct(None), None)
 print(time_correct(""), "")
 print(time_correct("001122"), None)
 print(time_correct("00;11;22"), None)

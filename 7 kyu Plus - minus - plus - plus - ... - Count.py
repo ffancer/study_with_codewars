@@ -1,9 +1,13 @@
-import itertools
-
 def catch_sign_change(lst):
-    return max(sum(1 for key in itertools.groupby(lst, lambda x: x >= 0)) - 1, 0)
+    cnt = 0
 
+    for i in range(1, len(lst)):
+        if lst[i] < 0 and lst[i-1] >= 0:
+            cnt += 1
+        if lst[i] >= 0 and lst[i-1] < 0:
+            cnt += 1
 
+    return cnt
 
 
 print(catch_sign_change([1, 3, 4, 5]), 0)

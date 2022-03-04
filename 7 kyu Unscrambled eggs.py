@@ -1,5 +1,5 @@
 def unscramble_eggs(word):
-    pass
+    return word.replace('egg', '')
 
 
 print(unscramble_eggs("ceggodegge heggeregge"), "code here")

@@ -1,5 +1,12 @@
 def catch_sign_change(lst):
-    pass
+    # lst = [str(i) for i in lst]
+    cnt = 0
+    x = lst[0]
+    if x < 0:
+        for i in lst[1:]:
+            if
+
+
 
 
 print(catch_sign_change([1, 3, 4, 5]), 0)

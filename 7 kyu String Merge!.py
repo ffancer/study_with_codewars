@@ -1,5 +1,5 @@
 def string_merge(string1, string2, letter):
-    pass
+    return string1.find(letter), string2.find(letter)
 
 
 print(string_merge("hello", "world", "l"), "held")

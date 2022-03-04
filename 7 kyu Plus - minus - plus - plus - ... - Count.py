@@ -1,10 +1,7 @@
+import itertools
+
 def catch_sign_change(lst):
-    # lst = [str(i) for i in lst]
-    cnt = 0
-    x = lst[0]
-    if x < 0:
-        for i in lst[1:]:
-            if
+    return max(sum(1 for key in itertools.groupby(lst, lambda x: x >= 0)) - 1, 0)
 
 
 

@@ -1,5 +1,7 @@
 def is_very_even_number(n):
-    return True
+    # while len(str(n)) != 1:
+    #     n = sum(int(str(n)))
+    return sum([int(i) for i in list(str(n))])
 
 
 print(is_very_even_number(0), True)

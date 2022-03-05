@@ -1,6 +1,9 @@
 def fizz_buzz_cuckoo_clock(time):
     time = time.split(':')
-    return time
+    time = [int(i) for i in time]
+    hour = time[0]
+    minute = time[1]
+    return hour, minute
 
 print(fizz_buzz_cuckoo_clock("13:34"), "tick")
 print(fizz_buzz_cuckoo_clock("21:00"), "Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo")

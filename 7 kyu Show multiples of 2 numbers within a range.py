@@ -1,12 +1,6 @@
 # Python version: return multiples of 2 numbers in a list
 def multiples(s1, s2, s3):
-    lst = []
-
-    for i in range(s1, s3):
-        if i % s1 == 0 and i % s2 == 0:
-            lst.append(i)
-
-    return lst
+    return [i for i in range(s1, s3) if i % s1 == 0 and i % s2 == 0]
 
 s1, s2, s3 = 2, 4, 40
 print(s1, s2, s3)

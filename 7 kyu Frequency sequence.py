@@ -1,10 +1,5 @@
 def freq_seq(s, sep):
-    ans = ''
-
-    for i in s:
-        ans += str(s.count(i)) + sep
-
-    return ans[:-1]
+    return sep.join(str(s.count(i)) for i in s)
 
 
 print(freq_seq('hello world', '-'), '1-1-3-3-2-1-1-2-1-3-1')

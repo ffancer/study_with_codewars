@@ -1,9 +1,15 @@
 def order_food(lst):
     ans = []
+
     for i in lst:
         ans.append(i['meal'])
 
-    return ans
+    dct = {i: ans.count(i) for i in ans}
+
+    return dct
+
+
+
 list1 = [
     {'firstName': 'Noah', 'lastName': 'M.', 'country': 'Switzerland', 'continent': 'Europe', 'age': 19, 'language': 'C',
      'meal': 'vegetarian'},

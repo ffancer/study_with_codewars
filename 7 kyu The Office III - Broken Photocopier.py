@@ -1,5 +1,5 @@
 def broken(inp):
-    return inp
+    return inp.replace('0', '1').replace('1', '0')
 
 
 

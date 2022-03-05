@@ -3,7 +3,10 @@
 
 
 def remove(s):
-    pass
+    point = s.find('H')
+    s = s[:point].replace('!', '') + s[point:]
+    return s
+
 
 
 print(remove('Hi!'), 'Hi!')

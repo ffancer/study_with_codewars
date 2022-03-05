@@ -1,8 +1,9 @@
 def order_food(lst):
+    ans = []
     for i in lst:
-        print(i['meal'])
+        ans.append(i['meal'])
 
-
+    return ans
 list1 = [
     {'firstName': 'Noah', 'lastName': 'M.', 'country': 'Switzerland', 'continent': 'Europe', 'age': 19, 'language': 'C',
      'meal': 'vegetarian'},

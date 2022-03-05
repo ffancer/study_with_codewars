@@ -4,12 +4,18 @@
 
 def remove(s):
     ans = ''
-    i = 1
-    while s:
-        if s[i-1] != '!' or s[i+1] != '!':
-            ans += s[i]
+    flag = False
 
-    return ans
+    for i in s[::-1]:
+        if i == '!':
+            if not flag:
+                ans += i
+        else:
+            if not flag and i.isalpha():
+                flag = True
+            ans += i
+
+    return ans[::-1]
 
 
 print(remove('Hi!'), 'Hi!')

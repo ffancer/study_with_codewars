@@ -1,6 +1,6 @@
 def order_food(lst):
-    # your code here
-    pass
+    for i in lst:
+        print(i['meal'])
 
 
 list1 = [

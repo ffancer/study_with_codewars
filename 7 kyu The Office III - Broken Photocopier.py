@@ -1,5 +1,13 @@
 def broken(inp):
-    return inp.replace('0', '1').replace('1', '0')
+    s = ''
+
+    for i in inp:
+        if i == '1':
+            s += '0'
+        else:
+            s += '1'
+
+    return s
 
 
 

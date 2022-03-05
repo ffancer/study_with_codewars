@@ -3,7 +3,8 @@ def fizz_buzz_cuckoo_clock(time):
     time = [int(i) for i in time]
     hour = time[0]
     minute = time[1]
-    clock = {0: 12, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 10: 10, 11: 11, 12: 12, 13: 1, 14: 2, 15: 3, 16: 4, 17: 5, 18: 6, 19: 7, 20: 8, 21: 9, 22: 10, 23: 11, 24: 12}
+    clock = {0: 12, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 10: 10, 11: 11, 12: 12, 13: 1, 14: 2, 15: 3,
+             16: 4, 17: 5, 18: 6, 19: 7, 20: 8, 21: 9, 22: 10, 23: 11, 24: 12}
     if minute == 0:
         return ("Cuckoo " * clock[hour]).rstrip()
     if minute == 30:
@@ -14,6 +15,9 @@ def fizz_buzz_cuckoo_clock(time):
         return "Fizz"
     if minute % 5 == 0:
         return "Buzz"
+    else:
+        return 'tick'
+
 
 print(fizz_buzz_cuckoo_clock("13:34"), "tick")
 print(fizz_buzz_cuckoo_clock("21:00"), "Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo")

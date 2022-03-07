@@ -1,6 +1,5 @@
 def between_extremes(numbers):
-    # Your code goes here!
-    pass
+    return max(numbers) - min(numbers)
 
 
 print(between_extremes([1, 1]), 0, 'Expecting zero when all numbers are equal')

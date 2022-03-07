@@ -1,6 +1,6 @@
 def gordon(a):
-    # your code here
-    return ''
+    lst = []
+    return a.split()
 
 
 print(gordon('What feck damn cake'), 'WH@T!!!! F*CK!!!! D@MN!!!! C@K*!!!!')

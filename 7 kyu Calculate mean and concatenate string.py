@@ -8,7 +8,8 @@ def mean(lst):
         else:
             letters += i
 
-    return letters, digits
+    return [sum(digits) / 10, letters]
+
 
 lst = ["u", "6", "d", "1", "i", "w", "6", "s", "t", "4", "a", "6", "g", "1", "2", "w", "8", "o", "2", "0"]
 print(mean(lst), [3.6, "udiwstagwo"])

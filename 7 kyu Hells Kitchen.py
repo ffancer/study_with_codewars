@@ -1,7 +1,10 @@
 def gordon(a):
     lst = []
-    return a.split()
+    a = a.split()
 
+    for i in a:
+        lst.append(i.upper().replace('A', '@'))
+    return lst
 
 print(gordon('What feck damn cake'), 'WH@T!!!! F*CK!!!! D@MN!!!! C@K*!!!!')
 print(gordon('are you stu pid'), '@R*!!!! Y**!!!! ST*!!!! P*D!!!!')

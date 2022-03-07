@@ -1,5 +1,5 @@
 def between_extremes(numbers):
-    return 'Expecting zero when all numbers are equal' if max(numbers) - min(numbers) == 0 else max(numbers) - min(numbers)
+    return max(numbers) - min(numbers)
 
 
 print(between_extremes([1, 1]), 0, 'Expecting zero when all numbers are equal')

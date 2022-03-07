@@ -1,9 +1,10 @@
 def gordon(a):
     lst = []
     a = a.split()
+    # vowels = ['a', 'e', 'i', 'o', 'u']
 
     for i in a:
-        lst.append(i.upper().replace('A', '@'))
+        lst.append(i.upper().replace('A', '@').replace('E', '*').replace('I', '*').replace('O', '*').replace('U', '*') + '!!!!')
     return lst
 
 print(gordon('What feck damn cake'), 'WH@T!!!! F*CK!!!! D@MN!!!! C@K*!!!!')

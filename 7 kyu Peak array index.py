@@ -1,5 +1,6 @@
 def peak(arr):
-    pass
+    for i in range(len(arr)):
+        print(sum(arr[i:]))
 
 
 print(peak([1, 2, 3, 5, 3, 2, 1]), 3)

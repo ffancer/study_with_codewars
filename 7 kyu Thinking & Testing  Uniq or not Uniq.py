@@ -3,8 +3,7 @@
 
 
 def testit(a, b):
-    a.extend(b)  # extend???
-    return a
+    return sorted(a + b)
 
 
 print(testit([0], [1]), [0, 1], "")

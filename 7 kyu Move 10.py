@@ -1,5 +1,8 @@
 def move_ten(st):
-    pass
+    s = ''
+
+    for i in st:
+        print(ord(i))
 
 
 print(move_ten("testcase"), "docdmkco")

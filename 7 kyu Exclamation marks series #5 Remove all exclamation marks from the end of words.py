@@ -3,9 +3,7 @@
 
 
 def remove(s):
-    s = s.split()
-    s = [i.rstrip('!') for i in s]
-    return ' '.join(s)
+    return ' '.join(i.rstrip('!') for i in s.split())
 
 
 print(remove('Hi!'), 'Hi')

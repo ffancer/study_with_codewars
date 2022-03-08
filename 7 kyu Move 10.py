@@ -1,8 +1,11 @@
 def move_ten(st):
     s = ''
+    alph = 'abcdefghijklmnopqrstuvwxyz'
 
-    for i in st:
-        s += chr(ord(i) + 10)
+    for i, j in enumerate(alph):
+        # print(i, j)
+        if j in st:
+            s += alph[(i + 10) % len(alph)]
 
     return s
 

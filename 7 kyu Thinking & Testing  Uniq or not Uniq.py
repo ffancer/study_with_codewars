@@ -3,8 +3,7 @@
 
 
 def testit(a, b):
-    a, b = list(set(a)), list(set(b))
-    return sorted(a + b)
+    return sorted(list(set(a)) + list(set(b)))
 
 
 print(testit([0], [1]), [0, 1], "")

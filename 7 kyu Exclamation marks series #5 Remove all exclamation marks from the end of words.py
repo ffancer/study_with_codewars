@@ -3,7 +3,8 @@
 
 
 def remove(s):
-    pass
+    s = s.split()
+    return s[-1].rstrip('!')
 
 
 print(remove('Hi!'), 'Hi')

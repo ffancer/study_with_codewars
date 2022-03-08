@@ -2,7 +2,9 @@ def move_ten(st):
     s = ''
 
     for i in st:
-        print(ord(i))
+        s += chr(ord(i) + 10)
+
+    return s
 
 
 print(move_ten("testcase"), "docdmkco")

@@ -4,8 +4,8 @@
 
 def remove(s):
     s = s.split()
-    # s[-1].rstrip('!')
-    return ' '.join(s).rstrip('!')
+    s = [i.rstrip('!') for i in s]
+    return ' '.join(s)
 
 
 print(remove('Hi!'), 'Hi')

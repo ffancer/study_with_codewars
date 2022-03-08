@@ -3,14 +3,8 @@
 
 
 def testit(a, b):
-    srtd_lst = sorted(a + b)
-    lst = []
-
-    for i in srtd_lst:
-        if srtd_lst.count(i) < 3:
-            lst.append(i)
-
-    return lst
+    a, b = list(set(a)), list(set(b))
+    return sorted(a + b)
 
 
 print(testit([0], [1]), [0, 1], "")

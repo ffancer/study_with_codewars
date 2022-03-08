@@ -1,6 +1,5 @@
 def move_ten(st):
     s = ''
-    alph = 'abcdefghijklmnopqrstuvwxyz'
 
     for i in st:
         if i:
@@ -8,7 +7,7 @@ def move_ten(st):
         else:
             s += chr((ord(i) + 10 - 65) % 26 + 97)
 
-    return s
+    return s.lower()
 
 
 print(move_ten("testcase"), "docdmkco")

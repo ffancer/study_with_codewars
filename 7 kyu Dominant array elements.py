@@ -1,15 +1,13 @@
 def solve(arr):
     a = 0
-    b = 1
     lst = []
-    while b < len(arr):
-        for i in arr[b:]:
-            if i > arr[a]:
-                a += 1
-            else:
-                lst.append(arr[a])
-                a += 1
-                b += 1
+
+    while a != len(arr):
+        if arr[a] < max(arr[a:]):
+            a += 1
+        else:
+            lst.append(arr[a])
+            a += 1
 
     return lst
 

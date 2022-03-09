@@ -1,7 +1,7 @@
 def palindrome(num):
     if str(num)[0].isalpha() or str(num)[0] == '-' or type(num) == str:
         return "Not valid"
-
+    return str(num) == str(num)[::-1]
 
 
 print(palindrome(1221), True)

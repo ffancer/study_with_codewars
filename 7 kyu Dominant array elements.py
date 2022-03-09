@@ -1,19 +1,9 @@
 def solve(arr):
-    a = 0
-    lst = []
-
-
-    while a != len(arr):
-        if arr[a] < max(arr[a:]):
-            a += 1
-        else:
-            lst.append(arr[a])
-            a += 1
-
-    ans = []
-    [ans.append(item) for item in lst if item not in ans]
-
-    return ans
+    r = []
+    for v in arr[::-1]:
+        if not r or r[-1] < v:
+            r.append(v)
+    return r[::-1]
 
 
 print(solve([16, 17, 14, 3, 14, 5, 2]), [17, 14, 5, 2])

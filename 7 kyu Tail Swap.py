@@ -1,5 +1,7 @@
 def tail_swap(strings):
-    return strings[0].split(':')
+    first_head, second_tail = strings[0].split(':')
+    second_head, first_tail = strings[1].split(':')
+    return [first_head + ':' + first_tail, second_head + ':' + second_tail]
 
 
 print(tail_swap(['abc:123', 'cde:456']),

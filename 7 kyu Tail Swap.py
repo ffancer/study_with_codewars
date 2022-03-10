@@ -1,5 +1,5 @@
 def tail_swap(strings):
-    pass
+    return strings[0].split(':')
 
 
 print(tail_swap(['abc:123', 'cde:456']),

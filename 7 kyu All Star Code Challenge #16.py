@@ -1,8 +1,5 @@
 def no_repeat(string):
-    for i in string:
-        if string.count(i) == 1:
-            return i
-
+    return ''.join(i for i in string if string.count(i) == 1)[0]
 
 print(no_repeat("aabbccdde"), "e")
 print(no_repeat("wxyz"), "w")

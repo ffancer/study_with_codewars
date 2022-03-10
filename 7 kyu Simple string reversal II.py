@@ -1,5 +1,5 @@
 def solve(st, a, b):
-    pass
+    return st[a:b+1][::-1]
 
 
 print(solve("codewars", 1, 5), "cawedors")

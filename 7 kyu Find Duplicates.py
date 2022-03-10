@@ -1,11 +1,13 @@
 def duplicates(array):
-    lst = []
+    seen = []
+    dups = []
+    for char in array:
+        if char not in seen:
+            seen.append(char)
+        elif char not in dups:
+            dups.append(char)
 
-    for i, j in enumerate(array):
-        if array[:i + 1].count(j) > 1 and j not in lst:
-            lst.append(j)
-
-    return lst
+    return dups
 
 
 print(duplicates([1, 2, 4, 4, 3, 3, 1, 5, 3, '5']), [4, 3, 1])

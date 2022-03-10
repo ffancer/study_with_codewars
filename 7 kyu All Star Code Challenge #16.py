@@ -1,5 +1,7 @@
 def no_repeat(string):
-    pass
+    for i in string:
+        if string.count(i) == 1:
+            return i
 
 
 print(no_repeat("aabbccdde"), "e")

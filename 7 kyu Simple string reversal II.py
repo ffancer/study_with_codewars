@@ -1,5 +1,6 @@
 def solve(st, a, b):
-    return st[a:b+1][::-1]
+    return st[:a] + st[a:b+1][::-1] + st[b+1:]
+
 
 
 print(solve("codewars", 1, 5), "cawedors")

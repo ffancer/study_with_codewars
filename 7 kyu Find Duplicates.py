@@ -1,10 +1,13 @@
 def duplicates(array):
+    dupl = []
     lst = []
 
     for i in array:
         if array.count(i) > 1:
+            dupl.append(i)
+    for i in dupl:
+        if i not in lst:
             lst.append(i)
-
     return lst
 
 

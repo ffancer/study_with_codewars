@@ -2,7 +2,7 @@ def sum_average(arr):
     lst = []
     for i in arr:
         lst.append(sum(i) / len(i))
-    return lst
+    return sum(lst)
 
 print(sum_average([[1, 2, 2, 1], [2, 2, 2, 1]]), 3)
 print(sum_average([[52, 64, 84, 21, 54], [44, 87, 46, 90, 43]]), 117)

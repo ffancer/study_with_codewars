@@ -3,8 +3,9 @@
 
 
 def late_ride(n):
-    return (n - n % 60) / 60
-
+    hour = (n - n % 60) / 60
+    minute = n % 60
+    return hour, minute
 
 print(late_ride(240), 4)
 print(late_ride(808), 14)

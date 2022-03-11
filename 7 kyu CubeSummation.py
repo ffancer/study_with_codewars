@@ -1,7 +1,7 @@
 def cube_sum(n, m):
-    total = 1
+    total = 0
 
-    for i in range(n+1, m+1):
+    for i in range(min(n, m)+1, max(n, m)+1):
         total += i ** 3
 
     return total

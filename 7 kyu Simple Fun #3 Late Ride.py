@@ -1,15 +1,8 @@
 # 7 kyu
 # Simple Fun #3: Late Ride
 
-
 def late_ride(n):
-    # hour = (n - n % 60) / 60
-    # minute = n % 60
-    # return hour, minute
-
-    hour = n / 60
-    minute = n % 60
-    return hour / 10 + hour % 10 + minute / 10 + minute % 10
+    return sum([int(x) for x in (str(n % 60) + str(int(n / 60)))])
 
 
 print(late_ride(240), 4)

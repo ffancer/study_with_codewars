@@ -10,7 +10,7 @@ def add(l_st):
 
 
 def reverse(string):
-    return string.reverse()
+    return string[::-1]
 
 
 print(multi([8, 2, 5]), 80)

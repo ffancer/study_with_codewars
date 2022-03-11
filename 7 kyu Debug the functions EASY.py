@@ -1,13 +1,16 @@
+from math import prod
+
+
 def multi(l_st):
-    return l_st * l_st
+    return prod(i for i in l_st)
 
 
 def add(l_st):
-    return l_st + l_st
+    return sum(l_st)
 
 
 def reverse(string):
-    return string.reverse
+    return string.reverse()
 
 
 print(multi([8, 2, 5]), 80)

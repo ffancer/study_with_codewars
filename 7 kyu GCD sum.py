@@ -1,11 +1,13 @@
 def solve(s, g):
+    if s % g != 0:
+        return -1
     lst = []
 
     for i in range(s):
         if i % g == 0:
             lst.append(i)
 
-    return -1 if s % g != 0 else lst[1], max(lst)
+    return lst[1], max(lst)
 
 
 print(solve(12, 4), (4, 8))

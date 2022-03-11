@@ -3,7 +3,7 @@
 
 
 def late_ride(n):
-    pass
+    return (n - n % 60) / 60
 
 
 print(late_ride(240), 4)

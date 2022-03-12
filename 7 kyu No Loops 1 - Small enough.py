@@ -3,8 +3,7 @@
 
 
 def small_enough(a, limit):
-    a = sorted(a, reverse=True)
-    return limit >= a[0]
+    return limit >= max(a)
 
 
 print(small_enough([66, 101], 200), True)

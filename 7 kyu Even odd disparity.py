@@ -1,14 +1,13 @@
 def solve(a):
-    odd_lst, even_lst = [], []
+    odd_cnt, even_cnt = 0, 0
 
     for i in a:
         if type(i) == int and i % 2 == 0:
-            even_lst.append(i)
+            even_cnt += 1
         if type(i) == int and i % 2 != 0:
-            odd_lst.append(i)
+            odd_cnt += 1
 
-
-    return len(even_lst) - len(odd_lst)
+    return even_cnt - odd_cnt
 
 
 print(solve([0, 1, 2, 3]), 0)

@@ -1,5 +1,11 @@
 def borrow(s):
-    return ""
+    ans = ''
+
+    for i in s.lower():
+        if i.isalpha():
+            ans += i
+
+    return ans
 
 
 print(borrow('WhAt! FiCK! DaMn CAke?'), 'whatfickdamncake')

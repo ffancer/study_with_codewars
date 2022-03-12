@@ -3,8 +3,7 @@
 
 
 def small_enough(a, limit):
-    # your code here
-    pass
+    return all(limit >= i for i in a)
 
 
 print(small_enough([66, 101], 200), True)

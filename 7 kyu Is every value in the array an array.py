@@ -3,7 +3,7 @@
 
 
 def arr_check(arr):
-    pass
+    return all(type(i) == list for i in arr)
 
 
 print(arr_check([]), True)

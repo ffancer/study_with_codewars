@@ -1,5 +1,5 @@
 def generate_integers(n):
-    return []
+    return [i for i in range(n+1)]
 
 
 print(generate_integers(1))

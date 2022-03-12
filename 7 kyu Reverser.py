@@ -1,5 +1,5 @@
 def reverse(n):
-    pass
+    return int(str(n)[::-1])
 
 
 print(reverse(1234), 4321)

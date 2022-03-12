@@ -2,14 +2,14 @@ def solve(a):
     odd_cnt, even_cnt = 0,0
 
     a = [i for i in a if type(i) == int]
-    print(a)
-    # for i, j in enumerate(a):
-    #     if i % 2 != 0:
-    #         odd_cnt += 1
-    #     else:
-    #         even_cnt += 1
-    #
-    # return odd_cnt, even_cnt
+
+    for i, j in enumerate(a):
+        if i % 2 != 0:
+            odd_cnt += 1
+        else:
+            even_cnt += 1
+
+    return odd_cnt, even_cnt
 
 
 print(solve([0, 1, 2, 3]), 0)

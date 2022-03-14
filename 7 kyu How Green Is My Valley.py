@@ -3,24 +3,8 @@
 
 
 def make_valley(arr):
-    left_wing_lst, right_wing_lst, middle_lst = [], [], []
-
-    if len(arr) % 2 != 0:
-        middle_lst = [min(arr)]
-        arr.remove(min(arr))
-        while len(arr) > 1:
-            left_wing_lst.append(max(arr))
-            arr.remove(max(arr))
-            right_wing_lst.append(max(arr))
-            arr.remove(max(arr))
-        return left_wing_lst + middle_lst + right_wing_lst[::-1]
-    else:
-        while len(arr) > 1:
-            left_wing_lst.append(max(arr))
-            arr.remove(max(arr))
-            right_wing_lst.append(max(arr))
-            arr.remove(max(arr))
-        return left_wing_lst + right_wing_lst[::-1]
+    arr = sorted(arr, reverse=True)
+    return arr[::2] + arr[1::2][::-1]
 
 
 print(make_valley([17, 17, 15, 14, 8, 7, 7, 5, 4, 4, 1]), [17, 15, 8, 7, 4, 1, 4, 5, 7, 14, 17])

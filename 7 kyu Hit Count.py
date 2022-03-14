@@ -3,7 +3,7 @@ def counter_effect(hit_count):
 
     for i in hit_count:
         for j in range(0, int(i)+1):
-            print(j)
+            lst.append(j)
 
     return lst
 

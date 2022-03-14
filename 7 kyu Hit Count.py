@@ -1,11 +1,5 @@
 def counter_effect(hit_count):
-    hit_count = [int(i) for i in hit_count]
-    lst = []
-
-    for i in hit_count:
-        lst.append([j for j in range(0, i + 1)])
-
-    return lst
+    return [list(range(int(a) + 1)) for a in hit_count]
 
 
 print(counter_effect("1250"), [[0, 1], [0, 1, 2], [0, 1, 2, 3, 4, 5], [0]])

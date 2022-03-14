@@ -3,20 +3,16 @@
 
 
 def smaller(arr):
+    num = arr[0]
     cnt = 0
-    i, j = 0, 1
     lst = []
-    while j < len(arr):
-        if arr[i] > arr[j]:
+    for i in arr:
+        if num > i:
             cnt += 1
-            j += 1
         lst.append(cnt)
         cnt = 0
-        i += 1
-        j += 1
-        arr = arr[i:]
-    return cnt
-
+        arr = arr[1:]
+    return lst
 
 print(smaller([5, 4, 3, 2, 1]), [4, 3, 2, 1, 0])
 print(smaller([1, 2, 3]), [0, 0, 0])

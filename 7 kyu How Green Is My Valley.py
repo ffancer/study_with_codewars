@@ -3,9 +3,15 @@
 
 
 def make_valley(arr):
-    arr = sorted(arr)
-    return arr[len(arr) // 2:], arr[:len(arr) // 2]
-
+    left_wing_lst, right_wing_lst = [], []
+    middle_lst = [min(arr)]
+    arr.remove(min(arr))
+    # while arr:
+    #     left_wing_lst.append(max(arr))
+    #     arr.remove(max(arr))
+    #     right_wing_lst.append(min(arr))
+    #     arr.remove(min(arr))
+    return middle_lst, arr
 
 print(make_valley([17, 17, 15, 14, 8, 7, 7, 5, 4, 4, 1]), [17, 15, 8, 7, 4, 1, 4, 5, 7, 14, 17])
 print(make_valley([20, 7, 6, 2]), [20, 6, 2, 7])

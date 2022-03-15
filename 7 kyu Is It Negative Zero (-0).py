@@ -1,5 +1,5 @@
 def is_negative_zero(n):
-    return n
+    return str(n)[:2] == '-0'
 
 
 print(is_negative_zero(-0.0), True)

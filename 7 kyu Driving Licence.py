@@ -1,37 +1,13 @@
+months = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
+
+
 def driver(data):
-    month = {
-        'Jan': '01',
-        'Feb': '02',
-        'Mar': '03',
-        'Apr': '04',
-        'May': '05',
-        'Jun': "06",
-        'Jul': "07",
-        'Aug': "08",
-        'September': "09",
-        'Oct': "10",
-        'Nov': "11",
-        'Dec': "12"
-    }
+    first, middle, surname, birth, sex = data
+    day, month, year = birth.split("-")
 
-    split_birth = data[3].split('-')
-    first = data[2][:6].upper().ljust(5, '9')
-    # second = data[3].split('-')[2][2]
-    second = split_birth[2][2]
-    third = ''
-    if data[-1] == 'F':
-        third += str(int(month.get(split_birth[1])[0]) + 5) + month.get(split_birth[1])[1]
-    fourth = split_birth[0]
-    fifth = split_birth[2][3]
-    sixth = data[0][0]
-    if data[1] == '':
-        sixth += '9'
-    else:
-        sixth += data[1][0]
-    seventh = '9'
-    eighth = 'AA'
-
-    return first + second + third + fourth + fifth + sixth + seventh + eighth
+    return "%s%s%02d%s%s%s%s9AA" % ((surname.upper() + "9999")[:5],
+                                    year[-2], months.index(month[:3]) + (51 if sex == "F" else 1),
+                                    day, year[-1], first[0], (middle + "9")[0])
 
 
 data = ["John", "James", "Smith", "01-Jan-2000", "M"]

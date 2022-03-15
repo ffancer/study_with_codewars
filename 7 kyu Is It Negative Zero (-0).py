@@ -1,5 +1,5 @@
 def is_negative_zero(n):
-    pass
+    return n
 
 
 print(is_negative_zero(-0.0), True)

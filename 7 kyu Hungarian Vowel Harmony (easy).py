@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 def dative(word):
-    if ['e', 'é', 'i', 'í', 'ö', 'ő', 'ü', 'ű'] in word[-3:]:
+    if [i for i in word[-3:]] in ['e', 'é', 'i', 'í', 'ö', 'ő', 'ü', 'ű'] :
         return word + 'nek'
-    if ['a', 'á', 'o', 'ó', 'u', 'ú'] in word[-3:]:
+    if [i for i in word[-3:]] in ['a', 'á', 'o', 'ó', 'u', 'ú']:
         return word + 'nak'
 
 

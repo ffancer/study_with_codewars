@@ -1,5 +1,5 @@
 def fire_fight(s):
-    pass
+    return s.split()
 
 
 print(fire_fight("Boat Rudder Mast Boat Hull Water Fire Boat Deck Hull Fire Propeller Deck Fire Deck Boat Mast"),

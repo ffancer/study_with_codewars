@@ -1,11 +1,5 @@
 def find_children(santas_list, children):
-    lst = []
-
-    for i in santas_list:
-        if i in children:
-            lst.append(i)
-
-    return sorted(lst)
+    return sorted(i for i in santas_list if i in children)
 
 
 print(find_children(["Jason", "Jackson", "Jordan", "Johnny"], ["Jason", "Jordan", "Jennifer"]),

@@ -1,6 +1,6 @@
 def driver(data):
-    pass
-
+    first = data[2][:6].upper()
+    return first
 
 data = ["John", "James", "Smith", "01-Jan-2000", "M"]
 print(driver(data), "SMITH001010JJ9AA")

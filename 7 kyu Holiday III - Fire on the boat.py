@@ -1,5 +1,13 @@
 def fire_fight(s):
-    return s.split()
+    lst = []
+
+    for i in s.split():
+        if i == 'Fire':
+            lst.append('~~')
+        else:
+            lst.append(i)
+
+    return ' '.join(lst)
 
 
 print(fire_fight("Boat Rudder Mast Boat Hull Water Fire Boat Deck Hull Fire Propeller Deck Fire Deck Boat Mast"),

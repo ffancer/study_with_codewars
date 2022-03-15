@@ -28,9 +28,10 @@ def driver(data):
         sixth += '9'
     else:
         sixth += data[1][0]
-    return sixth
-    # seventh
-    # eighth
+    seventh = '9'
+    eighth = 'AA'
+
+    return first + second + third + fourth + fifth + sixth + seventh + eighth
 
 
 data = ["John", "James", "Smith", "01-Jan-2000", "M"]

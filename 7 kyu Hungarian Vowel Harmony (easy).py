@@ -1,10 +1,9 @@
 def dative(word):
-    if word == 'úr':
-        return 'úrnak'
-    if word[-1] in 'eéiíöőüű' or word[-2] in 'eéiíöőüű' or word[-3] in 'eéiíöőüű':
-        return word + 'nek'
-    if word[-1] in 'aáoóuú' or word[-2] in 'aáoóuú' or word[-3] in 'aáoóuú' or word[-4] in 'aáoóuú':
-        return word + 'nak'
+    for c in word[::-1]:
+        if c in u'eéiíöőüű':
+            return word+'nek'
+        elif c in u'aáoóuú':
+            return word+'nak'
 
 
 print(dative(u"ablak"), u"ablaknak")

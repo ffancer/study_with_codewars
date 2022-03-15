@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 def dative(word):
-    pass
+    if ['e', 'é', 'i', 'í', 'ö', 'ő', 'ü', 'ű'] in word[-3:]:
+        return word + 'nek'
+    if ['a', 'á', 'o', 'ó', 'u', 'ú'] in word[-3:]:
+        return word + 'nak'
 
 
 print(dative(u"ablak"), u"ablaknak")
